@@ -1,6 +1,6 @@
 (* ::Package:: *)
 
-BeginPackage["ahafver`BayesianNetwork`"]
+BeginPackage["AndreasHafver`BayesianNetwork`"]
 
 (* Declare your package's public symbols here. *)
 BayesianNetwork

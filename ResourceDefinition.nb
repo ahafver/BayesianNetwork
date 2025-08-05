@@ -3,18 +3,20 @@ Notebook[{
 Cell[CellGroupData[{
 Cell["AndreasHafver/BayesianNetwork", "Title",
  Deletable->False,
+ TaggingRules->{},
  CellTags->{"Name", "TemplateCell", "Title"},
  CellID->376104720,ExpressionUUID->"794415ba-891f-fc42-bc0b-d0abb7889ef9"],
 
-Cell["Bayesian Networks for probabilistic analysis.", "Text",
+Cell["Bayesian Networks for probabilistic analysis", "Text",
  Deletable->False,
+ TaggingRules->{},
  CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
        SelectedNotebook[], After, Cell]; NotebookFind[
        SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
        WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
        SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
    PassEventsDown -> False, PassEventsUp -> False},
- CellChangeTimes->{3.963369100581852*^9},
+ CellChangeTimes->{3.963369100581852*^9, 3.963370690728216*^9},
  CellTags->{"DefaultContent", "Description", "TabNext", "TemplateCell"},
  CellID->840423204,ExpressionUUID->"b9b1c665-0265-4a44-a2bd-b327cb84615d"],
 
@@ -38,31 +40,9 @@ Cell[CellGroupData[{
 
 Cell["", "FileManagerTopSpacer",
  CellGroupingRules->{"SectionGrouping", 99},
+ TaggingRules->{},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->44272378,ExpressionUUID->"1af370c3-f95c-0f41-a75a-14a2f1481a08"],
-
-Cell[BoxData[
- InterpretationBox[
-  TagBox[
-   TemplateBox[{"\"BayesianNetwork  Definition Notebook.nb\"", 
-     FileNameJoin[{
-       NotebookDirectory[], "BayesianNetwork  Definition Notebook.nb"}]},
-    "FileManagerFileOpenerTemplate"],
-   Annotation[#, 
-    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  FileNameJoin[{
-    NotebookDirectory[], "BayesianNetwork  Definition Notebook.nb"}],
-  BoxID -> "FileTreePath",
-  BaseStyle->{"Text"}]], "FileManagerFile",
- CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
- CellGroupingRules->{"SectionGrouping", 100},
- CellFrameLabels->{{
-    Cell[
-     BoxData[
-      TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
-    Inherited}, {Inherited, Inherited}},
- CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->49615963,ExpressionUUID->"0e406e86-8a29-174b-9e7d-93eb9f2d3487"],
+ CellID->44272378,ExpressionUUID->"0a3416d0-3c13-bf4c-b4c6-18b42b2656d6"],
 
 Cell[CellGroupData[{
 
@@ -87,17 +67,18 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"4be3210c-db07-ef4f-bc2f-437da4d49607"]], \
+   "Text"}]],ExpressionUUID->"72b754b4-d5d1-0d40-b453-5ac228328325"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerDocumentationIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->382468549,ExpressionUUID->"6f7eeb71-ef6c-0c4c-add5-1cd4f32900f2"],
+ CellID->382468549,ExpressionUUID->"401309dd-c581-4d4e-b2df-0c90a78ebf35"],
 
 Cell[CellGroupData[{
 
@@ -122,17 +103,18 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"abdef220-914e-e441-8819-846b7d3e7c3a"]], \
+   "Text"}]],ExpressionUUID->"0da682ca-904b-f54d-be17-e0394c27142e"]], \
 "FileManagerDirectory",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->126510115,ExpressionUUID->"27d2b050-7613-2c4a-9ec0-db185287cb51"],
+ CellID->126510115,ExpressionUUID->"ffe0cd98-0a92-114b-a29a-188436ac6fe5"],
 
 Cell[TextData[Cell[BoxData[
  InterpretationBox[
@@ -155,17 +137,18 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English", "Guides"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"457b95c8-2040-6848-9f9a-87b136b9a8a0"]], \
+   "Text"}]],ExpressionUUID->"1ea4de74-a3bc-1b48-88e7-d11d0afb86b3"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerEmptyDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->65623686,ExpressionUUID->"c3a5bd49-4f3f-9943-be97-72b7d9cd841e"],
+ CellID->65623686,ExpressionUUID->"dc91757b-df73-3f4f-b3ee-075a3f5b4f93"],
 
 Cell[CellGroupData[{
 
@@ -190,17 +173,18 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English", "ReferencePages"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"034fdf7d-bbd4-834e-88f5-2673a14d93e4"]], \
+   "Text"}]],ExpressionUUID->"b0b59123-ea7b-ee4d-88b9-ef83e1c46db6"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->68374745,ExpressionUUID->"2191b944-db9e-5f43-8133-ccda38ef9b49"],
+ CellID->68374745,ExpressionUUID->"76bc12f0-be6c-7b4b-a674-3ac057da5a30"],
 
 Cell[CellGroupData[{
 
@@ -226,17 +210,18 @@ Cell[TextData[Cell[BoxData[
     "Symbols"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"c71524a9-1306-754d-b6ba-f762a95532a4"]], \
+   "Text"}]],ExpressionUUID->"5434200f-64ca-a94b-8bc9-b54a82619895"]], \
 "FileManagerDirectory",
  CellMargins->{{69 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 130},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->297456928,ExpressionUUID->"83cc2b28-8463-4346-8cb4-f24305e5a6da"],
+ CellID->297456928,ExpressionUUID->"1c72a993-c4ef-e745-be36-d63e8a700f0f"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -255,13 +240,14 @@ Cell[BoxData[
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{92 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 140},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->40642925,ExpressionUUID->"7ac6649d-f5cb-db4e-9b6a-644e93c8d6b5"],
+ CellID->40642925,ExpressionUUID->"2182c01d-1162-ab40-9f16-b8509ac67061"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -280,13 +266,14 @@ Cell[BoxData[
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{92 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 140},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->74028785,ExpressionUUID->"5bd689ce-442c-d946-90d4-e5a0d1514da4"]
+ CellID->74028785,ExpressionUUID->"18f3c770-eb6f-6943-af64-4b74822cee3b"]
 }, Closed]]
 }, Closed]],
 
@@ -311,17 +298,18 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Documentation", "English", "Tutorials"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"5581fc5a-16ca-c048-95bf-3e267a8d4900"]], \
+   "Text"}]],ExpressionUUID->"07a2fcd3-b8b4-0042-8f15-2b7a246b48aa"]], \
 "FileManagerDirectory",
  CellMargins->{{46 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 120},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerEmptyDirectoryIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->680990427,ExpressionUUID->"204cc43b-f23f-504e-9841-30bdb137b930"]
+ CellID->680990427,ExpressionUUID->"a3645d7d-9427-0349-bba2-49e0f89f4133"]
 }, Closed]]
 }, Closed]],
 
@@ -348,17 +336,18 @@ Cell[TextData[Cell[BoxData[
     NotebookDirectory[], "Kernel"}],
   BoxID -> "FileTreePath",
   BaseStyle->{
-   "Text"}]],ExpressionUUID->"d9df79f6-3d61-7c4d-8a99-a819e38e99e4"]], \
+   "Text"}]],ExpressionUUID->"8e170cbb-85ad-874d-a075-06360b288a95"]], \
 "FileManagerDirectory",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerKernelIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->1021927813,ExpressionUUID->"eb114dbb-fa58-cf43-a665-a545d35c1507"],
+ CellID->1021927813,ExpressionUUID->"876aa613-eff4-f443-8b66-4d34339e7b17"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -375,14 +364,39 @@ Cell[BoxData[
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{23 + Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 110},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerWLIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->327868430,ExpressionUUID->"2c9c5efa-4ac0-9e4f-a923-79a45b6c72f6"]
+ CellID->327868430,ExpressionUUID->"37efcc72-8b03-c647-a8e2-4f2de6113740"]
 }, Closed]],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TemplateBox[{"\"LICENSE\"", 
+     FileNameJoin[{
+       NotebookDirectory[], "LICENSE"}]},
+    "FileManagerFileOpenerTemplate"],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "LICENSE"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{"Text"}]], "FileManagerFile",
+ CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 100},
+ TaggingRules->{},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
+     Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->91477384,ExpressionUUID->"690264c8-d375-104b-830e-f5becaba5261"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -399,13 +413,38 @@ Cell[BoxData[
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerPacletInfoIconTemplate"]], Background -> 
      None], Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->295669418,ExpressionUUID->"3d9da9a1-7ce2-ab4a-9761-e14572b38bb6"],
+ CellID->295669418,ExpressionUUID->"5b443bec-438a-434b-b998-73146c1f80db"],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   TemplateBox[{"\"README.md\"", 
+     FileNameJoin[{
+       NotebookDirectory[], "README.md"}]},
+    "FileManagerFileOpenerTemplate"],
+   Annotation[#, 
+    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
+  FileNameJoin[{
+    NotebookDirectory[], "README.md"}],
+  BoxID -> "FileTreePath",
+  BaseStyle->{"Text"}]], "FileManagerFile",
+ CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
+ CellGroupingRules->{"SectionGrouping", 100},
+ TaggingRules->{},
+ CellFrameLabels->{{
+    Cell[
+     BoxData[
+      TemplateBox[{}, "FileManagerTXTIconTemplate"]], Background -> None], 
+    Inherited}, {Inherited, Inherited}},
+ CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
+ CellID->17503612,ExpressionUUID->"91d202dc-b857-a448-9d0e-791b51bbccee"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -422,59 +461,14 @@ Cell[BoxData[
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->139326669,ExpressionUUID->"b4515198-ff8e-9b42-9121-339068c1d389"],
-
-Cell[BoxData[
- InterpretationBox[
-  TagBox[
-   TemplateBox[{"\"ResourceDefinition.pdf\"", 
-     FileNameJoin[{
-       NotebookDirectory[], "ResourceDefinition.pdf"}]},
-    "FileManagerFileOpenerTemplate"],
-   Annotation[#, 
-    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  FileNameJoin[{
-    NotebookDirectory[], "ResourceDefinition.pdf"}],
-  BoxID -> "FileTreePath",
-  BaseStyle->{"Text"}]], "FileManagerFile",
- CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
- CellGroupingRules->{"SectionGrouping", 100},
- CellFrameLabels->{{
-    Cell[
-     BoxData[
-      TemplateBox[{}, "FileManagerUnknownIconTemplate"]], Background -> None],
-     Inherited}, {Inherited, Inherited}},
- CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->75867368,ExpressionUUID->"a4710e16-ef93-c44d-8759-ec70b7021b8b"],
-
-Cell[BoxData[
- InterpretationBox[
-  TagBox[
-   TemplateBox[{"\"Testing.nb\"", 
-     FileNameJoin[{
-       NotebookDirectory[], "Testing.nb"}]},
-    "FileManagerFileOpenerTemplate"],
-   Annotation[#, 
-    DefinitionNotebookClient`TemplateCells`PackagePrivate`fileDepth[0]]& ],
-  FileNameJoin[{
-    NotebookDirectory[], "Testing.nb"}],
-  BoxID -> "FileTreePath",
-  BaseStyle->{"Text"}]], "FileManagerFile",
- CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
- CellGroupingRules->{"SectionGrouping", 100},
- CellFrameLabels->{{
-    Cell[
-     BoxData[
-      TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
-    Inherited}, {Inherited, Inherited}},
- CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->127534339,ExpressionUUID->"2f06473e-97f2-d34b-b8d4-ad2bc970d138"],
+ CellID->139326669,ExpressionUUID->"7448cf6f-8a6b-6942-9579-f1ac9e9bf50b"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -491,18 +485,20 @@ Cell[BoxData[
   BaseStyle->{"Text"}]], "FileManagerFile",
  CellMargins->{{Inherited, Inherited}, {Inherited, Inherited}},
  CellGroupingRules->{"SectionGrouping", 100},
+ TaggingRules->{},
  CellFrameLabels->{{
     Cell[
      BoxData[
       TemplateBox[{}, "FileManagerNBIconTemplate"]], Background -> None], 
     Inherited}, {Inherited, Inherited}},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->214333528,ExpressionUUID->"ff0f149f-3025-9c43-a107-c9421893e244"],
+ CellID->214333528,ExpressionUUID->"35d0bd28-d5ee-2947-b0a0-2714822c3fb5"],
 
 Cell["", "FileManagerBottomSpacer",
  CellGroupingRules->{"SectionGrouping", 100},
+ TaggingRules->{},
  CellTags->{"FileManagerCell", "FileManager-PacletFiles"},
- CellID->154625277,ExpressionUUID->"0635b4cd-1d2e-f44d-a8c5-3d33337a832e"]
+ CellID->154625277,ExpressionUUID->"08bed912-2194-5348-acc2-25ba2519bbf0"]
 }, Open  ]]
 }, Open  ]],
 
@@ -846,6 +842,7 @@ z5MJp60JAjA0x44dO3z4sANjAAAAAAAAAAAAAAAAAACABf1/OrBKIw==
   DefaultBaseStyle->"ImageGraphics",
   ImageSizeRaw->{360., 319.8},
   PlotRange->{{0, 360.}, {0, 319.8}}]], "Input",
+ TaggingRules->{},
  CellChangeTimes->{{3.963369117515381*^9, 3.9633691296157303`*^9}},
  CellTags->"DefaultContent",
  CellID->445097320,ExpressionUUID->"3cca0722-7cd9-7a4e-92fd-c9cf0e4fa1db"]
@@ -889,6 +886,7 @@ multivariate probability distributions with conditional relationships among \
 the variables. This implementation works with categorical (finite discrete) \
 variables. \
 \>", "Text",
+ TaggingRules->{},
  CellChangeTimes->{{3.9633691497771225`*^9, 3.9633691603247204`*^9}},
  CellTags->"DefaultContent",
  CellID->441612482,ExpressionUUID->"5eb28b8b-57c5-6641-ab67-ca04ef5e31ff"]
@@ -931,6 +929,7 @@ Cell["\<\
 The Wolfram Language has extenive support for probabilistic computations, \
 however there is no inbuilt support for graphical models. \
 \>", "Notes",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631666972689533`*^9, 3.963166768117756*^9}, {
   3.9631668080285015`*^9, 3.9631668265580006`*^9}, {3.963167050164837*^9, 
   3.9631670516812153`*^9}, {3.963167081868929*^9, 3.963167119462187*^9}, {
@@ -956,6 +955,7 @@ function ",
   ButtonNote->"https://reference.wolfram.com/language/ref/Graph.html"],
  ".  "
 }], "Notes",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631675263800125`*^9, 3.9631676000377884`*^9}, {
   3.963167644297518*^9, 3.9631677052890873`*^9}, {3.963167741482767*^9, 
   3.963167741482767*^9}},
@@ -982,6 +982,7 @@ html"], None},
    "https://reference.wolfram.com/language/ref/EmpiricalDistribution.html"],
  " that may conditionally depend on each other."
 }], "Notes",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631666972689533`*^9, 3.963166768117756*^9}, {
   3.9631668080285015`*^9, 3.9631668265580006`*^9}, {3.963167050164837*^9, 
   3.9631670516812153`*^9}, {3.963167081868929*^9, 3.9631671991521893`*^9}, {
@@ -996,6 +997,7 @@ with symbolic probabilities. This means that one can do inference even when \
 probabilities are unknown/difficult to specify and use the symbolic forms of \
 the answer to gain insights about a system.\
 \>", "Notes",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631672060901012`*^9, 3.9631672073078938`*^9}, {
   3.9631677599936104`*^9, 3.9631679442219124`*^9}},
  CellID->107427623,ExpressionUUID->"31386dc4-792d-1147-875e-ae5c3d920468"]
@@ -1068,6 +1070,7 @@ for your paclet."}], "MoreInfoText"], Background -> GrayLevel[0.95],
  CellID->945361513,ExpressionUUID->"2830007f-8cc8-4b4e-979e-ee385392bef0"],
 
 Cell["andreashafver`BayesianNetwork`", "Text",
+ TaggingRules->{},
  CellID->626055752,ExpressionUUID->"8fd9a5ce-ffc9-014d-9488-b646d76df094"]
 }, Open  ]],
 
@@ -1201,6 +1204,7 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"PacletDirectoryLoad", "[", 
    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], ";"}]], "Input", "Excluded",
+ TaggingRules->{},
  InitializationCell->True,
  CellChangeTimes->{3.9633692131938896`*^9},
  CellID->996717066,ExpressionUUID->"107b7183-33c4-324f-8166-c3e51c42fdd8"],
@@ -1209,6 +1213,7 @@ Cell[BoxData[
  RowBox[{
   RowBox[{"Needs", "[", "\"\<andreashafver`BayesianNetwork`\>\"", "]"}], 
   ";"}]], "Input", "Excluded",
+ TaggingRules->{},
  InitializationCell->True,
  CellID->172764492,ExpressionUUID->"0a581a87-07af-a240-8014-b91edfc38148"]
 }, Open  ]],
@@ -1216,11 +1221,13 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell["Basic Examples", "Subsection",
+ TaggingRules->{},
  CellID->462042388,ExpressionUUID->"f92861b0-5804-8245-b22a-50a904974f87"],
 
 Cell["\<\
 Create a BN from a set of conditionally dependent univariate distributions: \
 \>", "Text",
+ TaggingRules->{},
  CellChangeTimes->{{3.963168071779127*^9, 3.963168098271448*^9}, {
   3.9631682224210835`*^9, 3.963168271511099*^9}},
  CellTags->"DefaultContent",
@@ -1311,7 +1318,7 @@ Cell[BoxData[{
            RowBox[{"#Sprinkler", "==", "\"\<Off\>\""}]}], "]"}], 
          RowBox[{"{", 
           RowBox[{"0.0", ",", "1.0"}], "}"}]}]}]}], "]"}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{"BN", " ", "=", " ", 
   RowBox[{"BayesianNetwork", "[", 
    RowBox[{"{", "\[IndentingNewLine]", 
@@ -1336,6 +1343,7 @@ Cell[BoxData[{
        RowBox[{"\"\<Name\>\"", "->", "\"\<Grass\>\""}], ",", 
        RowBox[{"\"\<Distribution\>\"", "->", "grass"}]}], "|>"}]}], 
     "\[IndentingNewLine]", "}"}], "]"}]}]}], "Input",
+ TaggingRules->{},
  CellChangeTimes->{{3.963168194116997*^9, 3.963168201765915*^9}, {
   3.9631682755979233`*^9, 3.9631683351693*^9}, {3.9631683679382687`*^9, 
   3.96316837307576*^9}, {3.9631686876276855`*^9, 3.9631686901541557`*^9}},
@@ -1647,7 +1655,6 @@ Cell[BoxData[
               
               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
                2.]] + 1. Boole[
-              
               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
                1.]] + 1. Boole[
               
@@ -1732,12 +1739,12 @@ Cell[BoxData[
              2.])))), {$CellContext`\[FormalX]1, 1, 2, 
        1}, {$CellContext`\[FormalX]2, 1, 2, 1}, {$CellContext`\[FormalX]3, 1, 
        2, 1}, {$CellContext`\[FormalX]4, 1, 2, 1}], "Graph" -> 
-    Graph[{
-      "Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 4}, {3, 
-       4}}, Null}, {VertexLabels -> {Automatic}}]|>],
+    Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 
+       4}, {3, 4}}, Null}, {VertexLabels -> {Automatic}}]|>],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
+ TaggingRules->{},
  CellChangeTimes->{3.9631683424160233`*^9},
  CellTags->"DefaultContent",
  CellLabel->"Out[9]=",
@@ -1745,6 +1752,7 @@ Cell[BoxData[
 }, Open  ]],
 
 Cell["Do some computations:", "Text",
+ TaggingRules->{},
  CellChangeTimes->{{3.963168407737213*^9, 3.9631684147206745`*^9}},
  CellID->574794726,ExpressionUUID->"59f7251d-02ed-9245-b0f6-9150caadc21b"],
 
@@ -1758,16 +1766,19 @@ Cell[BoxData[
      RowBox[{"#Cloudy", " ", "==", "\"\<True\>\""}], "\[Conditioned]", " ", 
      RowBox[{"#Rain", " ", "==", "\"\<True\>\""}]}], "&"}], ",", "BN"}], 
   "]"}]], "Input",
+ TaggingRules->{},
  CellLabel->"In[13]:=",
  CellID->443941269,ExpressionUUID->"24340085-5596-f141-a96a-7a2804d0d761"],
 
 Cell[BoxData["0.8000000000000002`"], "Output",
+ TaggingRules->{},
  CellChangeTimes->{3.9631685144119473`*^9},
  CellLabel->"Out[13]=",
  CellID->27816595,ExpressionUUID->"c00364e4-16f5-844c-a149-aad5c07bef23"]
 }, Open  ]],
 
 Cell["Visualise the model:", "Text",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631683847392864`*^9, 3.9631683922483463`*^9}},
  CellID->19636746,ExpressionUUID->"1442ae78-6472-fe4a-b961-fe22d0bdfd8e"],
 
@@ -1775,6 +1786,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"Graph", "[", "BN", "]"}]], "Input",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631683936822433`*^9, 3.9631684028951607`*^9}},
  CellLabel->"In[10]:=",
  CellID->203258179,ExpressionUUID->"1bcdb4c3-809b-fa47-a88c-d71081116577"],
@@ -2473,12 +2485,14 @@ Cell[BoxData[
   DefaultBaseStyle->"NetworkGraphics",
   FormatType->TraditionalForm,
   FrameTicks->None]], "Output",
+ TaggingRules->{},
  CellChangeTimes->{3.963168403887806*^9},
  CellLabel->"Out[10]=",
  CellID->331479567,ExpressionUUID->"b7634d62-d412-6042-9612-c754c341df3c"]
 }, Open  ]],
 
 Cell["Visualise the model with some evidence:", "Text",
+ TaggingRules->{},
  CellChangeTimes->{{3.963168475050886*^9, 3.9631684877082767`*^9}},
  CellID->55754256,ExpressionUUID->"fccf1e35-218b-ee4c-9574-96a743414ff0"],
 
@@ -2489,6 +2503,7 @@ Cell[BoxData[
   RowBox[{"BN", ",", " ", 
    RowBox[{
     RowBox[{"#Rain", " ", "==", "\"\<True\>\""}], "&"}]}], "]"}]], "Input",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631684467091846`*^9, 3.9631684494198723`*^9}},
  CellLabel->"In[12]:=",
  CellID->504720292,ExpressionUUID->"a7e9c0f6-ec12-1347-99f7-dc6597c50461"],
@@ -3100,9 +3115,8 @@ Cell[BoxData[
                     "RoundingRadius" -> 0], 
                     StatusArea[#, 0.9162000000000001]& , TagBoxNote -> 
                     "0.9162000000000001"], 
-                    StyleBox[
-                    "0.9162000000000001`", {}, StripOnInput -> False]], 
-                   Annotation[#, 
+                    StyleBox["0.9162000000000001`", {}, StripOnInput -> False]
+                    ], Annotation[#, 
                     Style[0.9162000000000001, {}], "Tooltip"]& ]}, {
                   Directive[
                    EdgeForm[
@@ -3186,6 +3200,7 @@ Cell[BoxData[
   DefaultBaseStyle->"NetworkGraphics",
   FormatType->TraditionalForm,
   FrameTicks->None]], "Output",
+ TaggingRules->{},
  CellChangeTimes->{3.9631684509179707`*^9, 3.963168490808176*^9},
  CellLabel->"Out[12]=",
  CellID->656642438,ExpressionUUID->"a745807d-001f-1b4c-976f-013241d652e1"]
@@ -3195,11 +3210,13 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell["Scope", "Subsection",
+ TaggingRules->{},
  CellID->964056545,ExpressionUUID->"e18717a1-5466-8b40-b152-685e6c9d8e19"],
 
 Cell["\<\
 Give more examples showing the range of features in the paclet:\
 \>", "Text",
+ TaggingRules->{},
  CellTags->"DefaultContent",
  CellID->217390316,ExpressionUUID->"f5ed4fa8-3f11-0b4f-8a28-41d10f42df21"],
 
@@ -3207,6 +3224,7 @@ Cell["\<\
 Advanced inference is possible, beyond what is possible with other BN \
 implementations:\
 \>", "Text",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631688521243076`*^9, 3.963168888976755*^9}},
  CellID->158660521,ExpressionUUID->"fe01b380-82ca-5d43-b3d8-181eec5130d5"],
 
@@ -3471,12 +3489,12 @@ Cell[BoxData[{
                  
                  And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
                   1.]] + 1. Boole[
+                 
                  And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
                   2.]])/(0. + 1. Boole[
                 
                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
                  1.]] + 1. Boole[
-                
                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
                  2.]] + 1. Boole[
                 
@@ -3637,17 +3655,20 @@ Cell[BoxData[{
        RowBox[{"#Sprinkler", "==", "\"\<On\>\""}]}]}], "\[Conditioned]", " ", 
      RowBox[{"#Rain", " ", "==", "\"\<True\>\""}]}], "&"}], ",", "BN"}], 
   "]"}]}], "Input",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631689223524055`*^9, 3.96316896501112*^9}, {
   3.963169001473692*^9, 3.9631690024116535`*^9}},
  CellLabel->"In[37]:=",
  CellID->35403745,ExpressionUUID->"df0fa84d-d665-b84d-8458-c33d72b43c1c"],
 
 Cell[BoxData["0.38661971830985914`"], "Output",
+ TaggingRules->{},
  CellChangeTimes->{3.963168967090761*^9, 3.9631690032514935`*^9},
  CellLabel->"Out[38]=",
  CellID->838530824,ExpressionUUID->"3d77cc2b-67b8-eb45-8a2d-cd153323c894"],
 
 Cell[BoxData["0.07300000000000001`"], "Output",
+ TaggingRules->{},
  CellChangeTimes->{3.963168967090761*^9, 3.9631690032678986`*^9},
  CellLabel->"Out[39]=",
  CellID->314637742,ExpressionUUID->"c76e656b-71ec-114a-9206-867fa9403cbb"]
@@ -3664,10 +3685,12 @@ Cell[BoxData[
   #& ,
   TaggingRules -> {"DefaultContentBoxes" -> True},
   AutoDelete->True]], "ExampleDelimiter",
+ TaggingRules->{},
  CellTags->"DefaultContent",
  CellID->702934695,ExpressionUUID->"74c0edf8-2387-7240-9cca-45fa30ea0574"],
 
 Cell["A BN can be partially symbolic:", "Text",
+ TaggingRules->{},
  CellChangeTimes->{{3.963168573858391*^9, 3.963168599636791*^9}},
  CellTags->"DefaultContent",
  CellID->385021948,ExpressionUUID->"3aec2190-7da8-2a49-ba1b-398b77bf1444"],
@@ -3758,7 +3781,7 @@ Cell[BoxData[{
            RowBox[{"#Sprinkler", "==", "\"\<Off\>\""}]}], "]"}], 
          RowBox[{"{", 
           RowBox[{"0.0", ",", "1.0"}], "}"}]}]}]}], "]"}], "]"}]}], ";"}], 
-  "\[IndentingNewLine]"}], "\n", 
+  "\n"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{"BN", " ", "=", " ", 
@@ -3786,6 +3809,7 @@ Cell[BoxData[{
          RowBox[{"\"\<Distribution\>\"", "->", "grass"}]}], "|>"}]}], 
       "\[IndentingNewLine]", "}"}], "]"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{"Graph", "[", "BN", "]"}]}], "Input",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631686505039024`*^9, 3.9631686666971416`*^9}, {
   3.9631687176583977`*^9, 3.963168738799858*^9}},
  CellTags->"DefaultContent",
@@ -4244,6 +4268,7 @@ Cell[BoxData[
   DefaultBaseStyle->"NetworkGraphics",
   FormatType->TraditionalForm,
   FrameTicks->None]], "Output",
+ TaggingRules->{},
  CellChangeTimes->{
   3.963168667524765*^9, {3.9631687287941246`*^9, 3.9631687397818356`*^9}},
  CellTags->"DefaultContent",
@@ -4263,6 +4288,7 @@ Cell[BoxData[
   #& ,
   TaggingRules -> {"DefaultContentBoxes" -> True},
   AutoDelete->True]], "ExampleDelimiter",
+ TaggingRules->{},
  CellTags->"DefaultContent",
  CellID->844676018,ExpressionUUID->"a0d82635-c021-ed40-9246-2be6789994a1"],
 
@@ -4270,6 +4296,7 @@ Cell["\<\
 A BN can be complete symbolic:
 \
 \>", "Text",
+ TaggingRules->{},
  CellChangeTimes->{{3.96316874892725*^9, 3.9631687889625874`*^9}},
  CellTags->"DefaultContent",
  CellID->702494810,ExpressionUUID->"658c44e3-109c-9943-9a0f-257b70e985d3"],
@@ -4393,6 +4420,7 @@ Cell[BoxData[{
      RowBox[{"#Cloudy", "==", " ", "c"}], "\[Conditioned]", 
      RowBox[{"#Grass", "==", "\"\<Wet\>\""}]}], "&"}], ",", "BN"}], 
   "]"}], "\[IndentingNewLine]"}], "Input",
+ TaggingRules->{},
  CellChangeTimes->{{3.963168798282442*^9, 3.9631688113494816`*^9}, {
   3.963169082991993*^9, 3.9631692152686844`*^9}},
  CellLabel->"In[59]:=",
@@ -4492,6 +4520,7 @@ Cell[BoxData[
           RowBox[{"-", "1"}], "+", "pSc"}], ")"}]}], "-", "pSc", "+", "pSnc", 
        "-", 
        RowBox[{"pRnc", " ", "pSnc"}]}], ")"}]}]}], ")"}]}]], "Output",
+ TaggingRules->{},
  CellChangeTimes->{{3.9631691004965*^9, 3.9631691667743053`*^9}, {
   3.963169202978239*^9, 3.963169215822237*^9}},
  CellLabel->"Out[60]=",
@@ -4543,6 +4572,7 @@ publicly credited with contributing this paclet.", "MoreInfoText"],
  CellID->57534933,ExpressionUUID->"66c7795e-87a5-5248-91cb-444486f16432"],
 
 Cell["Andreas Hafver", "Text",
+ TaggingRules->{},
  CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
        SelectedNotebook[], After, Cell]; NotebookFind[
        SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
@@ -4587,6 +4617,7 @@ GitHub), you can provide the URL here.", "MoreInfoText"], Background ->
  CellID->221376991,ExpressionUUID->"ad5189f6-c2a5-2646-87dc-83e281079ad5"],
 
 Cell["https://github.com/ahafver/BayesianNetwork", "Text",
+ TaggingRules->{},
  CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
        SelectedNotebook[], After, Cell]; NotebookFind[
        SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
@@ -4778,7 +4809,7 @@ McWW58k1bQlvkDYqmK7IcWEctphv5Ab62NTqdFhG5dGk11szp6VLxO7oSITpYUSNHgusuLarHXmrx3\
 HwvIrWjVOuESY5zQA8v5jOw+k/J3+o9KS6yqjkq5L5J+\
 iDyDhTpYFLfWu9vaGdNb4RCrbLVqwKpsftFq6VKFf7wyVBUOWtIUYbLOvcuauEGj8bocOrU6LZpnmO\
 Q/6yYxFYxHglNYfuewx0imyf03lwXj9h0xao+l8GtP4Ys1yJHVYvfhtLfQH/gK4wD9R", 
-   "RadioButtonValue" -> "Other", "SpecifiedLicenseID" -> Null},
+   "RadioButtonValue" -> "MIT", "SpecifiedLicenseID" -> Null},
  CellTags->{
   "LicensingInformation", "LicensingInformation-RadioButtons", 
    "RadioButtonsCell"},
@@ -4817,6 +4848,7 @@ concepts) that should be used to include the paclet in search results.",
  CellID->913860664,ExpressionUUID->"36daaf6a-a658-f840-b59a-745c339206ea"],
 
 Cell["Bayesian Network", "Item",
+ TaggingRules->{},
  CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
        SelectedNotebook[], After, Cell]; NotebookFind[
        SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
@@ -5074,8 +5106,6 @@ PwXkIlPiGCYK7Cwowu4Mn5exvtmJOR/MHd70lCD4AidngdWcTj1eE3NewiDnY27wHy4PQCF/\
  CellID->508531351,ExpressionUUID->"8fbe06df-9a3e-664a-ae75-6850acc836ba"]
 }, Open  ]],
 
-Cell[CellGroupData[{
-
 Cell[TextData[{
  "Related Resource Objects",
  Cell[BoxData[
@@ -5104,20 +5134,6 @@ repository that are related to this paclet.", "MoreInfoText"], Background ->
  DefaultNewCellStyle->"Item",
  CellTags->{"Related Resource Objects", "TemplateCellGroup"},
  CellID->280622473,ExpressionUUID->"2be9a507-170c-3047-b023-b053eb0e96e7"],
-
-Cell["", "Item",
- CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
-       SelectedNotebook[], After, Cell]; NotebookFind[
-       SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
-       WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
-       SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
-   PassEventsDown -> False, PassEventsUp -> False},
- CellChangeTimes->{3.9633693929932156`*^9},
- CellTags->{"DefaultContent", "TabNext"},
- CellID->694609509,ExpressionUUID->"b38673ce-11ab-b948-9653-7573f3594b6c"]
-}, Open  ]],
-
-Cell[CellGroupData[{
 
 Cell[TextData[{
  "Original Source References and Attributions",
@@ -5150,20 +5166,6 @@ repository).", "MoreInfoText"], Background -> GrayLevel[0.95], FrameMargins ->
    "TemplateCellGroup"},
  CellID->687116677,ExpressionUUID->"5f52276b-c50c-7f4f-8bc8-9b5ab2420af6"],
 
-Cell["", "Item",
- CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
-       SelectedNotebook[], After, Cell]; NotebookFind[
-       SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
-       WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
-       SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
-   PassEventsDown -> False, PassEventsUp -> False},
- CellChangeTimes->{3.963369397294323*^9},
- CellTags->{"DefaultContent", "TabNext"},
- CellID->702019342,ExpressionUUID->"a4610e6f-912a-3448-b679-6f84904f348b"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
 Cell[TextData[{
  "Links",
  Cell[BoxData[
@@ -5191,17 +5193,6 @@ to the paclet.", "MoreInfoText"], Background -> GrayLevel[0.95], FrameMargins ->
  DefaultNewCellStyle->"Item",
  CellTags->{"Links", "TemplateCellGroup"},
  CellID->179193585,ExpressionUUID->"edae1cab-35cb-8842-9655-4491274b4067"],
-
-Cell["Link to other related material", "Item",
- CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
-       SelectedNotebook[], After, Cell]; NotebookFind[
-       SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
-       WrapAround -> True], Blank[NotebookSelection] :> SelectionMove[
-       SelectedNotebook[], All, CellContents, AutoScroll -> True]], 
-   PassEventsDown -> False, PassEventsUp -> False},
- CellTags->{"DefaultContent", "TabNext"},
- CellID->938599834,ExpressionUUID->"f970d2a3-4c1e-8449-b882-04cf6bfe6d96"]
-}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -5270,6 +5261,7 @@ Cell[TextData[{
  CellID->267876551,ExpressionUUID->"5d951be8-61a9-4142-ae5a-528c5c5f7cac"],
 
 Cell["12.1+", "Text",
+ TaggingRules->{},
  CellID->141824513,ExpressionUUID->"d23d7152-b844-ee4a-a3a9-d82901ca87ee"]
 }, Open  ]],
 
@@ -6504,6 +6496,7 @@ implementation!
 Feel free to contact me if you have questions or suggestions to improve this \
 paclet: ahafver@gmail.com  \
 \>", "Text",
+ TaggingRules->{},
  CellEventActions->{Inherited, {"KeyDown", "\t"} :> Replace[SelectionMove[
        SelectedNotebook[], After, Cell]; NotebookFind[
        SelectedNotebook[], "TabNext", Next, CellTags, AutoScroll -> True, 
@@ -6516,9 +6509,1310 @@ paclet: ahafver@gmail.com  \
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{574.8, 638.4},
-WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 0}},
+WindowSize->{1152, 651.6},
+WindowMargins->{{
+  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
 WindowTitle->"BayesianNetwork | Definition Notebook",
+DockedCells->{
+  Cell[
+   BoxData[
+    TemplateBox[{}, "MainGridTemplate"]], "DockedCell", 
+   CellMargins -> {{-10, -10}, {-8, -8}}, CellFrame -> 0, Background -> 
+   RGBColor[0.33333, 0.33333, 0.33333], CellTags -> {"MainDockedCell"}, 
+   CacheGraphics -> False], 
+  Cell[
+   BoxData[
+    TemplateBox[{}, "ToolsGridTemplate"]], "DockedCell", 
+   TaggingRules -> {"Tools" -> True}, CellTags -> {"ToolbarDockedCell"}, 
+   CellFrameMargins -> {{0, 0}, {2, 2}}, CellFrame -> {{0, 0}, {1, 0}}, 
+   CacheGraphics -> False, CellOpen -> Dynamic[
+     CurrentValue[
+      EvaluationNotebook[], {TaggingRules, "ToolsOpen"}, True]]], 
+  Cell[
+   BoxData[
+    StyleBox[
+     TagBox[
+      GridBox[{{
+         OverlayBox[{
+           StyleBox[
+            TagBox[
+             DynamicModuleBox[{Typeset`var$$ = False}, 
+              InterpretationBox[
+               StyleBox[
+                PaneSelectorBox[{False -> GridBox[{{
+                    OpenerBox[
+                    Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
+                    Automatic, AutoAction -> False, ContinuousAction -> 
+                    False], 
+                    StyleBox[
+                    DynamicBox[
+                    ToBoxes[
+                    DateString[
+                    TimeZoneConvert[
+                    DateObject[
+                    3.9633797156363177`17.350640671513244*^9, TimeZone -> 
+                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
+                    StandardForm], SingleEvaluation -> True, Evaluator -> 
+                    "System"], FontSlant -> Italic, FontColor -> 
+                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
+                    False]}}, GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                    AutoDelete -> False, 
+                    GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
+                    BaselinePosition -> {1, 1}], True -> GridBox[{{
+                    OpenerBox[
+                    Dynamic[Typeset`var$$], Appearance -> Automatic, Enabled -> 
+                    Automatic, AutoAction -> False, ContinuousAction -> 
+                    False], 
+                    StyleBox[
+                    DynamicBox[
+                    ToBoxes[
+                    DateString[
+                    TimeZoneConvert[
+                    DateObject[
+                    3.9633797156363177`17.350640671513244*^9, TimeZone -> 
+                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
+                    StandardForm], SingleEvaluation -> True, Evaluator -> 
+                    "System"], FontSlant -> Italic, FontColor -> 
+                    GrayLevel[0.5], FontSize -> 0.9 Inherited, StripOnInput -> 
+                    False]}, {"", 
+                    PaneBox["\"\"", ImageMargins -> 0]}}, 
+                    GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> 
+                    False, GridBoxBackground -> {"Columns" -> {{Automatic}}}, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{0.2}}, "Rows" -> {{0.5}}}, 
+                    BaselinePosition -> {1, 1}]}, 
+                 Dynamic[
+                  TrueQ[Typeset`var$$]], Alignment -> Automatic, ImageSize -> 
+                 Automatic, ImageMargins -> 0, BaseStyle -> {}, 
+                 DefaultBaseStyle -> "OpenerView", BaselinePosition -> 
+                 Baseline], Deployed -> False, StripOnInput -> False], 
+               OpenerView[{
+                 Style[
+                  Dynamic[
+                   DateString[
+                    TimeZoneConvert[
+                    DateObject[
+                    3.9633797156363177`17.350640671513244*^9, TimeZone -> 
+                    0]], {"MonthName", " ", "DayShort", ", ", "Year", " ", 
+                    "Hour12Short", ":", "Minute", " ", "AMPMLowerCase"}], 
+                   SingleEvaluation -> True, Evaluator -> "System"], 
+                  FontSlant -> Italic, FontColor -> GrayLevel[0.5], FontSize -> 
+                  0.9 Inherited], ""}, False]], DynamicModuleValues -> 
+              Automatic], Setting[#, {0}]& ], ShowContents -> False, 
+            StripOnInput -> False], 
+           StyleBox[
+            DynamicBox[
+             ToBoxes[
+              DateString[
+               TimeZoneConvert[
+                DateObject[
+                3.9633797156363177`17.350640671513244*^9, TimeZone -> 0]], {
+               "MonthName", " ", "DayShort", ", ", "Year", " ", "Hour12Short",
+                 ":", "Minute", " ", "AMPMLowerCase"}], StandardForm], 
+             SingleEvaluation -> True, Evaluator -> "System"], FontSlant -> 
+            Italic, FontColor -> GrayLevel[0.5], FontSize -> 0.9 Inherited, 
+            StripOnInput -> False]}, Alignment -> {Right, Baseline}], 
+         "\"   \"", 
+         ItemBox[
+          StyleBox[
+           TagBox[
+            GridBox[{{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[0.9647058823529412, 0.16862745098039217`, 0.]}, 
+                 "HintPodIconHint"], ImageSize -> {12, 12}, ImageSizeAction -> 
+                "ShrinkToFit", BaselinePosition -> Scaled[0.2]], "\"\"", 
+               "\"\"", 
+               StyleBox[
+                ButtonBox[
+                 TagBox[
+                  TemplateBox[{
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"A license ID must be specified\"", 
+                    "\" \[RightGuillemet]\""}, "RowDefault"], FontColor -> 
+                    RGBColor[0.86667, 0.06667, 0.], StripOnInput -> False], 
+                    StyleBox[
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"A license ID must be specified\"", 
+                    "\" \[RightGuillemet]\""}, "RowDefault"], FontColor -> 
+                    RGBColor[0.86667, 0.06667, 0.], StripOnInput -> False], 
+                    "HyperlinkActive"], BaseStyle -> "Hyperlink"}, 
+                   "MouseoverTemplate"], 
+                  MouseAppearanceTag["LinkHand"]], BaseStyle -> "Hyperlink", 
+                 ButtonFunction :> 
+                 DefinitionNotebookClient`PackageScope`moveToCell[
+                   CellObject[
+                   "ea8c6178-7fcb-8e4a-8990-15727926c79a", 
+                    "bd6622b7-a6d3-7040-803c-f799c57542fa"]], Evaluator -> 
+                 Automatic, Method -> "Queued"], "StripeTemporary", 
+                TaggingRules -> {"Replacement" -> StyleBox[
+                    
+                    TemplateBox[{"\"A license ID must be specified\""}, 
+                    "RowDefault"], FontColor -> 
+                    RGBColor[0.86667, 0.06667, 0.], StripOnInput -> False]}, 
+                StripOnInput -> False]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {
+              "Columns" -> {{0.25}}, "ColumnsIndexed" -> {2 -> 0.1}, 
+               "Rows" -> {{Automatic}}}], "Grid"], LineBreakWithin -> 
+           Automatic, LineIndent -> 0, StripOnInput -> False], ItemSize -> 
+          Fit, StripOnInput -> False], 
+         StyleBox[
+          ActionMenuBox[
+           FrameBox[
+            TemplateBox[{
+              TagBox[
+               GridBox[{{
+                  TemplateBox[{
+                    TemplateBox[{
+                    PaneBox[
+                    TemplateBox[{
+                    RGBColor[0.9647058823529412, 0.16862745098039217`, 0.]}, 
+                    "HintPodIconHint"], ImageSize -> {12, 12}, 
+                    ImageSizeAction -> "ShrinkToFit", BaselinePosition -> 
+                    Scaled[0.1]], 
+                    TemplateBox[{1}, "Spacer1"], 
+                    StyleBox[
+                    "1", FontSize -> 14, FontWeight -> Plain, FontColor -> 
+                    GrayLevel[0.25], FontFamily -> "Source Sans Pro", 
+                    StripOnInput -> False]}, "RowDefault"], 
+                    "\"Errors encountered while attempting to create the \
+resource\""}, "PrettyTooltipTemplate"], 
+                  TemplateBox[{
+                    TemplateBox[{
+                    PaneBox[
+                    TemplateBox[{
+                    RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"],
+                     ImageSize -> {12, 12}, ImageSizeAction -> "ShrinkToFit", 
+                    BaselinePosition -> Scaled[0.1]], 
+                    TemplateBox[{1}, "Spacer1"], 
+                    StyleBox[
+                    "16", FontSize -> 14, FontWeight -> Plain, FontColor -> 
+                    GrayLevel[0.25], FontFamily -> "Source Sans Pro", 
+                    StripOnInput -> False]}, "RowDefault"], 
+                    "\"Potential issues found\""}, "PrettyTooltipTemplate"], 
+                  TemplateBox[{
+                    TemplateBox[{
+                    PaneBox[
+                    TemplateBox[{
+                    RGBColor[
+                    0.49019607843137253`, 0.49019607843137253`, 
+                    0.49019607843137253`]}, "HintPodIconHint"], 
+                    ImageSize -> {12, 12}, ImageSizeAction -> "ShrinkToFit", 
+                    BaselinePosition -> Scaled[0.1]], 
+                    TemplateBox[{1}, "Spacer1"], 
+                    StyleBox[
+                    "13", FontSize -> 14, FontWeight -> Plain, FontColor -> 
+                    GrayLevel[0.25], FontFamily -> "Source Sans Pro", 
+                    StripOnInput -> False]}, "RowDefault"], 
+                    "\"Suggestions found\""}, "PrettyTooltipTemplate"]}}, 
+                AutoDelete -> False, 
+                GridBoxItemSize -> {
+                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+               "Grid"], 
+              GraphicsBox[{
+                GrayLevel[0.4], 
+                AbsoluteThickness[2], 
+                CapForm["Round"], 
+                LineBox[{{-1, 0}, {0, -1}, {1, 0}}]}, {
+               ImageSize -> {13, 9}, BaselinePosition -> Scaled[0.2], 
+                ImagePadding -> {{3, 3}, {3, 3}}, AspectRatio -> Full}]}, 
+             "RowDefault"], DefaultBaseStyle -> "HighlightedInput", 
+            StripOnInput -> False, ImageSize -> {Automatic, 19}, 
+            BaselinePosition -> Baseline, Background -> GrayLevel[1], 
+            FrameStyle -> Dynamic[
+              If[
+               CurrentValue["MouseOver"], 
+               Hue[0.55, 0.82, 0.87], 
+               GrayLevel[0.8]]], FrameMargins -> {{4, 4}, {1, 1}}, 
+            Alignment -> {Center, Baseline}], {TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"The PacletInfo file is missing a description\""}, 
+              "RowDefault"] :> DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "e2cf6808-2ebf-4c5e-abd4-fb077ca04c7c", 840423204, 
+                "PacletDescriptionMissing", <|
+                "Actual" -> Missing["NotAvailable"], "Expected" -> 
+                 "Bayesian Networks for probabilistic analysis", 
+                 "PacletDirectory" -> 
+                 File["C:\\Users\\HAFVE\\Repos\\BayesianNetwork"], 
+                 "Selection" -> ("Description" -> 
+                  "Bayesian Networks for probabilistic analysis")|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[840423204]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"The documentation metadata has an incorrect paclet name \
+(ahafver/BayesianNetwork)\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "d322f646-4a39-46f8-b3c1-d0cce9f25eb2", 40642925, 
+                "DocumentationWrongPacletName", <|
+                "CellID" -> 40642925, "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Documentation\\\
+English\\ReferencePages\\Symbols\\BayesianNetwork.nb", "Excluded" -> False, 
+                 "DocumentationNotebook" -> True, "DocumentFlag" -> None, 
+                 "ObjectName" -> "BayesianNetwork", "FullName" -> 
+                 "ahafver`BayesianNetwork`BayesianNetwork", "Type" -> 
+                 "Function", "FileHash" -> 4416495506000545862, "Flag" -> 
+                 None, "Extensions" -> {"Documentation"}, "EntityType" -> 
+                 "Symbol", "PacletName" -> "ahafver/BayesianNetwork", 
+                 "Context" -> "ahafver`BayesianNetwork`", "URI" -> 
+                 "ahafver/BayesianNetwork/ref/BayesianNetwork", 
+                 "ExpectedPacletName" -> "AndreasHafver/BayesianNetwork"|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[40642925]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"The documentation metadata has an incorrect paclet name \
+(ahafver/BayesianNetwork)\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "baa32491-2b7b-4d8c-bc7a-9dd65d949ca5", 74028785, 
+                "DocumentationWrongPacletName", <|
+                "CellID" -> 74028785, "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Documentation\\\
+English\\ReferencePages\\Symbols\\BayesianNetworkObject.nb", "Excluded" -> 
+                 False, "DocumentationNotebook" -> True, "DocumentFlag" -> 
+                 None, "ObjectName" -> "BayesianNetworkObject", "FullName" -> 
+                 "ahafver`BayesianNetwork`BayesianNetworkObject", "Type" -> 
+                 "Function", "FileHash" -> 2463717648905885647, "Flag" -> 
+                 None, "Extensions" -> {"Documentation"}, "EntityType" -> 
+                 "Symbol", "PacletName" -> "ahafver/BayesianNetwork", 
+                 "Context" -> "ahafver`BayesianNetwork`", "URI" -> 
+                 "ahafver/BayesianNetwork/ref/BayesianNetworkObject", 
+                 "ExpectedPacletName" -> "AndreasHafver/BayesianNetwork"|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[74028785]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{
+                 StyleBox[
+                 "Optional", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\" occurs before \"", 
+                 StyleBox[
+                 "OptionsPattern", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\" and may bind arguments intended for \"", 
+                 StyleBox[
+                 "OptionsPattern", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L93,C64) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "a99b2eb3-676d-48dd-9d68-1d19dd9d1fa6", 327868430, 
+                "CodeInspectionFileIssue/OptionsPattern", <|
+                "AdditionalSources" -> {{{93, 71}, {93, 87}}}, "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 93, 
+                 "SourceColumnStart" -> 64, "SourceLineEnd" -> 93, 
+                 "SourceColumnEnd" -> 65, "Message" -> 
+                 "``Optional`` occurs before ``OptionsPattern`` and may bind \
+arguments intended for ``OptionsPattern``.\!\(\*StyleBox[\"\\\" (L93,C64) \
+\\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "OptionsPattern", 
+                   "``Optional`` occurs before ``OptionsPattern`` and may \
+bind arguments intended for ``OptionsPattern``.", "Warning", <|
+                   CodeParser`Source -> {{93, 64}, {93, 65}}, 
+                    "AdditionalSources" -> {{{93, 71}, {93, 87}}}, 
+                    ConfidenceLevel -> 0.95, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L93,C64) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"The same symbol occurs on LHS and RHS of \"", 
+                 StyleBox[
+                 "Rule", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L31,C51) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "7be89b17-b5cc-4b0c-b382-377bf71a1ad2", 327868430, 
+                "CodeInspectionFileIssue/PatternRule", <|
+                "AdditionalSources" -> {{{31, 56}, {31, 57}}}, "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 31, 
+                 "SourceColumnStart" -> 51, "SourceLineEnd" -> 31, 
+                 "SourceColumnEnd" -> 52, "Message" -> 
+                 "The same symbol occurs on LHS and RHS of \
+``Rule``.\!\(\*StyleBox[\"\\\" (L31,C51) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                 "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "PatternRule", 
+                   "The same symbol occurs on LHS and RHS of ``Rule``.", 
+                   "Error", <|
+                   CodeParser`Source -> {{31, 51}, {31, 52}}, 
+                    "AdditionalSources" -> {{{31, 56}, {31, 57}}}, 
+                    ConfidenceLevel -> 0.7, CodeParser`CodeActions -> {}, 
+                    "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L31,C51) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"The same symbol occurs on LHS and RHS of \"", 
+                 StyleBox[
+                 "Rule", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L99,C56) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "c9502ca1-0f86-4886-85a1-75cd9f0183e7", 327868430, 
+                "CodeInspectionFileIssue/PatternRule", <|
+                "AdditionalSources" -> {{{99, 61}, {99, 62}}}, "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 99, 
+                 "SourceColumnStart" -> 56, "SourceLineEnd" -> 99, 
+                 "SourceColumnEnd" -> 57, "Message" -> 
+                 "The same symbol occurs on LHS and RHS of \
+``Rule``.\!\(\*StyleBox[\"\\\" (L99,C56) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                 "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "PatternRule", 
+                   "The same symbol occurs on LHS and RHS of ``Rule``.", 
+                   "Error", <|
+                   CodeParser`Source -> {{99, 56}, {99, 57}}, 
+                    "AdditionalSources" -> {{{99, 61}, {99, 62}}}, 
+                    ConfidenceLevel -> 0.7, CodeParser`CodeActions -> {}, 
+                    "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L99,C56) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"Unscoped \"", 
+                 StyleBox[
+                 "Slot", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\" error: \"", 
+                 StyleBox[
+                 "Slot[i]", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L28,C45) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "f4f07f99-8cd5-4917-92c2-be2de902d993", 327868430, 
+                "CodeInspectionFileIssue/UnscopedObjectError", <|
+                "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 28, 
+                 "SourceColumnStart" -> 45, "SourceLineEnd" -> 28, 
+                 "SourceColumnEnd" -> 52, "Message" -> 
+                 "Unscoped ``Slot`` error: ``Slot[i]``.\!\(\*StyleBox[\"\\\" \
+(L28,C45) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, \
+Inherited]], Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", \
+False]]], Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "UnscopedObjectError", 
+                   "Unscoped ``Slot`` error: ``Slot[i]``.", "Error", <|
+                   CodeParser`Source -> {{28, 45}, {28, 52}}, ConfidenceLevel -> 
+                    0.8, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L28,C45) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"Unscoped \"", 
+                 StyleBox[
+                 "Slot", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\" error: \"", 
+                 StyleBox[
+                 "Slot[Pattern[a, Blank[]]]", "Program", FontWeight -> Medium,
+                   ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L31,C46) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "b9cf5958-5ba5-406e-99bd-5f64161bba50", 327868430, 
+                "CodeInspectionFileIssue/UnscopedObjectError", <|
+                "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 31, 
+                 "SourceColumnStart" -> 46, "SourceLineEnd" -> 31, 
+                 "SourceColumnEnd" -> 54, "Message" -> 
+                 "Unscoped ``Slot`` error: ``Slot[Pattern[a, Blank[]]]``.\!\(\
+\*StyleBox[\"\\\" (L31,C46) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, \
+Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                 "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "UnscopedObjectError", 
+                   "Unscoped ``Slot`` error: ``Slot[Pattern[a, Blank[]]]``.", 
+                   "Error", <|
+                   CodeParser`Source -> {{31, 46}, {31, 54}}, ConfidenceLevel -> 
+                    0.8, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L31,C46) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"Unscoped \"", 
+                 StyleBox[
+                 "Slot", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\" error: \"", 
+                 StyleBox[
+                 "Slot[Part[names, i]]", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L42,C11) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "e8749fc3-0432-437f-8d49-cb5c2f65e438", 327868430, 
+                "CodeInspectionFileIssue/UnscopedObjectError", <|
+                "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 42, 
+                 "SourceColumnStart" -> 11, "SourceLineEnd" -> 42, 
+                 "SourceColumnEnd" -> 26, "Message" -> 
+                 "Unscoped ``Slot`` error: ``Slot[Part[names, \
+i]]``.\!\(\*StyleBox[\"\\\" (L42,C11) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                 "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "UnscopedObjectError", 
+                   "Unscoped ``Slot`` error: ``Slot[Part[names, i]]``.", 
+                   "Error", <|
+                   CodeParser`Source -> {{42, 11}, {42, 26}}, ConfidenceLevel -> 
+                    0.8, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L42,C11) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"Unscoped \"", 
+                 StyleBox[
+                 "Slot", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\" error: \"", 
+                 StyleBox[
+                 "Slot[Part[variableNames, i]]", "Program", FontWeight -> 
+                  Medium, ShowStringCharacters -> True, StripOnInput -> 
+                  False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L81,C10) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "2ca2d1a0-4b0f-4f24-aa4d-b8bf92fc55f9", 327868430, 
+                "CodeInspectionFileIssue/UnscopedObjectError", <|
+                "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 81, 
+                 "SourceColumnStart" -> 10, "SourceLineEnd" -> 81, 
+                 "SourceColumnEnd" -> 33, "Message" -> 
+                 "Unscoped ``Slot`` error: ``Slot[Part[variableNames, \
+i]]``.\!\(\*StyleBox[\"\\\" (L81,C10) \\\"\", Rule[FontOpacity, 0.65`], \
+Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                 "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "UnscopedObjectError", 
+                   "Unscoped ``Slot`` error: ``Slot[Part[variableNames, \
+i]]``.", "Error", <|
+                   CodeParser`Source -> {{81, 10}, {81, 33}}, ConfidenceLevel -> 
+                    0.8, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L81,C10) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"Unscoped \"", 
+                 StyleBox[
+                 "Slot", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\" error: \"", 
+                 StyleBox[
+                 "Slot[Pattern[a, Blank[]]]", "Program", FontWeight -> Medium,
+                   ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L99,C51) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "c27a9c39-e31c-45a2-b636-964ccbf0b0cd", 327868430, 
+                "CodeInspectionFileIssue/UnscopedObjectError", <|
+                "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 99, 
+                 "SourceColumnStart" -> 51, "SourceLineEnd" -> 99, 
+                 "SourceColumnEnd" -> 59, "Message" -> 
+                 "Unscoped ``Slot`` error: ``Slot[Pattern[a, Blank[]]]``.\!\(\
+\*StyleBox[\"\\\" (L99,C51) \\\"\", Rule[FontOpacity, 0.65`], Rule[FontSize, \
+Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, False]]\)", 
+                 "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "UnscopedObjectError", 
+                   "Unscoped ``Slot`` error: ``Slot[Pattern[a, Blank[]]]``.", 
+                   "Error", <|
+                   CodeParser`Source -> {{99, 51}, {99, 59}}, ConfidenceLevel -> 
+                    0.8, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L99,C51) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"Unscoped \"", 
+                 StyleBox[
+                 "Slot", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\" error: \"", 
+                 StyleBox[
+                 "Slot[var[\"Name\"]]", "Program", FontWeight -> Medium, 
+                  ShowStringCharacters -> True, StripOnInput -> False], 
+                 "\".\\!\\(\\*StyleBox[\\\"\\\\\\\" (L102,C13) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "f61e563c-33cd-413a-8d33-55592f2b2b78", 327868430, 
+                "CodeInspectionFileIssue/UnscopedObjectError", <|
+                "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 102, 
+                 "SourceColumnStart" -> 13, "SourceLineEnd" -> 102, 
+                 "SourceColumnEnd" -> 30, "Message" -> 
+                 "Unscoped ``Slot`` error: \
+``Slot[var[\"Name\"]]``.\!\(\*StyleBox[\"\\\" (L102,C13) \\\"\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "UnscopedObjectError", 
+                   "Unscoped ``Slot`` error: ``Slot[var[\"Name\"]]``.", 
+                   "Error", <|
+                   CodeParser`Source -> {{102, 13}, {102, 30}}, 
+                    ConfidenceLevel -> 0.8, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Hash" -> 46737139052376241, 
+                 "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L102,C13) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               TemplateBox[{"\"Expected context: \"", 
+                 StyleBox[
+                 "AndreasHafver`ahafver`BayesianNetwork`", "Program", 
+                  FontWeight -> Medium, ShowStringCharacters -> True, 
+                  StripOnInput -> False], 
+                 "\"\\!\\(\\*StyleBox[\\\"\\\\\\\" (L3,C14) \\\\\\\"\\\", \
+Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\\\"OperatorSubstitution\\\", False]]], \
+Rule[StripOnInput, False]]\\)\""}, "RowDefault"]}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "cd3c82d8-13f4-4a12-8acc-3cae8e523646", 327868430, 
+                "CodeInspectionFileIssue/NotPublisherContext", <|
+                "Hash" -> 46737139052376241, 
+                 "MessageParameters" -> {
+                  "AndreasHafver`ahafver`BayesianNetwork`"}, "Templated" -> 
+                 True, "File" -> 
+                 "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic, "SourceLineStart" -> 3, 
+                 "SourceColumnStart" -> 14, "SourceLineEnd" -> 3, 
+                 "SourceColumnEnd" -> 40, "Message" -> 
+                 "Expected context: \
+**AndreasHafver`ahafver`BayesianNetwork`**\!\(\*StyleBox[\"\\\" (L3,C14) \\\"\
+\", Rule[FontOpacity, 0.65`], Rule[FontSize, Times[0.9`, Inherited]], \
+Rule[PrivateFontOptions, List[Rule[\"OperatorSubstitution\", False]]], \
+Rule[StripOnInput, False]]\)", "SourceInformation" -> 
+                 CodeInspector`InspectionObject[
+                  "NotPublisherContext", 
+                   "Expected context: \
+**AndreasHafver`ahafver`BayesianNetwork`**", "Error", <|
+                   CodeParser`Source -> {{3, 14}, {3, 40}}, "Hash" -> 
+                    6273830463414217316, ConfidenceLevel -> 0.99, 
+                    CodeParser`CodeActions -> {
+                    CodeParser`CodeAction[
+                    "Replace with suggested context", 
+                    CodeParser`ReplaceNode, <|
+                    "ReplacementNode" -> CodeParser`ContainerNode[String, {
+                    CodeParser`LeafNode[
+                    String, "\"AndreasHafver`ahafver`BayesianNetwork`\"", <|
+                    CodeParser`Source -> {{1, 1}, {1, 41}}|>]}, <|
+                    CodeParser`Source -> {{1, 1}, {1, 41}}|>], 
+                    CodeParser`Source -> {{3, 14}, {3, 40}}|>]}, 
+                    "MessageParameters" -> {
+                    "AndreasHafver`ahafver`BayesianNetwork`"}, "Templated" -> 
+                    True, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Kernel\\\
+BayesianNetwork.wl", "Editor" -> Automatic|>], "Position" -> 
+                 "\!\(\*StyleBox[\"\\\" (L3,C14) \\\"\", Rule[FontOpacity, \
+0.65`], Rule[FontSize, Times[0.9`, Inherited]], Rule[PrivateFontOptions, \
+List[Rule[\"OperatorSubstitution\", False]]], Rule[StripOnInput, \
+False]]\)"|>]; DefinitionNotebookClient`PackageScope`seekAfter[327868430]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Found 2 symbols that are not declared in the paclet \
+info\""}, "RowDefault"] :> DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "80203d27-fcf8-4b91-8a16-1ffe61afbe95", 295669418, 
+                "UndeclaredSymbols", <|
+                "CellID" -> 295669418, "PacletDirectory" -> 
+                 File["C:\\Users\\HAFVE\\Repos\\BayesianNetwork"], 
+                 "DeclaredSymbols" -> {}, "Count" -> 2, 
+                 "UndeclaredSymbols" -> {<|
+                   "CellID" -> 40642925, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Documentation\\\
+English\\ReferencePages\\Symbols\\BayesianNetwork.nb", "Excluded" -> False, 
+                    "DocumentationNotebook" -> True, "DocumentFlag" -> None, 
+                    "ObjectName" -> "BayesianNetwork", "FullName" -> 
+                    "ahafver`BayesianNetwork`BayesianNetwork", 
+                    "Categorization" -> <|
+                    "EntityType" -> "Symbol", "PacletName" -> 
+                    "ahafver/BayesianNetwork", "Context" -> 
+                    "ahafver`BayesianNetwork`", "URI" -> 
+                    "ahafver/BayesianNetwork/ref/BayesianNetwork"|>, "Type" -> 
+                    "Function", "FileHash" -> 4416495506000545862, "Flag" -> 
+                    None, "Extensions" -> {"Documentation"}|>, <|
+                   "CellID" -> 74028785, "File" -> 
+                    "C:\\Users\\HAFVE\\Repos\\BayesianNetwork\\Documentation\\\
+English\\ReferencePages\\Symbols\\BayesianNetworkObject.nb", "Excluded" -> 
+                    False, "DocumentationNotebook" -> True, "DocumentFlag" -> 
+                    None, "ObjectName" -> "BayesianNetworkObject", "FullName" -> 
+                    "ahafver`BayesianNetwork`BayesianNetworkObject", 
+                    "Categorization" -> <|
+                    "EntityType" -> "Symbol", "PacletName" -> 
+                    "ahafver/BayesianNetwork", "Context" -> 
+                    "ahafver`BayesianNetwork`", "URI" -> 
+                    "ahafver/BayesianNetwork/ref/BayesianNetworkObject"|>, 
+                    "Type" -> "Function", "FileHash" -> 2463717648905885647, 
+                    "Flag" -> None, "Extensions" -> {"Documentation"}|>}|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[295669418]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"New submissions should typically be version 1.0.0\""}, 
+              "RowDefault"] :> DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "e67998fc-67c5-47af-a194-f1759b8869c4", 295669418, 
+                "InvalidFirstVersion", <|
+                "Current" -> "0.0.1", "Published" -> None, 
+                 "Selection" -> ("Version" -> "0.0.1"), "PublisherID" -> 
+                 "AndreasHafver", "PacletDirectory" -> 
+                 File["C:\\Users\\HAFVE\\Repos\\BayesianNetwork"], 
+                 "ResourceName" -> "AndreasHafver/BayesianNetwork"|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[295669418]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Extra whitespace should be removed\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "528ff90b-f89f-471f-9873-6cc2be10a816", 441612482, 
+                "ExtraWhitespace", {
+                 Cell[
+                 "This is a simple implementation of Bayesian Networks (BNs) \
+in the Wolfram Language. BNs are probabilistic graphical models for compactly \
+representing multivariate probability distributions with conditional \
+relationships among the variables. This implementation works with categorical \
+(finite discrete) variables. ", "Text", TaggingRules -> {}, 
+                  CellChangeTimes -> {{3.9633691497771225`*^9, 
+                   3.9633691603247204`*^9}}, CellTags -> "DefaultContent", 
+                  CellID -> 441612482]}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[441612482]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Extra whitespace should be removed\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "d4e538b0-62b3-4a85-8764-d6e449face08", 889292814, 
+                "ExtraWhitespace", {
+                 Cell[
+                 "The Wolfram Language has extenive support for probabilistic \
+computations, however there is no inbuilt support for graphical models. ", 
+                  "Notes", TaggingRules -> {}, 
+                  CellChangeTimes -> {{3.9631666972689533`*^9, 
+                   3.963166768117756*^9}, {3.9631668080285015`*^9, 
+                   3.9631668265580006`*^9}, {3.963167050164837*^9, 
+                   3.9631670516812153`*^9}, {3.963167081868929*^9, 
+                   3.963167119462187*^9}, {3.963167434316086*^9, 
+                   3.9631675184080276`*^9}, {3.963167789930361*^9, 
+                   3.9631677918159447`*^9}}, CellTags -> "DefaultContent", 
+                  CellID -> 889292814]}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[889292814]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Extra whitespace should be removed\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "8791599c-3d82-4ed7-8a31-40756e621ee8", 195018199, 
+                "ExtraWhitespace", {
+                 Cell[
+                  
+                  TextData[{
+                   "This paclet provides a BayesianNetwork function that \
+creates a BayesianNetworkObject. The BayesianNetworkObject can then be used \
+with the function ", 
+                    ButtonBox[
+                    "Probability", BaseStyle -> "Hyperlink", ButtonData -> {
+                    URL[
+                    "https://reference.wolfram.com/language/ref/Probability.\
+html"], None}, ButtonNote -> 
+                    "https://reference.wolfram.com/language/ref/Probability.\
+html"], " to make inferences. The model can also be visualised using ", 
+                    ButtonBox["Graph", BaseStyle -> "Hyperlink", ButtonData -> {
+                    URL[
+                    "https://reference.wolfram.com/language/ref/Graph.html"], 
+                    None}, ButtonNote -> 
+                    "https://reference.wolfram.com/language/ref/Graph.html"], 
+                    ".  "}], "Notes", TaggingRules -> {}, 
+                  CellChangeTimes -> {{3.9631675263800125`*^9, 
+                   3.9631676000377884`*^9}, {3.963167644297518*^9, 
+                   3.9631677052890873`*^9}, {3.963167741482767*^9, 
+                   3.963167741482767*^9}}, CellID -> 195018199]}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[195018199]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"The primary context should usually be declared in the \
+paclet info file as well\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "6bb1d3df-4873-4bfc-8503-35ff25cf6a34", 626055752, 
+                "PacletPrimaryContextMissing2", <|
+                "PrimaryContext" -> "andreashafver`BayesianNetwork`", 
+                 "SuggestedContext" -> "AndreasHafver`BayesianNetwork`"|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[626055752]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"The primary context is expected to start with your \
+publisher ID\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "523bb3e1-c53a-414d-ab3b-0b2cdba3417a", 626055752, 
+                "PrimaryContextPublisher", <|
+                "PrimaryContext" -> "andreashafver`BayesianNetwork`", 
+                 "PublisherContext" -> "AndreasHafver`", "SuggestedContext" -> 
+                 "AndreasHafver`BayesianNetwork`"|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[626055752]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"File does not correspond to a guide page\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "43f5e3c0-1dd3-407c-ba6b-6d75db14211e", 614786987, 
+                "NotGuideNotebook", <|
+                "MainGuidePage" -> 
+                 "Documentation/English/ReferencePages/Symbols/\
+BayesianNetwork.nb", "PacletDirectory" -> 
+                 File["C:\\Users\\HAFVE\\Repos\\BayesianNetwork"]|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[614786987]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Extra whitespace should be removed\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "fa8061ad-da46-453b-948f-2b4b7576df04", 231927799, 
+                "ExtraWhitespace", {
+                 Cell[
+                 "Create a BN from a set of conditionally dependent \
+univariate distributions: ", "Text", TaggingRules -> {}, 
+                  CellChangeTimes -> {{3.963168071779127*^9, 
+                   3.963168098271448*^9}, {3.9631682224210835`*^9, 
+                   3.963168271511099*^9}}, CellTags -> "DefaultContent", 
+                  CellID -> 231927799]}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[231927799]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"This cell contains a large amount of data (1.6 MB). \
+Consider reducing the size to avoid potential issues.\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "4da39d32-e57e-48e7-84e6-ff1df184821c", 40176246, 
+                "LargeCellByteCount", <|
+                "ByteCount" -> 1581560, "Size" -> "1.6 MB"|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[40176246]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Inputs should be separated so they each generate at most a \
+single output\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "d6eaf0cc-6174-4bd5-87cb-22a0db0af6ff", 35403745, 
+                "MultipleOutputs", {}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[35403745]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"This cell contains a large amount of data (1.6 MB). \
+Consider reducing the size to avoid potential issues.\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "e91074e8-1c33-4383-809c-17a045d3cfb0", 35403745, 
+                "LargeCellByteCount", <|
+                "ByteCount" -> 1586104, "Size" -> "1.6 MB"|>]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[35403745]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[1., 0.4627450980392157, 0.]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"No repository found at \
+\\\"https://github.com/ahafver/BayesianNetwork\\\"\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Warning", "Paclet", DefinitionNotebookClient`$CurrentNotebook,
+                 "303b2817-ee96-4631-ad97-5cb2af14f381", 75689085, 
+                "NoGithubRepoFound", {
+                "https://github.com/ahafver/BayesianNetwork"}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[75689085]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[0.9647058823529412, 0.16862745098039217`, 0.]}, 
+                 "HintPodIconHint"], ImageSize -> {10, 10}, ImageSizeAction -> 
+                "ShrinkToFit", BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"A license ID must be specified\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Error", "Paclet", DefinitionNotebookClient`$CurrentNotebook, 
+                "7a815341-a1ba-438d-ba4e-8db486d29f2b", 253890516, 
+                "UnspecifiedLicense", {}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[253890516]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Cell is empty\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "b850aa8d-e177-4e11-b62d-d79022ef0e96", 694609509, 
+                "EmptyCell", {}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[694609509]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Cell is empty\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "9bc717e9-08e0-4ba7-b8c6-c91b56a306aa", 694609509, 
+                "EmptyCell", {""}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[694609509]; 
+              Null], TemplateBox[{
+               PaneBox[
+                TemplateBox[{
+                  RGBColor[
+                  0.49019607843137253`, 0.49019607843137253`, 
+                   0.49019607843137253`]}, "HintPodIconHint"], 
+                ImageSize -> {10, 10}, ImageSizeAction -> "ShrinkToFit", 
+                BaselinePosition -> Scaled[0.1]], "\" \"", 
+               "\"Cell is empty\""}, "RowDefault"] :> 
+            DefinitionNotebookClient`WithCurrentNotebook[
+              EvaluationNotebook[], 
+              DefinitionNotebookClient`LoadDefinitionNotebook[
+               "Paclet", DefinitionNotebookClient`$CurrentNotebook]; 
+              DefinitionNotebookClient`PackageScope`setHint[
+               "Suggestion", "Paclet", 
+                DefinitionNotebookClient`$CurrentNotebook, 
+                "84908e81-c4e2-4851-9e56-9b475062e5eb", 702019342, 
+                "EmptyCell", {}]; 
+              DefinitionNotebookClient`PackageScope`seekAfter[702019342]; 
+              Null]}, Appearance -> None], "BoxID" -> "WarningCountButton", 
+          StripOnInput -> False], 
+         TagBox[
+          ButtonBox[
+           TagBox[
+            PaneSelectorBox[{False -> GraphicsBox[{
+                 GrayLevel[
+                  NCache[
+                   Rational[64, 85], 0.7529411764705882]], 
+                 
+                 PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                  0.42426406871192845`}, {0.42426406871192845`, 
+                  0.282842712474619}}], 
+                 
+                 PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                  0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                  0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
+                0, PlotRange -> 0.7, Background -> None], True -> GraphicsBox[{
+                 GrayLevel[
+                  NCache[
+                   Rational[128, 255], 0.5019607843137255]], 
+                 
+                 PolygonBox[{{-0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, -0.282842712474619}, {0.282842712474619, 
+                  0.42426406871192845`}, {0.42426406871192845`, 
+                  0.282842712474619}}], 
+                 
+                 PolygonBox[{{0.42426406871192845`, -0.282842712474619}, {
+                  0.282842712474619, -0.42426406871192845`}, \
+{-0.42426406871192845`, 0.282842712474619}, {-0.282842712474619, 
+                  0.42426406871192845`}}]}, ImageSize -> 18, PlotRangePadding -> 
+                0, PlotRange -> 0.7, Background -> None]}, 
+             Dynamic[
+              CurrentValue["MouseOver"]], ImageSize -> Automatic, 
+             FrameMargins -> 0], 
+            MouseAppearanceTag["LinkHand"]], ButtonFunction :> 
+           With[{DefinitionNotebookClient`Stripes`PackagePrivate`nbo$ = 
+              EvaluationNotebook[]}, 
+             CurrentValue[
+              DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+               DockedCells] = If[
+               TrueQ[
+                MemberQ[
+                 CurrentValue["ModifierKeys"], "Control"]], 
+               DeleteCases[
+                Flatten[{
+                  CurrentValue[
+                  DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                   DockedCells]}], 
+                Cell[
+                 Blank[], "StripeCell", 
+                 BlankNullSequence[]]], 
+               DeleteCases[
+                Flatten[{
+                  CurrentValue[
+                  DefinitionNotebookClient`Stripes`PackagePrivate`nbo$, 
+                   DockedCells]}], 
+                Condition[
+                 Pattern[DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                  Blank[Cell]], 
+                 Not[
+                  FreeQ[
+                  DefinitionNotebookClient`Stripes`PackagePrivate`c$, 
+                   "6d1b06e4-d08d-4ea2-9e7d-d79da35d6526"]]]]]], Appearance -> 
+           None, BoxID -> "6d1b06e4-d08d-4ea2-9e7d-d79da35d6526", Evaluator -> 
+           Automatic, Method -> "Preemptive"], 
+          MouseAppearanceTag["LinkHand"]]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Baseline}}}, 
+       AutoDelete -> False, 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], "Grid"], 
+     "Text", FontSize -> 12, FontColor -> GrayLevel[0.25], StripOnInput -> 
+     False]], "StripeCell", CellFrameMargins -> {{20, 5}, {2, 2}}, 
+   CellFrame -> {{0, 0}, {1, 0}}, CellFrameColor -> GrayLevel[0.75]]},
 TaggingRules->{
  "ResourceType" -> "Paclet", "ResourceCreateNotebook" -> True, 
   "TemplateVersion" -> "2023.03.03", "CreationTimestamp" -> 
@@ -7237,7 +8531,6 @@ ixhxYrAnRlbHyD4xsmNNnR1Tp9jIfdK01PNm+xcdthV0bvs7VDZhuw==
               ButtonBox[
                TemplateBox[{
                  StyleBox[
-                  
                   TemplateBox[{
                    "\"Tables\"", 
                     "\"\[ThinSpace]\[ThinSpace]\[ThinSpace]\
@@ -7619,6 +8912,7 @@ AsyncronousResourceInformationUpdates = False,
              FrameBox[
               ButtonBox[
                StyleBox[
+                
                 TemplateBox[{
                  "\"Documentation Tools\"", 
                   "\"\[ThinSpace]\[ThinSpace]\[ThinSpace]\[FilledDownTriangle]\
@@ -7869,7 +9163,6 @@ h/Fh4QMzDxZ+6PEFAOibv7E=
                    FaceForm[{
                     RGBColor[0.31373, 0.4549, 0.61176], 
                     Opacity[1.]}], 
-                   
                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                     0}}}, {{{182.78, 198.67}, {182.78, 123.95}, {118.06, 
                     86.587}, {118.06, 161.31}, {182.78, 198.67}}}]}, {
@@ -7960,7 +9253,6 @@ h/Fh4QMzDxZ+6PEFAOibv7E=
                    FaceForm[{
                     RGBColor[0.6902, 0.58824, 0.81176], 
                     Opacity[1.]}], 
-                   
                    FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{
                     278.37, 281.22}, {278.44, 350.75}, {338.56, 315.96}, {
                     278.37, 281.22}}}]}}, {
@@ -8695,7 +9987,6 @@ h/Fh4QMzDxZ+6PEFAOibv7E=
                 FaceForm[{
                   RGBColor[0.55294, 0.67451, 0.81176], 
                   Opacity[1.]}], 
-                
                 FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 
                  0}}}, {{{43., 198.67}, {107.71, 161.31}, {107.71, 86.587}, {
                  43., 123.95}, {43., 198.67}}}]}, {
@@ -9729,7 +11020,6 @@ jN4=
     TemplateBoxOptions -> {DisplayFunction -> (GraphicsBox[{
          Thickness[0.05], 
          StyleBox[{
-           
            FilledCurveBox[{{{1, 4, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3,
              3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3,
              3}}}, CompressedData["
@@ -12916,8 +14206,8 @@ AsyncronousResourceInformationUpdates = False,
                     DefinitionNotebookClient`$ButtonCodeID = 
                     341138948110023950; 
                     DefinitionNotebookClient`CheckForUpdates[RSNB`nb$, 
-                    ReleaseHold[
-                    DefinitionNotebookClient`$ButtonCode = HoldForm[
+                    ReleaseHold[DefinitionNotebookClient`$ButtonCode = 
+                    HoldForm[
                     
                     PacletResource`DefinitionNotebook`\
 RefreshNotebookPacletFiles[RSNB`nbo, RSNB`cell]]]], 
@@ -13386,7 +14676,6 @@ RefreshNotebookPacletFiles[RSNB`nbo, RSNB`cell]]]],
                     If[
                     And[RSNB`nbDir =!= RSNB`oldDir, 
                     MemberQ[$Packages, "PacletResource`DefinitionNotebook`"]], 
-                    
                     With[{RSNB`nb$ = EvaluationNotebook[], 
                     RSNB`$cp$ = $ContextPath}, 
                     Quiet[
@@ -13405,8 +14694,8 @@ AsyncronousResourceInformationUpdates = False,
                     DefinitionNotebookClient`$ButtonCodeID = 
                     341138948110023950; 
                     DefinitionNotebookClient`CheckForUpdates[RSNB`nb$, 
-                    ReleaseHold[DefinitionNotebookClient`$ButtonCode = 
-                    HoldForm[
+                    ReleaseHold[
+                    DefinitionNotebookClient`$ButtonCode = HoldForm[
                     
                     PacletResource`DefinitionNotebook`\
 RefreshNotebookPacletFiles[RSNB`nbo, RSNB`cell]]]], 
@@ -14223,9 +15512,9 @@ GRPf1sw3cDj8VSOm/5G9w5vAHXKt3IZQ/0HDoQHBFwFFwBcEHxR9zQlGcP3o
               0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{12.5, 
               8.5146}, {12.5, 13.234}, {16.5, 14.912}, {16.5, 10.193}}, {{7.5,
                14.912}, {11.5, 13.234}, {11.5, 8.5146}, {7.5, 10.193}}, {{
-              15.708, 15.664}, {12., 14.109}, {8.292, 15.664}, {12., 17.221}},
-               {{12., 18.305}, {6.5, 15.996}, {6.5, 9.5286}, {12., 7.2206}, {
-              17.5, 9.5286}, {17.5, 15.996}}}]}}, {
+              15.708, 15.664}, {12., 14.109}, {8.292, 15.664}, {12., 
+              17.221}}, {{12., 18.305}, {6.5, 15.996}, {6.5, 9.5286}, {12., 
+              7.2206}, {17.5, 9.5286}, {17.5, 15.996}}}]}}, {
           ImageSize -> 12, AspectRatio -> Automatic, ImageSize -> {24., 24.}, 
            PlotRange -> {{0., 24.}, {0., 24.}}}]}, 
         Alignment -> {Right, Bottom}]& )}], 

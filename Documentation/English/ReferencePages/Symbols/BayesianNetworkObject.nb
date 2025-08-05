@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[    151501,       3395]
-NotebookOptionsPosition[    143335,       3219]
-NotebookOutlinePosition[    144374,       3250]
-CellTagsIndexPosition[    144258,       3244]
+NotebookDataLength[    151981,       3402]
+NotebookOptionsPosition[    143834,       3226]
+NotebookOutlinePosition[    144855,       3257]
+CellTagsIndexPosition[    144739,       3251]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -70,10 +70,10 @@ Cell[TextData[{
     "4a7fdcea-4b91-fb48-8082-c3db757c0928"], 
    DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
     "4a9c7d7d-dad9-c14b-83bc-e8b584a79b3b", 
-     "94f4334b-4908-2043-905a-0f3675c717c3"], $CellContext`cellobj$$ = 
+     "aa0af093-97d3-0b47-a84b-059ceb1d76d8"], $CellContext`cellobj$$ = 
     CellObject[
     "2723792f-0c5c-0d48-aaa2-ba16824073f3", 
-     "eab7ab5b-895c-4842-a674-5da5c5b132e6"]}, 
+     "356a0e0f-8bec-e543-a327-6b6f37473ff6"]}, 
     TemplateBox[{
       GraphicsBox[{{
          Thickness[0.06], 
@@ -170,8 +170,9 @@ Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]],
  CellID->749404200,ExpressionUUID->"b54b8102-97e9-0b44-af68-436d4dc4e200"],
 
 Cell[BoxData[
- RowBox[{"Needs", "[", "\"\<ahafver`BayesianNetwork`\>\"", 
+ RowBox[{"Needs", "[", "\"\<AndreasHafver`BayesianNetwork`\>\"", 
   "]"}]], "ExampleInitialization",
+ CellChangeTimes->{{3.9633806400139637`*^9, 3.963380643121662*^9}},
  CellID->196164021,ExpressionUUID->"8a7b13c6-954a-734f-997d-0db0e29b5784"]
 }, Open  ]],
 
@@ -437,7 +438,7 @@ Cell[BoxData[
        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
      "SummaryPanel"],
     DynamicModuleValues:>{}], "]"}],
-  ahafver`BayesianNetwork`BayesianNetworkObject[<|
+  AndreasHafver`BayesianNetwork`BayesianNetworkObject[<|
    "Variables" -> {<|
       "Name" -> "Cloudy", "Parents" -> {}, 
        "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
@@ -446,78 +447,78 @@ Cell[BoxData[
        "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
        DataDistribution[
         "Empirical", {{(0.8 Boole[# == 1.] + 
-            0.2 Boole[# == 2.]) (1. Boole[# == 1.] + 
-             1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
-             0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
-            1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
-            1. Boole[# == 1.] + 1. Boole[# == 2.])), (0.2 Boole[# == 1.] + 
-            0.8 Boole[# == 2.]) (1. Boole[# == 1.] + 
-             1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
-             0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
-            1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
-            1. Boole[# == 1.] + 1. Boole[# == 2.]))}, {1, 2}, False}, 1, 
+            0.2 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+              1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+              0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+             1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
+             1. Boole[# == 1.] + 1. Boole[# == 2.]))), (0.2 Boole[# == 1.] + 
+            0.8 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+              1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+              0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+             1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
+             1. Boole[# == 1.] + 1. Boole[# == 2.])))}, {1, 2}, False}, 1, 
          2]|>, <|"Name" -> "Sprinkler", "Parents" -> {"Cloudy"}, 
        "Domain" -> <|"On" -> 1, "Off" -> 2|>, "Distribution" -> 
        DataDistribution[
         "Empirical", {{(0.1 Boole[# == 1.] + 
-            0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
-             1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
-             0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
-            1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
-            1. Boole[# == 1.] + 1. Boole[# == 2.])), (0.9 Boole[# == 1.] + 
-            0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
-             1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
-             0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
-            1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
-            1. Boole[# == 1.] + 1. Boole[# == 2.]))}, {1, 2}, False}, 1, 
+            0.5 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+              1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+              0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+             1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
+             1. Boole[# == 1.] + 1. Boole[# == 2.]))), (0.9 Boole[# == 1.] + 
+            0.5 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+              1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+              0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+             1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
+             1. Boole[# == 1.] + 1. Boole[# == 2.])))}, {1, 2}, False}, 1, 
          2]|>, <|"Name" -> "Grass", "Parents" -> {"Rain", "Sprinkler"}, 
        "Domain" -> <|"Wet" -> 1, "Dry" -> 2|>, "Distribution" -> 
        DataDistribution["Empirical", {{(0. + 0.99 Boole[
                And[#2 == 1., #3 == 1.]] + 0.9 Boole[
                And[#2 == 1., #3 == 2.]] + 0.9 Boole[
-               And[#2 == 2., #3 == 1.]]) (0. + 1. Boole[
+               And[#2 == 2., #3 == 1.]]) ((0. + 1. Boole[
+                 And[#2 == 1., #3 == 1.]] + 1. Boole[
+                 And[#2 == 1., #3 == 2.]] + 1. Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                 And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                 And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                 And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
                 And[#2 == 1., #3 == 1.]] + 1. Boole[
                 And[#2 == 1., #3 == 2.]] + 1. Boole[
                 And[#2 == 2., #3 == 1.]] + 1. Boole[
-                And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
-                And[#2 == 1., #3 == 1.]] + 0.9 Boole[
-                And[#2 == 1., #3 == 2.]] + 0.9 Boole[
-                And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
-               And[#2 == 1., #3 == 1.]] + 1. Boole[
-               And[#2 == 1., #3 == 2.]] + 1. Boole[
-               And[#2 == 2., #3 == 1.]] + 1. Boole[
-               And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
-                And[#2 == 1., #3 == 1.]] + 0.1 Boole[
-                And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                 And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                 And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+                And[#2 == 1., #3 == 1.]] + 1. Boole[
+                And[#2 == 1., #3 == 2.]] + 1. Boole[
                 And[#2 == 2., #3 == 1.]] + 1. Boole[
-                And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
-               And[#2 == 1., #3 == 1.]] + 1. Boole[
-               And[#2 == 1., #3 == 2.]] + 1. Boole[
-               And[#2 == 2., #3 == 1.]] + 1. Boole[
-               And[#2 == 2., #3 == 2.]])), (0.01 Boole[
+                And[#2 == 2., #3 == 2.]]))), (0.01 Boole[
                And[#2 == 1., #3 == 1.]] + 0.1 Boole[
                And[#2 == 1., #3 == 2.]] + 0.1 Boole[
                And[#2 == 2., #3 == 1.]] + 1. Boole[
-               And[#2 == 2., #3 == 2.]]) (0. + 1. Boole[
+               And[#2 == 2., #3 == 2.]]) ((0. + 1. Boole[
+                 And[#2 == 1., #3 == 1.]] + 1. Boole[
+                 And[#2 == 1., #3 == 2.]] + 1. Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                 And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                 And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                 And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
                 And[#2 == 1., #3 == 1.]] + 1. Boole[
                 And[#2 == 1., #3 == 2.]] + 1. Boole[
                 And[#2 == 2., #3 == 1.]] + 1. Boole[
-                And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
-                And[#2 == 1., #3 == 1.]] + 0.9 Boole[
-                And[#2 == 1., #3 == 2.]] + 0.9 Boole[
-                And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
-               And[#2 == 1., #3 == 1.]] + 1. Boole[
-               And[#2 == 1., #3 == 2.]] + 1. Boole[
-               And[#2 == 2., #3 == 1.]] + 1. Boole[
-               And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
-                And[#2 == 1., #3 == 1.]] + 0.1 Boole[
-                And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                 And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                 And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+                And[#2 == 1., #3 == 1.]] + 1. Boole[
+                And[#2 == 1., #3 == 2.]] + 1. Boole[
                 And[#2 == 2., #3 == 1.]] + 1. Boole[
-                And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
-               And[#2 == 1., #3 == 1.]] + 1. Boole[
-               And[#2 == 1., #3 == 2.]] + 1. Boole[
-               And[#2 == 2., #3 == 1.]] + 1. Boole[
-               And[#2 == 2., #3 == 2.]]))}, {1, 2}, False}, 1, 2]|>}, 
+                And[#2 == 2., #3 == 2.]])))}, {1, 2}, False}, 1, 2]|>}, 
     "Distribution" -> 
     ProbabilityDistribution[(0.5 Boole[1 == $CellContext`\[FormalX]1] + 
        0.5 Boole[2 == $CellContext`\[FormalX]1]) ((0. + 0.99 Boole[
@@ -658,57 +659,57 @@ Cell[BoxData[
                2.]]))^(-1) Boole[2 == $CellContext`\[FormalX]4]) (
        Boole[1 == $CellContext`\[FormalX]3] (
          0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-         0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+         0.5 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+           0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-          1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-          0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-          0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-         1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-          0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-          0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-         1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+           0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+          1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.]))) + 
        Boole[2 == $CellContext`\[FormalX]3] (
          0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-         0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+         0.5 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+           0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-          1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-          0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-          0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-         1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-          0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-          0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-         1. Boole[$CellContext`\[FormalX]1 == 2.]))) (
+          1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+           0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+          1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.])))) (
        Boole[1 == $CellContext`\[FormalX]2] (
          0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-         0.2 Boole[$CellContext`\[FormalX]1 == 2.]) (
+         0.2 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+           0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-          1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-          0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-          0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
-         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-         1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-          0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-          0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
-         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-         1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+           0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+          1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.]))) + 
        Boole[2 == $CellContext`\[FormalX]2] (
          0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-         0.8 Boole[$CellContext`\[FormalX]1 == 2.]) (
+         0.8 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+           0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-          1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-          0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-          0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
-         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-         1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-          0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-          0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
-         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-         1. Boole[$CellContext`\[FormalX]1 == 
-            2.]))), {$CellContext`\[FormalX]1, 1, 2, 
+          1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+           0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+          1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+          1. Boole[$CellContext`\[FormalX]1 == 
+             2.])))), {$CellContext`\[FormalX]1, 1, 2, 
        1}, {$CellContext`\[FormalX]2, 1, 2, 1}, {$CellContext`\[FormalX]3, 1, 
        2, 1}, {$CellContext`\[FormalX]4, 1, 2, 1}], "Graph" -> 
     Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 
@@ -927,7 +928,7 @@ Cell[BoxData[
            Dynamic[Typeset`open$$], ImageSize -> Automatic]},
          "SummaryPanel"],
         DynamicModuleValues:>{}], "]"}],
-      ahafver`BayesianNetwork`BayesianNetworkObject[<|
+      AndreasHafver`BayesianNetwork`BayesianNetworkObject[<|
        "Variables" -> {<|
           "Name" -> "Cloudy", "Parents" -> {}, 
            "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
@@ -937,40 +938,40 @@ Cell[BoxData[
            "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
            DataDistribution[
             "Empirical", {{(0.8 Boole[# == 1.] + 
-                0.2 Boole[# == 2.]) (1. Boole[# == 1.] + 
-                 1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
-                 0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
-                1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 
-                 0.8 Boole[# == 2.])/(1. Boole[# == 1.] + 
-                1. Boole[# == 2.])), (0.2 Boole[# == 1.] + 
-                0.8 Boole[# == 2.]) (1. Boole[# == 1.] + 
-                 1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
-                 0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
-                1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 
-                 0.8 Boole[# == 2.])/(1. Boole[# == 1.] + 
-                1. Boole[# == 2.]))}, {1, 2}, False}, 1, 2]|>, <|
+                0.2 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+                  1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+                  0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                 1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 
+                  0.8 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                 1. Boole[# == 2.]))), (0.2 Boole[# == 1.] + 
+                0.8 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+                  1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+                  0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                 1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 
+                  0.8 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                 1. Boole[# == 2.])))}, {1, 2}, False}, 1, 2]|>, <|
           "Name" -> "Sprinkler", "Parents" -> {"Cloudy"}, 
            "Domain" -> <|"On" -> 1, "Off" -> 2|>, "Distribution" -> 
            DataDistribution[
             "Empirical", {{(0.1 Boole[# == 1.] + 
-                0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
-                 1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
-                 0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
-                1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 
-                 0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
-                1. Boole[# == 2.])), (0.9 Boole[# == 1.] + 
-                0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
-                 1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
-                 0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
-                1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 
-                 0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
-                1. Boole[# == 2.]))}, {1, 2}, False}, 1, 2]|>, <|
+                0.5 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+                  1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+                  0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                 1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 
+                  0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                 1. Boole[# == 2.]))), (0.9 Boole[# == 1.] + 
+                0.5 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+                  1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+                  0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                 1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 
+                  0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                 1. Boole[# == 2.])))}, {1, 2}, False}, 1, 2]|>, <|
           "Name" -> "Grass", "Parents" -> {"Rain", "Sprinkler"}, 
            "Domain" -> <|"Wet" -> 1, "Dry" -> 2|>, "Distribution" -> 
            DataDistribution["Empirical", {{(0. + 0.99 Boole[
                    And[#2 == 1., #3 == 1.]] + 0.9 Boole[
                    And[#2 == 1., #3 == 2.]] + 0.9 Boole[
-                   And[#2 == 2., #3 == 1.]]) (0. + 1. Boole[
+                   And[#2 == 2., #3 == 1.]]) ((0. + 1. Boole[
                     And[#2 == 1., #3 == 1.]] + 1. Boole[
                     And[#2 == 1., #3 == 2.]] + 1. Boole[
                     And[#2 == 2., #3 == 1.]] + 1. Boole[
@@ -978,22 +979,22 @@ Cell[BoxData[
                     And[#2 == 1., #3 == 1.]] + 0.9 Boole[
                     And[#2 == 1., #3 == 2.]] + 0.9 Boole[
                     And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
-                   And[#2 == 1., #3 == 1.]] + 1. Boole[
-                   And[#2 == 1., #3 == 2.]] + 1. Boole[
-                   And[#2 == 2., #3 == 1.]] + 1. Boole[
-                   And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                    And[#2 == 1., #3 == 1.]] + 1. Boole[
+                    And[#2 == 1., #3 == 2.]] + 1. Boole[
+                    And[#2 == 2., #3 == 1.]] + 1. Boole[
+                    And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
                     And[#2 == 1., #3 == 1.]] + 0.1 Boole[
                     And[#2 == 1., #3 == 2.]] + 0.1 Boole[
                     And[#2 == 2., #3 == 1.]] + 1. Boole[
                     And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
-                   And[#2 == 1., #3 == 1.]] + 1. Boole[
-                   And[#2 == 1., #3 == 2.]] + 1. Boole[
-                   And[#2 == 2., #3 == 1.]] + 1. Boole[
-                   And[#2 == 2., #3 == 2.]])), (0.01 Boole[
+                    And[#2 == 1., #3 == 1.]] + 1. Boole[
+                    And[#2 == 1., #3 == 2.]] + 1. Boole[
+                    And[#2 == 2., #3 == 1.]] + 1. Boole[
+                    And[#2 == 2., #3 == 2.]]))), (0.01 Boole[
                    And[#2 == 1., #3 == 1.]] + 0.1 Boole[
                    And[#2 == 1., #3 == 2.]] + 0.1 Boole[
                    And[#2 == 2., #3 == 1.]] + 1. Boole[
-                   And[#2 == 2., #3 == 2.]]) (0. + 1. Boole[
+                   And[#2 == 2., #3 == 2.]]) ((0. + 1. Boole[
                     And[#2 == 1., #3 == 1.]] + 1. Boole[
                     And[#2 == 1., #3 == 2.]] + 1. Boole[
                     And[#2 == 2., #3 == 1.]] + 1. Boole[
@@ -1001,18 +1002,18 @@ Cell[BoxData[
                     And[#2 == 1., #3 == 1.]] + 0.9 Boole[
                     And[#2 == 1., #3 == 2.]] + 0.9 Boole[
                     And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
-                   And[#2 == 1., #3 == 1.]] + 1. Boole[
-                   And[#2 == 1., #3 == 2.]] + 1. Boole[
-                   And[#2 == 2., #3 == 1.]] + 1. Boole[
-                   And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                    And[#2 == 1., #3 == 1.]] + 1. Boole[
+                    And[#2 == 1., #3 == 2.]] + 1. Boole[
+                    And[#2 == 2., #3 == 1.]] + 1. Boole[
+                    And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
                     And[#2 == 1., #3 == 1.]] + 0.1 Boole[
                     And[#2 == 1., #3 == 2.]] + 0.1 Boole[
                     And[#2 == 2., #3 == 1.]] + 1. Boole[
                     And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
-                   And[#2 == 1., #3 == 1.]] + 1. Boole[
-                   And[#2 == 1., #3 == 2.]] + 1. Boole[
-                   And[#2 == 2., #3 == 1.]] + 1. Boole[
-                   And[#2 == 2., #3 == 2.]]))}, {1, 2}, False}, 1, 2]|>}, 
+                    And[#2 == 1., #3 == 1.]] + 1. Boole[
+                    And[#2 == 1., #3 == 2.]] + 1. Boole[
+                    And[#2 == 2., #3 == 1.]] + 1. Boole[
+                    And[#2 == 2., #3 == 2.]])))}, {1, 2}, False}, 1, 2]|>}, 
         "Distribution" -> 
         ProbabilityDistribution[(0.5 Boole[1 == $CellContext`\[FormalX]1] + 
            0.5 Boole[2 == $CellContext`\[FormalX]1]) ((0. + 0.99 Boole[
@@ -1154,57 +1155,57 @@ Cell[BoxData[
             Boole[2 == $CellContext`\[FormalX]4]) (
            Boole[1 == $CellContext`\[FormalX]3] (
              0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-             0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+             0.5 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+               1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+               1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+               0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+               0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
               1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-              1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-              0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-              0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-             1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-              0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-              0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-             1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+               0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+               0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+              1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.]))) + 
            Boole[2 == $CellContext`\[FormalX]3] (
              0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-             0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+             0.5 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+               1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+               1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+               0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+               0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
               1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-              1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-              0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-              0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-             1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-              0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-              0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-             1. Boole[$CellContext`\[FormalX]1 == 2.]))) (
+              1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+               0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+               0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+              1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.])))) (
            Boole[1 == $CellContext`\[FormalX]2] (
              0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-             0.2 Boole[$CellContext`\[FormalX]1 == 2.]) (
+             0.2 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+               1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+               1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+               0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+               0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
               1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-              1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-              0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-              0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
-             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-             1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-              0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-              0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
-             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-             1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+               0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+               0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+              1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.]))) + 
            Boole[2 == $CellContext`\[FormalX]2] (
              0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-             0.8 Boole[$CellContext`\[FormalX]1 == 2.]) (
+             0.8 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+               1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+               1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+               0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+               0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
               1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-              1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-              0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-              0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
-             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-             1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-              0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-              0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
-             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-             1. Boole[$CellContext`\[FormalX]1 == 
-                2.]))), {$CellContext`\[FormalX]1, 1, 2, 
+              1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+               0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+               0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+              1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+              1. Boole[$CellContext`\[FormalX]1 == 
+                 2.])))), {$CellContext`\[FormalX]1, 1, 2, 
            1}, {$CellContext`\[FormalX]2, 1, 2, 1}, {$CellContext`\[FormalX]3,
             1, 2, 1}, {$CellContext`\[FormalX]4, 1, 2, 1}], "Graph" -> 
         Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 
@@ -1410,7 +1411,7 @@ Cell[BoxData[
          Dynamic[Typeset`open$$], ImageSize -> Automatic]},
        "SummaryPanel"],
       DynamicModuleValues:>{}], "]"}],
-    ahafver`BayesianNetwork`BayesianNetworkObject[<|
+    AndreasHafver`BayesianNetwork`BayesianNetworkObject[<|
      "Variables" -> {<|
         "Name" -> "Cloudy", "Parents" -> {}, 
          "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
@@ -1419,78 +1420,82 @@ Cell[BoxData[
          "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
          DataDistribution[
           "Empirical", {{(0.8 Boole[# == 1.] + 
-              0.2 Boole[# == 2.]) (1. Boole[# == 1.] + 
-               1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
-               0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
-              1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
-              1. Boole[# == 1.] + 1. Boole[# == 2.])), (0.2 Boole[# == 1.] + 
-              0.8 Boole[# == 2.]) (1. Boole[# == 1.] + 
-               1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
-               0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
-              1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
-              1. Boole[# == 1.] + 1. Boole[# == 2.]))}, {1, 2}, False}, 1, 
-           2]|>, <|"Name" -> "Sprinkler", "Parents" -> {"Cloudy"}, 
+              0.2 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+                1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+                0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+               1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 
+                0.8 Boole[# == 2.])/(1. Boole[# == 1.] + 
+               1. Boole[# == 2.]))), (0.2 Boole[# == 1.] + 
+              0.8 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+                1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+                0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+               1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 
+                0.8 Boole[# == 2.])/(1. Boole[# == 1.] + 
+               1. Boole[# == 2.])))}, {1, 2}, False}, 1, 2]|>, <|
+        "Name" -> "Sprinkler", "Parents" -> {"Cloudy"}, 
          "Domain" -> <|"On" -> 1, "Off" -> 2|>, "Distribution" -> 
          DataDistribution[
           "Empirical", {{(0.1 Boole[# == 1.] + 
-              0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
-               1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
-               0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
-              1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
-              1. Boole[# == 1.] + 1. Boole[# == 2.])), (0.9 Boole[# == 1.] + 
-              0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
-               1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
-               0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
-              1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
-              1. Boole[# == 1.] + 1. Boole[# == 2.]))}, {1, 2}, False}, 1, 
-           2]|>, <|"Name" -> "Grass", "Parents" -> {"Rain", "Sprinkler"}, 
+              0.5 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+                1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+                0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+               1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 
+                0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+               1. Boole[# == 2.]))), (0.9 Boole[# == 1.] + 
+              0.5 Boole[# == 2.]) ((1. Boole[# == 1.] + 
+                1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+                0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+               1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 
+                0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+               1. Boole[# == 2.])))}, {1, 2}, False}, 1, 2]|>, <|
+        "Name" -> "Grass", "Parents" -> {"Rain", "Sprinkler"}, 
          "Domain" -> <|"Wet" -> 1, "Dry" -> 2|>, "Distribution" -> 
          DataDistribution["Empirical", {{(0. + 0.99 Boole[
                  And[#2 == 1., #3 == 1.]] + 0.9 Boole[
                  And[#2 == 1., #3 == 2.]] + 0.9 Boole[
-                 And[#2 == 2., #3 == 1.]]) (0. + 1. Boole[
+                 And[#2 == 2., #3 == 1.]]) ((0. + 1. Boole[
+                   And[#2 == 1., #3 == 1.]] + 1. Boole[
+                   And[#2 == 1., #3 == 2.]] + 1. Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                   And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                   And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                   And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
                   And[#2 == 1., #3 == 1.]] + 1. Boole[
                   And[#2 == 1., #3 == 2.]] + 1. Boole[
                   And[#2 == 2., #3 == 1.]] + 1. Boole[
-                  And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
-                  And[#2 == 1., #3 == 1.]] + 0.9 Boole[
-                  And[#2 == 1., #3 == 2.]] + 0.9 Boole[
-                  And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
-                 And[#2 == 1., #3 == 1.]] + 1. Boole[
-                 And[#2 == 1., #3 == 2.]] + 1. Boole[
-                 And[#2 == 2., #3 == 1.]] + 1. Boole[
-                 And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
-                  And[#2 == 1., #3 == 1.]] + 0.1 Boole[
-                  And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                  And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                   And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                   And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+                  And[#2 == 1., #3 == 1.]] + 1. Boole[
+                  And[#2 == 1., #3 == 2.]] + 1. Boole[
                   And[#2 == 2., #3 == 1.]] + 1. Boole[
-                  And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
-                 And[#2 == 1., #3 == 1.]] + 1. Boole[
-                 And[#2 == 1., #3 == 2.]] + 1. Boole[
-                 And[#2 == 2., #3 == 1.]] + 1. Boole[
-                 And[#2 == 2., #3 == 2.]])), (0.01 Boole[
+                  And[#2 == 2., #3 == 2.]]))), (0.01 Boole[
                  And[#2 == 1., #3 == 1.]] + 0.1 Boole[
                  And[#2 == 1., #3 == 2.]] + 0.1 Boole[
                  And[#2 == 2., #3 == 1.]] + 1. Boole[
-                 And[#2 == 2., #3 == 2.]]) (0. + 1. Boole[
+                 And[#2 == 2., #3 == 2.]]) ((0. + 1. Boole[
+                   And[#2 == 1., #3 == 1.]] + 1. Boole[
+                   And[#2 == 1., #3 == 2.]] + 1. Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                   And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                   And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                   And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
                   And[#2 == 1., #3 == 1.]] + 1. Boole[
                   And[#2 == 1., #3 == 2.]] + 1. Boole[
                   And[#2 == 2., #3 == 1.]] + 1. Boole[
-                  And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
-                  And[#2 == 1., #3 == 1.]] + 0.9 Boole[
-                  And[#2 == 1., #3 == 2.]] + 0.9 Boole[
-                  And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
-                 And[#2 == 1., #3 == 1.]] + 1. Boole[
-                 And[#2 == 1., #3 == 2.]] + 1. Boole[
-                 And[#2 == 2., #3 == 1.]] + 1. Boole[
-                 And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
-                  And[#2 == 1., #3 == 1.]] + 0.1 Boole[
-                  And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                  And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                   And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                   And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+                  And[#2 == 1., #3 == 1.]] + 1. Boole[
+                  And[#2 == 1., #3 == 2.]] + 1. Boole[
                   And[#2 == 2., #3 == 1.]] + 1. Boole[
-                  And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
-                 And[#2 == 1., #3 == 1.]] + 1. Boole[
-                 And[#2 == 1., #3 == 2.]] + 1. Boole[
-                 And[#2 == 2., #3 == 1.]] + 1. Boole[
-                 And[#2 == 2., #3 == 2.]]))}, {1, 2}, False}, 1, 2]|>}, 
+                  And[#2 == 2., #3 == 2.]])))}, {1, 2}, False}, 1, 2]|>}, 
       "Distribution" -> 
       ProbabilityDistribution[(0.5 Boole[1 == $CellContext`\[FormalX]1] + 
          0.5 Boole[2 == $CellContext`\[FormalX]1]) ((0. + 0.99 Boole[
@@ -1632,57 +1637,57 @@ Cell[BoxData[
                  2.]]))^(-1) Boole[2 == $CellContext`\[FormalX]4]) (
          Boole[1 == $CellContext`\[FormalX]3] (
            0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-           0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+           0.5 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+             0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-            1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-            0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-            0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-           1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-            0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-            0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-           1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+             0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+            1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.]))) + 
          Boole[2 == $CellContext`\[FormalX]3] (
            0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-           0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+           0.5 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+             0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-            1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-            0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
-            0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-           1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-            0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
-            0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
-           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-           1. Boole[$CellContext`\[FormalX]1 == 2.]))) (
+            1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+             0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+            1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.])))) (
          Boole[1 == $CellContext`\[FormalX]2] (
            0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-           0.2 Boole[$CellContext`\[FormalX]1 == 2.]) (
+           0.2 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+             0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-            1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-            0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-            0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
-           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-           1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-            0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-            0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
-           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-           1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+             0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+            1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.]))) + 
          Boole[2 == $CellContext`\[FormalX]2] (
            0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-           0.8 Boole[$CellContext`\[FormalX]1 == 2.]) (
+           0.8 Boole[$CellContext`\[FormalX]1 == 2.]) ((
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+             0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-            1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
-            0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
-            0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
-           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-           1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
-            0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
-            0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
-           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
-           1. Boole[$CellContext`\[FormalX]1 == 
-              2.]))), {$CellContext`\[FormalX]1, 1, 2, 
+            1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+             0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+            1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+            1. Boole[$CellContext`\[FormalX]1 == 
+               2.])))), {$CellContext`\[FormalX]1, 1, 2, 
          1}, {$CellContext`\[FormalX]2, 1, 2, 1}, {$CellContext`\[FormalX]3, 
          1, 2, 1}, {$CellContext`\[FormalX]4, 1, 2, 1}], "Graph" -> 
       Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 
@@ -3172,18 +3177,20 @@ Cell["Symbol", "Categorization",
  CellLabel->"Entity Type",
  CellID->554451835,ExpressionUUID->"4f810c1c-4675-eb4f-aeab-f99f15dfc75b"],
 
-Cell["ahafver/BayesianNetwork", "Categorization",
+Cell["AndreasHafver/BayesianNetwork", "Categorization",
  CellLabel->"Paclet Name",
  CellID->661086004,ExpressionUUID->"c7b201fe-7791-7246-a036-638872a7b276"],
 
-Cell["ahafver`BayesianNetwork`", "Categorization",
+Cell["AndreasHafver`BayesianNetwork`", "Categorization",
  CellLabel->"Context",
  CellID->625231648,ExpressionUUID->"63bd68dd-1149-0d4d-a304-506a3ed8848a"],
 
-Cell["ahafver/BayesianNetwork/ref/BayesianNetworkObject", "Categorization",
+Cell["\<\
+AndreasHafver/BayesianNetwork/BayesianNetwork/ref/BayesianNetworkObject\
+\>", "Categorization",
  CellLabel->"URI",
  CellID->339386131,ExpressionUUID->"a4d1aa3b-e2c0-5740-ac50-f20b24198330"]
-}, Closed]],
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -3217,9 +3224,9 @@ Cell[BoxData[""], "Template",
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{700.1999999999999, 676.8},
-WindowMargins->{{Automatic, 162}, {Automatic, 40.199999999999996`}},
-TaggingRules-><|"Paclet" -> "ahafver/BayesianNetwork"|>,
+WindowSize->{700.1999999999999, 640.8},
+WindowMargins->{{Automatic, 162}, {Automatic, 0}},
+TaggingRules-><|"Paclet" -> "AndreasHafver/BayesianNetwork"|>,
 Magnification:>0.8 Inherited,
 FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (March 14, 2025)",
 StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
@@ -3232,19 +3239,19 @@ ExpressionUUID->"4a9c7d7d-dad9-c14b-83bc-e8b584a79b3b"
 (*CellTagsOutline
 CellTagsIndex->{
  "DefaultContent"->{
-  Cell[6401, 199, 3385, 89, 160, "Input",ExpressionUUID->"fb5684e7-7e19-bc4a-8969-b3643c1c8c76",
+  Cell[6475, 200, 3385, 89, 160, "Input",ExpressionUUID->"fb5684e7-7e19-bc4a-8969-b3643c1c8c76",
    CellTags->"DefaultContent",
    CellID->78583892]},
  "ExtendedExamples"->{
-  Cell[30457, 726, 487, 13, 45, "ExtendedExamplesSection",ExpressionUUID->"e1829e73-2071-f540-a047-0f7eff15a22b",
+  Cell[30646, 727, 487, 13, 70, "ExtendedExamplesSection",ExpressionUUID->"e1829e73-2071-f540-a047-0f7eff15a22b",
    CellTags->"ExtendedExamples",
    CellID->374925315]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"DefaultContent", 143890, 3233},
- {"ExtendedExamples", 144064, 3237}
+ {"DefaultContent", 144371, 3240},
+ {"ExtendedExamples", 144545, 3244}
  }
 *)
 (*NotebookFileOutline
@@ -3284,116 +3291,116 @@ Cell[4843, 149, 103, 1, 15, "RelatedLinks",ExpressionUUID->"cea598f9-0418-e74c-9
 Cell[CellGroupData[{
 Cell[4983, 155, 530, 14, 55, "ExamplesInitializationSection",ExpressionUUID->"b54b8102-97e9-0b44-af68-436d4dc4e200",
  CellID->749404200],
-Cell[5516, 171, 183, 3, 36, "ExampleInitialization",ExpressionUUID->"8a7b13c6-954a-734f-997d-0db0e29b5784",
+Cell[5516, 171, 257, 4, 36, "ExampleInitialization",ExpressionUUID->"8a7b13c6-954a-734f-997d-0db0e29b5784",
  CellID->196164021]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5736, 179, 442, 12, 55, "PrimaryExamplesSection",ExpressionUUID->"ea43f44a-f64b-7742-a602-7ebb3dad89ea",
+Cell[5810, 180, 442, 12, 55, "PrimaryExamplesSection",ExpressionUUID->"ea43f44a-f64b-7742-a602-7ebb3dad89ea",
  CellID->532038386],
-Cell[6181, 193, 217, 4, 18, "ExampleText",ExpressionUUID->"a49cd021-52e8-ac4b-9dbf-f8d5d0f2bf61",
+Cell[6255, 194, 217, 4, 18, "ExampleText",ExpressionUUID->"a49cd021-52e8-ac4b-9dbf-f8d5d0f2bf61",
  CellID->134743555],
-Cell[6401, 199, 3385, 89, 160, "Input",ExpressionUUID->"fb5684e7-7e19-bc4a-8969-b3643c1c8c76",
+Cell[6475, 200, 3385, 89, 160, "Input",ExpressionUUID->"fb5684e7-7e19-bc4a-8969-b3643c1c8c76",
  CellTags->"DefaultContent",
  CellID->78583892],
-Cell[9789, 290, 194, 2, 18, "ExampleText",ExpressionUUID->"6d61426a-a8c3-f04f-9595-2d01b3b73c6d",
+Cell[9863, 291, 194, 2, 70, "ExampleText",ExpressionUUID->"6d61426a-a8c3-f04f-9595-2d01b3b73c6d",
  CellID->226812332],
 Cell[CellGroupData[{
-Cell[10008, 296, 1050, 26, 90, "Input",ExpressionUUID->"31b4ac0d-beca-6246-9ef1-b27a9956a560",
+Cell[10082, 297, 1050, 26, 70, "Input",ExpressionUUID->"31b4ac0d-beca-6246-9ef1-b27a9956a560",
  CellID->90717749],
-Cell[11061, 324, 19347, 396, 61, "Output",ExpressionUUID->"6e69edd1-1d37-3b43-a732-a6f384d1a188",
+Cell[11135, 325, 19462, 396, 70, "Output",ExpressionUUID->"6e69edd1-1d37-3b43-a732-a6f384d1a188",
  CellID->50932647]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[30457, 726, 487, 13, 45, "ExtendedExamplesSection",ExpressionUUID->"e1829e73-2071-f540-a047-0f7eff15a22b",
+Cell[30646, 727, 487, 13, 70, "ExtendedExamplesSection",ExpressionUUID->"e1829e73-2071-f540-a047-0f7eff15a22b",
  CellTags->"ExtendedExamples",
  CellID->374925315],
-Cell[30947, 741, 241, 5, 25, "ExampleSection",ExpressionUUID->"5133d0b2-5404-c040-ba9c-c3daae0c7815",
+Cell[31136, 742, 241, 5, 70, "ExampleSection",ExpressionUUID->"5133d0b2-5404-c040-ba9c-c3daae0c7815",
  CellID->817888119],
-Cell[31191, 748, 263, 5, 17, "ExampleSection",ExpressionUUID->"df53a7e0-b243-9748-a3ff-fefaea10660e",
+Cell[31380, 749, 263, 5, 70, "ExampleSection",ExpressionUUID->"df53a7e0-b243-9748-a3ff-fefaea10660e",
  CellID->62412223],
 Cell[CellGroupData[{
-Cell[31479, 757, 243, 5, 17, "ExampleSection",ExpressionUUID->"53b289bb-6d14-3640-857e-8a0233efa88e",
+Cell[31668, 758, 243, 5, 70, "ExampleSection",ExpressionUUID->"53b289bb-6d14-3640-857e-8a0233efa88e",
  CellID->608888643],
-Cell[31725, 764, 246, 5, 18, "ExampleSubsection",ExpressionUUID->"cec70f6b-8a47-914d-85a7-ec4fe60a725f",
+Cell[31914, 765, 246, 5, 70, "ExampleSubsection",ExpressionUUID->"cec70f6b-8a47-914d-85a7-ec4fe60a725f",
  CellID->378459077],
-Cell[31974, 771, 246, 5, 16, "ExampleSubsection",ExpressionUUID->"d4561502-8a3c-4c47-9139-9805a71f333e",
+Cell[32163, 772, 246, 5, 70, "ExampleSubsection",ExpressionUUID->"d4561502-8a3c-4c47-9139-9805a71f333e",
  CellID->245110941]
 }, Open  ]],
-Cell[32235, 779, 248, 5, 25, "ExampleSection",ExpressionUUID->"7f72de38-bc00-0f43-952d-e46e136ba7c3",
+Cell[32424, 780, 248, 5, 70, "ExampleSection",ExpressionUUID->"7f72de38-bc00-0f43-952d-e46e136ba7c3",
  CellID->257151314],
 Cell[CellGroupData[{
-Cell[32508, 788, 258, 5, 17, "ExampleSection",ExpressionUUID->"c7815246-219a-bb41-bd89-6b7e9e1bf44d",
+Cell[32697, 789, 258, 5, 70, "ExampleSection",ExpressionUUID->"c7815246-219a-bb41-bd89-6b7e9e1bf44d",
  CellID->182478464],
-Cell[32769, 795, 317, 8, 18, "ExampleText",ExpressionUUID->"8b69a944-6525-fa49-97f7-b4e4f28b00a4",
+Cell[32958, 796, 317, 8, 70, "ExampleText",ExpressionUUID->"8b69a944-6525-fa49-97f7-b4e4f28b00a4",
  CellID->205933709],
 Cell[CellGroupData[{
-Cell[33111, 807, 21168, 416, 100, "Input",ExpressionUUID->"7840f628-2453-f649-bbe3-606ae0c14d48",
+Cell[33300, 808, 21265, 416, 70, "Input",ExpressionUUID->"7840f628-2453-f649-bbe3-606ae0c14d48",
  CellID->607043780],
-Cell[54282, 1225, 1529, 44, 41, "Output",ExpressionUUID->"1af1573e-014e-8b4e-b5b1-491a7aa19924",
+Cell[54568, 1226, 1529, 44, 70, "Output",ExpressionUUID->"1af1573e-014e-8b4e-b5b1-491a7aa19924",
  CellID->352773363]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[55848, 1274, 308, 6, 14, "ExampleDelimiter",ExpressionUUID->"661556b2-546b-6041-ad6b-5e05ca5d3e2d",
+Cell[56134, 1275, 308, 6, 70, "ExampleDelimiter",ExpressionUUID->"661556b2-546b-6041-ad6b-5e05ca5d3e2d",
  CellID->532181875],
-Cell[56159, 1282, 339, 8, 18, "ExampleText",ExpressionUUID->"96f50806-6763-404b-b7e3-2378390a087b",
+Cell[56445, 1283, 339, 8, 70, "ExampleText",ExpressionUUID->"96f50806-6763-404b-b7e3-2378390a087b",
  CellID->389212076],
-Cell[56501, 1292, 20140, 402, 61, "Input",ExpressionUUID->"1ef4da87-c3c0-fe47-a6e2-e1353b42fea6",
+Cell[56787, 1293, 20317, 406, 70, "Input",ExpressionUUID->"1ef4da87-c3c0-fe47-a6e2-e1353b42fea6",
  CellID->125010132],
 Cell[CellGroupData[{
-Cell[76666, 1698, 224, 4, 20, "Input",ExpressionUUID->"e71c9f55-e853-9b44-be23-9b2d532639ae",
+Cell[77129, 1703, 224, 4, 70, "Input",ExpressionUUID->"e71c9f55-e853-9b44-be23-9b2d532639ae",
  CellID->81199063],
-Cell[76893, 1704, 31324, 696, 263, "Output",ExpressionUUID->"119f692f-11a4-a24c-ae04-c8f9bf963564",
+Cell[77356, 1709, 31324, 696, 263, "Output",ExpressionUUID->"119f692f-11a4-a24c-ae04-c8f9bf963564",
  CellID->562929531]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[108254, 2405, 250, 6, 20, "Input",ExpressionUUID->"b86a301a-1f0e-b54f-b94f-e59cdb16c39a",
+Cell[108717, 2410, 250, 6, 20, "Input",ExpressionUUID->"b86a301a-1f0e-b54f-b94f-e59cdb16c39a",
  CellID->150766506],
-Cell[108507, 2413, 31285, 695, 263, "Output",ExpressionUUID->"907a6c00-84e0-164e-b03c-0a1c69a0de68",
+Cell[108970, 2418, 31285, 695, 263, "Output",ExpressionUUID->"907a6c00-84e0-164e-b03c-0a1c69a0de68",
  CellID->241792275]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
-Cell[139831, 3113, 249, 5, 25, "ExampleSection",ExpressionUUID->"ef25a303-b7d9-9140-bc2a-620116455d7a",
+Cell[140294, 3118, 249, 5, 25, "ExampleSection",ExpressionUUID->"ef25a303-b7d9-9140-bc2a-620116455d7a",
  CellID->3415318],
-Cell[140083, 3120, 256, 5, 17, "ExampleSection",ExpressionUUID->"74d4b510-7aa3-e643-b13e-ddaf45239935",
+Cell[140546, 3125, 256, 5, 17, "ExampleSection",ExpressionUUID->"74d4b510-7aa3-e643-b13e-ddaf45239935",
  CellID->215945417],
-Cell[140342, 3127, 249, 5, 17, "ExampleSection",ExpressionUUID->"044edd88-f823-154d-8b9a-be5e573b6db1",
+Cell[140805, 3132, 249, 5, 17, "ExampleSection",ExpressionUUID->"044edd88-f823-154d-8b9a-be5e573b6db1",
  CellID->951478747]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[140628, 3137, 109, 1, 56, "MetadataSection",ExpressionUUID->"186ad16a-0b2f-6749-8dd9-3f8ff1c46fac",
+Cell[141091, 3142, 109, 1, 56, "MetadataSection",ExpressionUUID->"186ad16a-0b2f-6749-8dd9-3f8ff1c46fac",
  CellID->21173782],
-Cell[140740, 3140, 473, 11, 20, "History",ExpressionUUID->"45b4cf4c-f7a0-584c-bcfc-3778c62225c1",
+Cell[141203, 3145, 473, 11, 20, "History",ExpressionUUID->"45b4cf4c-f7a0-584c-bcfc-3778c62225c1",
  CellID->126328385],
 Cell[CellGroupData[{
-Cell[141238, 3155, 484, 13, 16, "CategorizationSection",ExpressionUUID->"4b093b11-2027-ee4d-a8e6-b6e45353274c",
+Cell[141701, 3160, 484, 13, 16, "CategorizationSection",ExpressionUUID->"4b093b11-2027-ee4d-a8e6-b6e45353274c",
  CellID->449569619],
-Cell[141725, 3170, 134, 2, 56, "Categorization",ExpressionUUID->"4f810c1c-4675-eb4f-aeab-f99f15dfc75b",
+Cell[142188, 3175, 134, 2, 27, "Categorization",ExpressionUUID->"4f810c1c-4675-eb4f-aeab-f99f15dfc75b",
  CellID->554451835],
-Cell[141862, 3174, 151, 2, 56, "Categorization",ExpressionUUID->"c7b201fe-7791-7246-a036-638872a7b276",
+Cell[142325, 3179, 157, 2, 27, "Categorization",ExpressionUUID->"c7b201fe-7791-7246-a036-638872a7b276",
  CellID->661086004],
-Cell[142016, 3178, 148, 2, 56, "Categorization",ExpressionUUID->"63bd68dd-1149-0d4d-a304-506a3ed8848a",
+Cell[142485, 3183, 148, 2, 27, "Categorization",ExpressionUUID->"63bd68dd-1149-0d4d-a304-506a3ed8848a",
  CellID->625231648],
-Cell[142167, 3182, 169, 2, 56, "Categorization",ExpressionUUID->"a4d1aa3b-e2c0-5740-ac50-f20b24198330",
+Cell[142636, 3187, 199, 4, 27, "Categorization",ExpressionUUID->"a4d1aa3b-e2c0-5740-ac50-f20b24198330",
  CellID->339386131]
-}, Closed]],
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[142373, 3189, 110, 1, 16, "KeywordsSection",ExpressionUUID->"de92c145-0010-9142-9041-ecdfbcc1c173",
+Cell[142872, 3196, 110, 1, 24, "KeywordsSection",ExpressionUUID->"de92c145-0010-9142-9041-ecdfbcc1c173",
  CellID->112429085],
-Cell[142486, 3192, 99, 1, 56, "Keywords",ExpressionUUID->"0edfa247-56b0-434e-8009-50da890ba859",
+Cell[142985, 3199, 99, 1, 70, "Keywords",ExpressionUUID->"0edfa247-56b0-434e-8009-50da890ba859",
  CellID->207835869]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[142622, 3198, 119, 1, 16, "TemplatesSection",ExpressionUUID->"eaafeb78-a819-eb43-82f8-3b3fa8572c1b",
+Cell[143121, 3205, 119, 1, 16, "TemplatesSection",ExpressionUUID->"eaafeb78-a819-eb43-82f8-3b3fa8572c1b",
  CellID->667781239],
-Cell[142744, 3201, 147, 2, 56, "Template",ExpressionUUID->"5548f0b3-e0a9-614f-960c-8226b46e3d3b",
+Cell[143243, 3208, 147, 2, 70, "Template",ExpressionUUID->"5548f0b3-e0a9-614f-960c-8226b46e3d3b",
  CellID->49202832],
-Cell[142894, 3205, 137, 2, 56, "Template",ExpressionUUID->"99d68c9d-5bb9-094e-b6a2-c2e54b52fa37",
+Cell[143393, 3212, 137, 2, 70, "Template",ExpressionUUID->"99d68c9d-5bb9-094e-b6a2-c2e54b52fa37",
  CellID->115867404],
-Cell[143034, 3209, 133, 2, 56, "Template",ExpressionUUID->"860c5fc0-d0ee-be45-aa02-bc1a021f958d",
+Cell[143533, 3216, 133, 2, 70, "Template",ExpressionUUID->"860c5fc0-d0ee-be45-aa02-bc1a021f958d",
  CellID->5389133],
-Cell[143170, 3213, 137, 2, 56, "Template",ExpressionUUID->"929dce7e-b9ba-6644-9cf9-2916eb040667",
+Cell[143669, 3220, 137, 2, 70, "Template",ExpressionUUID->"929dce7e-b9ba-6644-9cf9-2916eb040667",
  CellID->416163802]
 }, Closed]]
 }, Open  ]]
