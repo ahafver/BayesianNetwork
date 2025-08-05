@@ -1,0 +1,3403 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[    151501,       3395]
+NotebookOptionsPosition[    143335,       3219]
+NotebookOutlinePosition[    144374,       3250]
+CellTagsIndexPosition[    144258,       3244]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["BayesianNetworkObject", "ObjectName",
+ CellID->378397021,ExpressionUUID->"6dd96f39-8418-4f49-ad8a-39888ce9ad7e"],
+
+Cell[TextData[{
+ Cell["   ", "ModInfo",ExpressionUUID->"c87ef308-6a84-af40-8837-2c848d3dec4d"],
+ Cell[BoxData[
+  RowBox[{"BayesianNetworkObject", "[", "]"}]], "InlineFormula",
+  ExpressionUUID->"5d2667f3-97a6-ea4d-ba28-5a8365b142a2"],
+ " \[LineSeparator]is the output from ",
+ StyleBox["BayesianNetwork", "InlineCode"],
+ " function and represents a Bayesian network (graphical probabilistic model)."
+}], "Usage",
+ CellChangeTimes->{{3.9631728132598915`*^9, 3.963172884059658*^9}},
+ CellID->77487121,ExpressionUUID->"30314f13-621c-c647-a503-bd6e38cbd635"],
+
+Cell["XXXX", "Notes",
+ CellID->576452828,ExpressionUUID->"674bc1e2-8712-c74b-92f1-8b09000d98dd"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "See Also",
+ Cell[BoxData[
+  TemplateBox[{"SeeAlso", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related reference (function) pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "db1df07f-6722-6f4e-bc85-cbfdd570c0bb"]
+}], "SeeAlsoSection",
+ CellID->221198932,ExpressionUUID->"ec027778-a462-df43-a5f4-379ceec4a9f1"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TagBox[
+   FrameBox["\<\"XXXX\"\>"],
+   "FunctionPlaceholder"]], "InlineSeeAlsoFunction",
+  TaggingRules->{"PageType" -> "Function"},ExpressionUUID->
+  "63c76027-188f-be4e-85fa-d9ac9591109d"],
+ Cell[BoxData[
+  RowBox[{
+  Cell[TextData[StyleBox[
+   " \[FilledVerySmallSquare] ", "InlineSeparator"]],ExpressionUUID->
+    "4a7fdcea-4b91-fb48-8082-c3db757c0928"], 
+   DynamicModuleBox[{$CellContext`nbobj$$ = NotebookObject[
+    "4a9c7d7d-dad9-c14b-83bc-e8b584a79b3b", 
+     "94f4334b-4908-2043-905a-0f3675c717c3"], $CellContext`cellobj$$ = 
+    CellObject[
+    "2723792f-0c5c-0d48-aaa2-ba16824073f3", 
+     "eab7ab5b-895c-4842-a674-5da5c5b132e6"]}, 
+    TemplateBox[{
+      GraphicsBox[{{
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         CircleBox[{0, 0}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{0, 0.62}, {0, -0.62}}]}, {
+         Thickness[0.06], 
+         StrokeForm[
+          Hue[0.4167, 0.406, 0.502]], 
+         LineBox[{{-0.62, 0}, {0.62, 0}}]}}, 
+       ImagePadding -> {{1., 1.}, {2.4, 1.}}, ImageSize -> 16, 
+       PlotRange -> {{-1.06, 1.06}, {-1.06, 1.06}}, 
+       BaselinePosition -> (Center -> 
+        Center)], $CellContext`nbobj$$, $CellContext`cellobj$$},
+     "InlineListingAddButton"],
+    Initialization:>($CellContext`nbobj$$ = 
+      EvaluationNotebook[]; $CellContext`cellobj$$ = EvaluationCell[])]}]], 
+  "InlineListingAddButton",ExpressionUUID->
+  "2723792f-0c5c-0d48-aaa2-ba16824073f3"]
+}], "SeeAlso",
+ CellID->400320720,ExpressionUUID->"5c265c6f-334a-a04d-a395-05deee049318"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Tech Notes",
+ Cell[BoxData[
+  TemplateBox[{"TechNotes", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Insert links to related tech notes.", "MoreInfoText"], BaseStyle -> 
+       "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "f6f19ed2-ad81-2649-8c89-ac77e3428e35"]
+}], "TechNotesSection",
+ CellID->830501767,ExpressionUUID->"cc3170bb-071e-b949-bb83-3c9be72b2018"],
+
+Cell["XXXX", "Tutorials",
+ CellID->70587949,ExpressionUUID->"568a5b93-a10d-d44b-9e1e-9e64841e2035"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Related Guides", "MoreAboutSection",
+ CellID->98245114,ExpressionUUID->"23a2a84a-cb01-7747-87c8-d598b0e46862"],
+
+Cell["XXXX", "MoreAbout",
+ CellID->318535299,ExpressionUUID->"074a5ea0-bffa-0e4f-8cdd-38094b5c47ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Related Links",
+ Cell[BoxData[
+  TemplateBox[{"RelatedLinks", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Insert links to any related page, including web pages.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "52edab06-114d-2a41-9948-63cbfad6d203"]
+}], "RelatedLinksSection",
+ CellID->326748677,ExpressionUUID->"6efb90b4-6ed5-2949-98b5-dee2e32c15ed"],
+
+Cell["XXXX", "RelatedLinks",
+ CellID->692981031,ExpressionUUID->"cea598f9-0418-e74c-9936-5ab16cdab5ba"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Examples Initialization",
+ Cell[BoxData[
+  TemplateBox[{"ExamplesInitialization", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Input that is to be evaluated before any examples are run, e.g. \
+Needs[\[Ellipsis]].", "MoreInfoText"], BaseStyle -> "IFrameBox"]], 
+     "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "436c1c61-2850-f241-ac4e-c17a18fa6f9d"]
+}], "ExamplesInitializationSection",
+ CellID->749404200,ExpressionUUID->"b54b8102-97e9-0b44-af68-436d4dc4e200"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<ahafver`BayesianNetwork`\>\"", 
+  "]"}]], "ExampleInitialization",
+ CellID->196164021,ExpressionUUID->"8a7b13c6-954a-734f-997d-0db0e29b5784"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     StyleBox[
+      RowBox[{"Basic", " ", "Examples"}], "PrimaryExamplesSection"], 
+     ButtonBox[
+      RowBox[{
+       RowBox[{"More", " ", "Examples"}], " ", "\[RightTriangle]"}],
+      BaseStyle->"ExtendedExamplesLink",
+      ButtonData:>"ExtendedExamples"]}
+   }],
+  $Line = 0; Null]], "PrimaryExamplesSection",
+ CellID->532038386,ExpressionUUID->"ea43f44a-f64b-7742-a602-7ebb3dad89ea"],
+
+Cell["\<\
+Create a set of conditionally dependent univariate distributions : \
+\>", "ExampleText",
+ CellChangeTimes->{3.9631729657175503`*^9},
+ CellID->134743555,ExpressionUUID->"a49cd021-52e8-ac4b-9dbf-f8d5d0f2bf61"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"cloudy", " ", "=", " ", 
+   RowBox[{"Function", "[", 
+    RowBox[{"CategoricalDistribution", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<True\>\"", ",", "\"\<False\>\""}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"0.5", ",", "0.5"}], "}"}]}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"rain", " ", "=", " ", 
+   RowBox[{"Function", "[", 
+    RowBox[{"CategoricalDistribution", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<True\>\"", ",", "\"\<False\>\""}], "}"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Boole", "[", 
+         RowBox[{"#Cloudy", "==", "\"\<True\>\""}], "]"}], 
+        RowBox[{"{", 
+         RowBox[{"0.8", ",", "0.2"}], "}"}]}], "+", 
+       RowBox[{
+        RowBox[{"Boole", "[", 
+         RowBox[{"#Cloudy", "==", "\"\<False\>\""}], "]"}], 
+        RowBox[{"{", 
+         RowBox[{"0.2", ",", "0.8"}], "}"}]}]}]}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"sprinkler", " ", "=", " ", 
+   RowBox[{"Function", "[", 
+    RowBox[{"CategoricalDistribution", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<On\>\"", ",", "\"\<Off\>\""}], "}"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Boole", "[", 
+         RowBox[{"#Cloudy", "==", "\"\<True\>\""}], "]"}], 
+        RowBox[{"{", 
+         RowBox[{"0.1", ",", "0.9"}], "}"}]}], "+", 
+       RowBox[{
+        RowBox[{"Boole", "[", 
+         RowBox[{"#Cloudy", "==", "\"\<False\>\""}], "]"}], 
+        RowBox[{"{", 
+         RowBox[{"0.5", ",", "0.5"}], "}"}]}]}]}], "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"grass", " ", "=", " ", 
+   RowBox[{"Function", "[", 
+    RowBox[{"CategoricalDistribution", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<Wet\>\"", ",", "\"\<Dry\>\""}], "}"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Boole", "[", 
+         RowBox[{
+          RowBox[{"#Rain", "==", "\"\<True\>\""}], "&&", 
+          RowBox[{"#Sprinkler", "==", "\"\<On\>\""}]}], "]"}], 
+        RowBox[{"{", 
+         RowBox[{"0.99", ",", "0.01"}], "}"}]}], "+", " ", 
+       RowBox[{
+        RowBox[{"Boole", "[", 
+         RowBox[{
+          RowBox[{"#Rain", "==", "\"\<False\>\""}], "&&", 
+          RowBox[{"#Sprinkler", "==", "\"\<On\>\""}]}], "]"}], 
+        RowBox[{"{", 
+         RowBox[{"0.9", ",", "0.1"}], "}"}]}], "+", 
+       RowBox[{
+        RowBox[{"Boole", "[", 
+         RowBox[{
+          RowBox[{"#Rain", "==", "\"\<True\>\""}], "&&", 
+          RowBox[{"#Sprinkler", "==", "\"\<Off\>\""}]}], "]"}], 
+        RowBox[{"{", 
+         RowBox[{"0.9", ",", "0.1"}], "}"}]}], "+", 
+       RowBox[{
+        RowBox[{"Boole", "[", 
+         RowBox[{
+          RowBox[{"#Rain", "==", "\"\<False\>\""}], "&&", 
+          RowBox[{"#Sprinkler", "==", "\"\<Off\>\""}]}], "]"}], 
+        RowBox[{"{", 
+         RowBox[{"0.0", ",", "1.0"}], "}"}]}]}]}], "]"}], "]"}]}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.963168194116997*^9, 3.963168201765915*^9}, {
+   3.9631682755979233`*^9, 3.9631683351693*^9}, {3.9631683679382687`*^9, 
+   3.96316837307576*^9}, {3.9631686876276855`*^9, 3.9631686901541557`*^9}, {
+   3.963171693361292*^9, 3.9631716942616005`*^9}, 3.9631729587952213`*^9},
+ CellTags->"DefaultContent",
+ CellLabel->"In[5]:=",
+ CellID->78583892,ExpressionUUID->"fb5684e7-7e19-bc4a-8969-b3643c1c8c76"],
+
+Cell["Create a Bayesian network:", "ExampleText",
+ CellChangeTimes->{{3.9631717088538074`*^9, 3.9631717358065815`*^9}},
+ CellID->226812332,ExpressionUUID->"6d61426a-a8c3-f04f-9595-2d01b3b73c6d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"BN", " ", "=", " ", 
+  RowBox[{"BayesianNetwork", "[", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Name\>\"", "->", "\"\<Cloudy\>\""}], ",", 
+       RowBox[{"\"\<Distribution\>\"", "->", "cloudy"}]}], "|>"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Name\>\"", "->", "\"\<Rain\>\""}], ",", 
+       RowBox[{"\"\<Distribution\>\"", "->", "rain"}]}], "|>"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Name\>\"", "->", "\"\<Sprinkler\>\""}], ",", 
+       RowBox[{"\"\<Distribution\>\"", "->", "sprinkler"}]}], "|>"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<Name\>\"", "->", "\"\<Grass\>\""}], ",", 
+       RowBox[{"\"\<Distribution\>\"", "->", "grass"}]}], "|>"}]}], 
+    "\[IndentingNewLine]", "}"}], "]"}]}]], "Input",
+ CellLabel->"In[9]:=",
+ CellID->90717749,ExpressionUUID->"31b4ac0d-beca-6246-9ef1-b27a9956a560"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["BayesianNetworkObject",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    TemplateBox[{
+      PaneSelectorBox[{False -> GridBox[{{
+            GridBox[{{
+               TagBox[
+                GraphicsBox[
+                 NamespaceBox["NetworkGraphics", 
+                  DynamicModuleBox[{Typeset`graph = HoldComplete[
+                    
+                    Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 
+                    2}, {1, 3}, {2, 4}, {3, 4}}, Null}, {
+                    GraphLayout -> {"Dimension" -> 2}, ImageSize -> 50, 
+                    VertexLabels -> {None}, VertexSize -> {Large}}]]}, 
+                   TagBox[
+                    GraphicsGroupBox[
+                    
+                    GraphicsComplexBox[{{-1.8369701987210297`*^-16, 1.}, {1., 
+                    1.2246467991473532`*^-16}, {-1., \
+-2.4492935982947064`*^-16}, {6.123233995736766*^-17, -1.}}, {{
+                    Arrowheads[Medium], 
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    
+                    ArrowBox[{{1, 2}, {1, 3}, {2, 4}, {3, 4}}, 
+                    0.282842712474619]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    DiskBox[1, 0.282842712474619], 
+                    DiskBox[2, 0.282842712474619], 
+                    DiskBox[3, 0.282842712474619], 
+                    DiskBox[4, 0.282842712474619]}}]], 
+                    MouseAppearanceTag["NetworkGraphics"]], 
+                   AllowKernelInitialization -> False]], {
+                 FormatType -> TraditionalForm, FrameTicks -> None, ImageSize -> 
+                  50, DefaultBaseStyle -> "NetworkGraphics"}], 
+                "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            GridBox[{{
+               TagBox[
+                GraphicsBox[
+                 NamespaceBox["NetworkGraphics", 
+                  DynamicModuleBox[{Typeset`graph = HoldComplete[
+                    
+                    Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 
+                    2}, {1, 3}, {2, 4}, {3, 4}}, Null}, {
+                    GraphLayout -> {"Dimension" -> 2}, ImageSize -> 50, 
+                    VertexLabels -> {None}, VertexSize -> {Large}}]]}, 
+                   TagBox[
+                    GraphicsGroupBox[
+                    
+                    GraphicsComplexBox[{{-1.8369701987210297`*^-16, 1.}, {1., 
+                    1.2246467991473532`*^-16}, {-1., \
+-2.4492935982947064`*^-16}, {6.123233995736766*^-17, -1.}}, {{
+                    Arrowheads[Medium], 
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    
+                    ArrowBox[{{1, 2}, {1, 3}, {2, 4}, {3, 4}}, 
+                    0.282842712474619]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    DiskBox[1, 0.282842712474619], 
+                    DiskBox[2, 0.282842712474619], 
+                    DiskBox[3, 0.282842712474619], 
+                    DiskBox[4, 0.282842712474619]}}]], 
+                    MouseAppearanceTag["NetworkGraphics"]], 
+                   AllowKernelInitialization -> False]], {
+                 FormatType -> TraditionalForm, FrameTicks -> None, ImageSize -> 
+                  50, DefaultBaseStyle -> "NetworkGraphics"}], 
+                "SummaryItem"]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+          AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  ahafver`BayesianNetwork`BayesianNetworkObject[<|
+   "Variables" -> {<|
+      "Name" -> "Cloudy", "Parents" -> {}, 
+       "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
+       DataDistribution["Empirical", {{0.5, 0.5}, {1, 2}, False}, 1, 2]|>, <|
+      "Name" -> "Rain", "Parents" -> {"Cloudy"}, 
+       "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
+       DataDistribution[
+        "Empirical", {{(0.8 Boole[# == 1.] + 
+            0.2 Boole[# == 2.]) (1. Boole[# == 1.] + 
+             1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+             0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+            1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
+            1. Boole[# == 1.] + 1. Boole[# == 2.])), (0.2 Boole[# == 1.] + 
+            0.8 Boole[# == 2.]) (1. Boole[# == 1.] + 
+             1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+             0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+            1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
+            1. Boole[# == 1.] + 1. Boole[# == 2.]))}, {1, 2}, False}, 1, 
+         2]|>, <|"Name" -> "Sprinkler", "Parents" -> {"Cloudy"}, 
+       "Domain" -> <|"On" -> 1, "Off" -> 2|>, "Distribution" -> 
+       DataDistribution[
+        "Empirical", {{(0.1 Boole[# == 1.] + 
+            0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
+             1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+             0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+            1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
+            1. Boole[# == 1.] + 1. Boole[# == 2.])), (0.9 Boole[# == 1.] + 
+            0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
+             1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+             0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+            1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
+            1. Boole[# == 1.] + 1. Boole[# == 2.]))}, {1, 2}, False}, 1, 
+         2]|>, <|"Name" -> "Grass", "Parents" -> {"Rain", "Sprinkler"}, 
+       "Domain" -> <|"Wet" -> 1, "Dry" -> 2|>, "Distribution" -> 
+       DataDistribution["Empirical", {{(0. + 0.99 Boole[
+               And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+               And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+               And[#2 == 2., #3 == 1.]]) (0. + 1. Boole[
+                And[#2 == 1., #3 == 1.]] + 1. Boole[
+                And[#2 == 1., #3 == 2.]] + 1. Boole[
+                And[#2 == 2., #3 == 1.]] + 1. Boole[
+                And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
+               And[#2 == 1., #3 == 1.]] + 1. Boole[
+               And[#2 == 1., #3 == 2.]] + 1. Boole[
+               And[#2 == 2., #3 == 1.]] + 1. Boole[
+               And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                And[#2 == 2., #3 == 1.]] + 1. Boole[
+                And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+               And[#2 == 1., #3 == 1.]] + 1. Boole[
+               And[#2 == 1., #3 == 2.]] + 1. Boole[
+               And[#2 == 2., #3 == 1.]] + 1. Boole[
+               And[#2 == 2., #3 == 2.]])), (0.01 Boole[
+               And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+               And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+               And[#2 == 2., #3 == 1.]] + 1. Boole[
+               And[#2 == 2., #3 == 2.]]) (0. + 1. Boole[
+                And[#2 == 1., #3 == 1.]] + 1. Boole[
+                And[#2 == 1., #3 == 2.]] + 1. Boole[
+                And[#2 == 2., #3 == 1.]] + 1. Boole[
+                And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
+               And[#2 == 1., #3 == 1.]] + 1. Boole[
+               And[#2 == 1., #3 == 2.]] + 1. Boole[
+               And[#2 == 2., #3 == 1.]] + 1. Boole[
+               And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                And[#2 == 2., #3 == 1.]] + 1. Boole[
+                And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+               And[#2 == 1., #3 == 1.]] + 1. Boole[
+               And[#2 == 1., #3 == 2.]] + 1. Boole[
+               And[#2 == 2., #3 == 1.]] + 1. Boole[
+               And[#2 == 2., #3 == 2.]]))}, {1, 2}, False}, 1, 2]|>}, 
+    "Distribution" -> 
+    ProbabilityDistribution[(0.5 Boole[1 == $CellContext`\[FormalX]1] + 
+       0.5 Boole[2 == $CellContext`\[FormalX]1]) ((0. + 0.99 Boole[
+            
+            And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+             1.]] + 0.9 Boole[
+            
+            And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+             2.]] + 0.9 Boole[
+            
+            And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+             1.]]) (0. + 1. Boole[
+             
+             And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+              1.]] + 1. Boole[
+             
+             And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+              2.]] + 1. Boole[
+             
+             And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+              1.]] + 1. Boole[
+             
+             And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+              2.]])^(-1) ((0. + 0.99 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                1.]] + 0.9 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                2.]] + 0.9 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                1.]])/(0. + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               2.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               2.]]) + (0.01 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                1.]] + 0.1 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                2.]] + 0.1 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                1.]] + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                2.]])/(0. + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               2.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               2.]]))^(-1) Boole[1 == $CellContext`\[FormalX]4] + (0.01 Boole[
+            
+            And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+             1.]] + 0.1 Boole[
+            
+            And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+             2.]] + 0.1 Boole[
+            
+            And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+             1.]] + 1. Boole[
+            
+            And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+             2.]]) (0. + 1. Boole[
+             
+             And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+              1.]] + 1. Boole[
+             
+             And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+              2.]] + 1. Boole[
+             
+             And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+              1.]] + 1. Boole[
+             
+             And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+              2.]])^(-1) ((0. + 0.99 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                1.]] + 0.9 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                2.]] + 0.9 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                1.]])/(0. + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               2.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               2.]]) + (0.01 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                1.]] + 0.1 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                2.]] + 0.1 Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                1.]] + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                2.]])/(0. + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               2.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               2.]]))^(-1) Boole[2 == $CellContext`\[FormalX]4]) (
+       Boole[1 == $CellContext`\[FormalX]3] (
+         0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+         0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+          1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+          0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+          0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+         1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+          0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+          0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+         1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+       Boole[2 == $CellContext`\[FormalX]3] (
+         0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+         0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+          1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+          0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+          0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+         1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+          0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+          0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+         1. Boole[$CellContext`\[FormalX]1 == 2.]))) (
+       Boole[1 == $CellContext`\[FormalX]2] (
+         0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+         0.2 Boole[$CellContext`\[FormalX]1 == 2.]) (
+          1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+          0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+          0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
+         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+         1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+          0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+          0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+         1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+       Boole[2 == $CellContext`\[FormalX]2] (
+         0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+         0.8 Boole[$CellContext`\[FormalX]1 == 2.]) (
+          1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+          1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+          0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+          0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
+         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+         1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+          0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+          0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+         1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+         1. Boole[$CellContext`\[FormalX]1 == 
+            2.]))), {$CellContext`\[FormalX]1, 1, 2, 
+       1}, {$CellContext`\[FormalX]2, 1, 2, 1}, {$CellContext`\[FormalX]3, 1, 
+       2, 1}, {$CellContext`\[FormalX]4, 1, 2, 1}], "Graph" -> 
+    Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 
+       4}, {3, 4}}, Null}, {VertexLabels -> {Automatic}}]|>],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.963172974573658*^9},
+ CellLabel->"Out[9]=",
+ CellID->50932647,ExpressionUUID->"6e69edd1-1d37-3b43-a732-a6f384d1a188"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "More Examples",
+ Cell[BoxData[
+  TemplateBox[{"MoreExamples", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell["Extended examples in standardized sections.", "MoreInfoText"], 
+       BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "5ea50633-91a9-af46-ae97-62abbab113bc"]
+}], "ExtendedExamplesSection",
+ CellTags->"ExtendedExamples",
+ CellID->374925315,ExpressionUUID->"e1829e73-2071-f540-a047-0f7eff15a22b"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Scope", "ExampleSection",ExpressionUUID->
+   "41778551-1ff8-c341-8b01-c93bd83761ef"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->817888119,ExpressionUUID->"5133d0b2-5404-c040-ba9c-c3daae0c7815"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Generalizations & Extensions", "ExampleSection",ExpressionUUID->
+   "bdf4d99c-ec0e-524a-a565-b74360763346"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->62412223,ExpressionUUID->"df53a7e0-b243-9748-a3ff-fefaea10660e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Options", "ExampleSection",ExpressionUUID->
+   "3f203049-b5a5-ea49-ba84-26a4d17688d9"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->608888643,ExpressionUUID->"53b289bb-6d14-3640-857e-8a0233efa88e"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "0bbd9487-3348-0c4d-aa85-b6c16d582356"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->378459077,ExpressionUUID->"cec70f6b-8a47-914d-85a7-ec4fe60a725f"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "XXXX", "ExampleSubsection",ExpressionUUID->
+   "890213bc-5490-624e-ab9b-86d4f1a26a7e"],
+  $Line = 0; Null]], "ExampleSubsection",
+ CellID->245110941,ExpressionUUID->"d4561502-8a3c-4c47-9139-9805a71f333e"]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Applications", "ExampleSection",ExpressionUUID->
+   "bdb83714-8433-ce4f-9b87-f88ebe9454bb"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->257151314,ExpressionUUID->"7f72de38-bc00-0f43-952d-e46e136ba7c3"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Properties & Relations", "ExampleSection",ExpressionUUID->
+   "64721cde-d2a8-0945-8aca-1897c3d56a32"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->182478464,ExpressionUUID->"c7815246-219a-bb41-bd89-6b7e9e1bf44d"],
+
+Cell[TextData[{
+ StyleBox["BayesianNetworkObject", "InlineCode"],
+ "  can be used with ",
+ StyleBox["Probability", "InlineCode"],
+ ":"
+}], "ExampleText",
+ CellChangeTimes->{
+  3.963172688238962*^9, {3.96317302667564*^9, 3.96317304435446*^9}},
+ CellID->205933709,ExpressionUUID->"8b69a944-6525-fa49-97f7-b4e4f28b00a4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"BN", " ", "=", " ", 
+     InterpretationBox[
+      RowBox[{
+       TagBox["BayesianNetworkObject",
+        "SummaryHead"], "[", 
+       DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+        "Ready"}, 
+        TemplateBox[{
+          PaneSelectorBox[{False -> GridBox[{{
+                GridBox[{{
+                   TagBox[
+                    GraphicsBox[
+                    NamespaceBox["NetworkGraphics", 
+                    DynamicModuleBox[{Typeset`graph = HoldComplete[
+                    
+                    Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 
+                    2}, {1, 3}, {2, 4}, {3, 4}}, Null}, {
+                    GraphLayout -> {"Dimension" -> 2}, ImageSize -> 50, 
+                    VertexLabels -> {None}, VertexSize -> {Large}}]]}, 
+                    TagBox[
+                    GraphicsGroupBox[
+                    
+                    GraphicsComplexBox[{{-1.8369701987210297`*^-16, 1.}, {1., 
+                    1.2246467991473532`*^-16}, {-1., \
+-2.4492935982947064`*^-16}, {6.123233995736766*^-17, -1.}}, {{
+                    Arrowheads[Medium], 
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    
+                    ArrowBox[{{1, 2}, {1, 3}, {2, 4}, {3, 4}}, 
+                    0.282842712474619]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    DiskBox[1, 0.282842712474619], 
+                    DiskBox[2, 0.282842712474619], 
+                    DiskBox[3, 0.282842712474619], 
+                    DiskBox[4, 0.282842712474619]}}]], 
+                    MouseAppearanceTag["NetworkGraphics"]], 
+                    AllowKernelInitialization -> False]], {
+                    FormatType -> TraditionalForm, FrameTicks -> None, 
+                    ImageSize -> 50, DefaultBaseStyle -> "NetworkGraphics"}], 
+                    "SummaryItem"]}}, 
+                 GridBoxAlignment -> {
+                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                 False, GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 GridBoxSpacings -> {
+                  "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                 BaseStyle -> {
+                  ShowStringCharacters -> False, NumberMarks -> False, 
+                   PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+              GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+              AutoDelete -> False, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {1, 1}], True -> GridBox[{{
+                GridBox[{{
+                   TagBox[
+                    GraphicsBox[
+                    NamespaceBox["NetworkGraphics", 
+                    DynamicModuleBox[{Typeset`graph = HoldComplete[
+                    
+                    Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 
+                    2}, {1, 3}, {2, 4}, {3, 4}}, Null}, {
+                    GraphLayout -> {"Dimension" -> 2}, ImageSize -> 50, 
+                    VertexLabels -> {None}, VertexSize -> {Large}}]]}, 
+                    TagBox[
+                    GraphicsGroupBox[
+                    
+                    GraphicsComplexBox[{{-1.8369701987210297`*^-16, 1.}, {1., 
+                    1.2246467991473532`*^-16}, {-1., \
+-2.4492935982947064`*^-16}, {6.123233995736766*^-17, -1.}}, {{
+                    Arrowheads[Medium], 
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    
+                    ArrowBox[{{1, 2}, {1, 3}, {2, 4}, {3, 4}}, 
+                    0.282842712474619]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    DiskBox[1, 0.282842712474619], 
+                    DiskBox[2, 0.282842712474619], 
+                    DiskBox[3, 0.282842712474619], 
+                    DiskBox[4, 0.282842712474619]}}]], 
+                    MouseAppearanceTag["NetworkGraphics"]], 
+                    AllowKernelInitialization -> False]], {
+                    FormatType -> TraditionalForm, FrameTicks -> None, 
+                    ImageSize -> 50, DefaultBaseStyle -> "NetworkGraphics"}], 
+                    "SummaryItem"]}}, 
+                 GridBoxAlignment -> {
+                  "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+                 False, GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 GridBoxSpacings -> {
+                  "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                 BaseStyle -> {
+                  ShowStringCharacters -> False, NumberMarks -> False, 
+                   PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+              GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+              AutoDelete -> False, 
+              GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {1, 1}]}, 
+           Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+         "SummaryPanel"],
+        DynamicModuleValues:>{}], "]"}],
+      ahafver`BayesianNetwork`BayesianNetworkObject[<|
+       "Variables" -> {<|
+          "Name" -> "Cloudy", "Parents" -> {}, 
+           "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
+           DataDistribution[
+            "Empirical", {{0.5, 0.5}, {1, 2}, False}, 1, 2]|>, <|
+          "Name" -> "Rain", "Parents" -> {"Cloudy"}, 
+           "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
+           DataDistribution[
+            "Empirical", {{(0.8 Boole[# == 1.] + 
+                0.2 Boole[# == 2.]) (1. Boole[# == 1.] + 
+                 1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+                 0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 
+                 0.8 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                1. Boole[# == 2.])), (0.2 Boole[# == 1.] + 
+                0.8 Boole[# == 2.]) (1. Boole[# == 1.] + 
+                 1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+                 0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 
+                 0.8 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                1. Boole[# == 2.]))}, {1, 2}, False}, 1, 2]|>, <|
+          "Name" -> "Sprinkler", "Parents" -> {"Cloudy"}, 
+           "Domain" -> <|"On" -> 1, "Off" -> 2|>, "Distribution" -> 
+           DataDistribution[
+            "Empirical", {{(0.1 Boole[# == 1.] + 
+                0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
+                 1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+                 0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 
+                 0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                1. Boole[# == 2.])), (0.9 Boole[# == 1.] + 
+                0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
+                 1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+                 0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 
+                 0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+                1. Boole[# == 2.]))}, {1, 2}, False}, 1, 2]|>, <|
+          "Name" -> "Grass", "Parents" -> {"Rain", "Sprinkler"}, 
+           "Domain" -> <|"Wet" -> 1, "Dry" -> 2|>, "Distribution" -> 
+           DataDistribution["Empirical", {{(0. + 0.99 Boole[
+                   And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                   And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                   And[#2 == 2., #3 == 1.]]) (0. + 1. Boole[
+                    And[#2 == 1., #3 == 1.]] + 1. Boole[
+                    And[#2 == 1., #3 == 2.]] + 1. Boole[
+                    And[#2 == 2., #3 == 1.]] + 1. Boole[
+                    And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                    And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                    And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                    And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
+                   And[#2 == 1., #3 == 1.]] + 1. Boole[
+                   And[#2 == 1., #3 == 2.]] + 1. Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                    And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                    And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                    And[#2 == 2., #3 == 1.]] + 1. Boole[
+                    And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+                   And[#2 == 1., #3 == 1.]] + 1. Boole[
+                   And[#2 == 1., #3 == 2.]] + 1. Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]])), (0.01 Boole[
+                   And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                   And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]]) (0. + 1. Boole[
+                    And[#2 == 1., #3 == 1.]] + 1. Boole[
+                    And[#2 == 1., #3 == 2.]] + 1. Boole[
+                    And[#2 == 2., #3 == 1.]] + 1. Boole[
+                    And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                    And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                    And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                    And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
+                   And[#2 == 1., #3 == 1.]] + 1. Boole[
+                   And[#2 == 1., #3 == 2.]] + 1. Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                    And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                    And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                    And[#2 == 2., #3 == 1.]] + 1. Boole[
+                    And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+                   And[#2 == 1., #3 == 1.]] + 1. Boole[
+                   And[#2 == 1., #3 == 2.]] + 1. Boole[
+                   And[#2 == 2., #3 == 1.]] + 1. Boole[
+                   And[#2 == 2., #3 == 2.]]))}, {1, 2}, False}, 1, 2]|>}, 
+        "Distribution" -> 
+        ProbabilityDistribution[(0.5 Boole[1 == $CellContext`\[FormalX]1] + 
+           0.5 Boole[2 == $CellContext`\[FormalX]1]) ((0. + 0.99 Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 1.]] + 0.9 Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 2.]] + 0.9 Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 1.]]) (0. + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  1.]] + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  2.]] + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  1.]] + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  2.]])^(-1) ((0. + 0.99 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    1., $CellContext`\[FormalX]3 == 1.]] + 0.9 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    1., $CellContext`\[FormalX]3 == 2.]] + 0.9 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    2., $CellContext`\[FormalX]3 == 1.]])/(0. + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   1., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   1., $CellContext`\[FormalX]3 == 2.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   2., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   2., $CellContext`\[FormalX]3 == 2.]]) + (0.01 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    1., $CellContext`\[FormalX]3 == 1.]] + 0.1 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    1., $CellContext`\[FormalX]3 == 2.]] + 0.1 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    2., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    2., $CellContext`\[FormalX]3 == 2.]])/(0. + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   1., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   1., $CellContext`\[FormalX]3 == 2.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   2., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                  And[$CellContext`\[FormalX]2 == 
+                   2., $CellContext`\[FormalX]3 == 2.]]))^(-1) 
+            Boole[1 == $CellContext`\[FormalX]4] + (0.01 Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 1.]] + 0.1 Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 2.]] + 0.1 Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 2.]]) (0. + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  1.]] + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  2.]] + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  1.]] + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  2.]])^(-1) ((0. + 0.99 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    1., $CellContext`\[FormalX]3 == 1.]] + 0.9 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    1., $CellContext`\[FormalX]3 == 2.]] + 0.9 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    2., $CellContext`\[FormalX]3 == 1.]])/(0. + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   1., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   1., $CellContext`\[FormalX]3 == 2.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   2., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   2., $CellContext`\[FormalX]3 == 2.]]) + (0.01 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    1., $CellContext`\[FormalX]3 == 1.]] + 0.1 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    1., $CellContext`\[FormalX]3 == 2.]] + 0.1 Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    2., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                   
+                   And[$CellContext`\[FormalX]2 == 
+                    2., $CellContext`\[FormalX]3 == 2.]])/(0. + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   1., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   1., $CellContext`\[FormalX]3 == 2.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   2., $CellContext`\[FormalX]3 == 1.]] + 1. Boole[
+                  
+                  And[$CellContext`\[FormalX]2 == 
+                   2., $CellContext`\[FormalX]3 == 2.]]))^(-1) 
+            Boole[2 == $CellContext`\[FormalX]4]) (
+           Boole[1 == $CellContext`\[FormalX]3] (
+             0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+              1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+              0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+              0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+              0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+              0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+           Boole[2 == $CellContext`\[FormalX]3] (
+             0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+              1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+              0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+              0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+              0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+              0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.]))) (
+           Boole[1 == $CellContext`\[FormalX]2] (
+             0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.2 Boole[$CellContext`\[FormalX]1 == 2.]) (
+              1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+              0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+              0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+              0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+              0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+           Boole[2 == $CellContext`\[FormalX]2] (
+             0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+             0.8 Boole[$CellContext`\[FormalX]1 == 2.]) (
+              1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+              1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+              0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+              0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+              0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+              0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+             1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+             1. Boole[$CellContext`\[FormalX]1 == 
+                2.]))), {$CellContext`\[FormalX]1, 1, 2, 
+           1}, {$CellContext`\[FormalX]2, 1, 2, 1}, {$CellContext`\[FormalX]3,
+            1, 2, 1}, {$CellContext`\[FormalX]4, 1, 2, 1}], "Graph" -> 
+        Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 
+           4}, {3, 4}}, Null}, {VertexLabels -> {Automatic}}]|>],
+      Editable->False,
+      SelectWithContents->True,
+      Selectable->False]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"Probability", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"#Cloudy", "==", " ", "c"}], "\[Conditioned]", 
+       RowBox[{"#Grass", "==", "\"\<Wet\>\""}]}], "&"}], ",", "BN"}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.963172698513529*^9, 3.9631727369386196`*^9}},
+ CellLabel->"In[1]:=",
+ CellID->607043780,ExpressionUUID->"7840f628-2453-f649-bbe3-606ae0c14d48"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\[Piecewise]", GridBox[{
+       {"0", 
+        RowBox[{
+         RowBox[{"c", "\[NotEqual]", "1"}], "&&", 
+         RowBox[{"c", "\[NotEqual]", "2"}]}]},
+       {"0.4242002781641168`", 
+        RowBox[{"c", "\[Equal]", "2"}]},
+       {"0.5757997218358832`", 
+        TagBox["True",
+         "PiecewiseDefault",
+         AutoDelete->True]}
+      },
+      AllowedDimensions->{2, Automatic},
+      Editable->True,
+      GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+      GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
+      GridBoxSpacings->{"Columns" -> {
+          Offset[0.27999999999999997`], {
+           Offset[0.84]}, 
+          Offset[0.27999999999999997`]}, "Rows" -> {
+          Offset[0.2], {
+           Offset[0.4]}, 
+          Offset[0.2]}},
+      Selectable->True]}
+   },
+   GridBoxAlignment->{"Columns" -> {{Left}}, "Rows" -> {{Baseline}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{1.}}},
+   GridBoxSpacings->{"Columns" -> {
+       Offset[0.27999999999999997`], {
+        Offset[0.35]}, 
+       Offset[0.27999999999999997`]}, "Rows" -> {
+       Offset[0.2], {
+        Offset[0.4]}, 
+       Offset[0.2]}}],
+  "Piecewise",
+  DeleteWithContents->True,
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False,
+  StripWrapperBoxes->True]], "Output",
+ CellChangeTimes->{3.963172738323641*^9, 3.9631730619669895`*^9},
+ CellLabel->"Out[2]=",
+ CellID->352773363,ExpressionUUID->"1af1573e-014e-8b4e-b5b1-491a7aa19924"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "\t", "ExampleDelimiter",ExpressionUUID->
+   "65c7e822-dbf9-d941-9364-a893d01e11df"],
+  $Line = 0; Null]], "ExampleDelimiter",
+ CellChangeTimes->{{3.963172634417671*^9, 3.963172681851671*^9}},
+ CellID->532181875,ExpressionUUID->"661556b2-546b-6041-ad6b-5e05ca5d3e2d"],
+
+Cell[TextData[{
+ StyleBox["BayesianNetworkObject", "InlineCode"],
+ "  can be used with ",
+ StyleBox["Graph", "InlineCode"],
+ ":"
+}], "ExampleText",
+ CellChangeTimes->{{3.963171833091564*^9, 3.963171876538622*^9}, {
+  3.9631730798483944`*^9, 3.963173083715372*^9}},
+ CellID->389212076,ExpressionUUID->"96f50806-6763-404b-b7e3-2378390a087b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"BN", " ", "=", " ", 
+   InterpretationBox[
+    RowBox[{
+     TagBox["BayesianNetworkObject",
+      "SummaryHead"], "[", 
+     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+      "Ready"}, 
+      TemplateBox[{
+        PaneSelectorBox[{False -> GridBox[{{
+              GridBox[{{
+                 TagBox[
+                  GraphicsBox[
+                   NamespaceBox["NetworkGraphics", 
+                    DynamicModuleBox[{Typeset`graph = HoldComplete[
+                    
+                    Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 
+                    2}, {1, 3}, {2, 4}, {3, 4}}, Null}, {
+                    GraphLayout -> {"Dimension" -> 2}, ImageSize -> 50, 
+                    VertexLabels -> {None}, VertexSize -> {Large}}]]}, 
+                    TagBox[
+                    GraphicsGroupBox[
+                    
+                    GraphicsComplexBox[{{-1.8369701987210297`*^-16, 1.}, {1., 
+                    1.2246467991473532`*^-16}, {-1., \
+-2.4492935982947064`*^-16}, {6.123233995736766*^-17, -1.}}, {{
+                    Arrowheads[Medium], 
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    
+                    ArrowBox[{{1, 2}, {1, 3}, {2, 4}, {3, 4}}, 
+                    0.282842712474619]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    DiskBox[1, 0.282842712474619], 
+                    DiskBox[2, 0.282842712474619], 
+                    DiskBox[3, 0.282842712474619], 
+                    DiskBox[4, 0.282842712474619]}}]], 
+                    MouseAppearanceTag["NetworkGraphics"]], 
+                    AllowKernelInitialization -> False]], {
+                   FormatType -> TraditionalForm, FrameTicks -> None, 
+                    ImageSize -> 50, DefaultBaseStyle -> "NetworkGraphics"}], 
+                  "SummaryItem"]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}], True -> GridBox[{{
+              GridBox[{{
+                 TagBox[
+                  GraphicsBox[
+                   NamespaceBox["NetworkGraphics", 
+                    DynamicModuleBox[{Typeset`graph = HoldComplete[
+                    
+                    Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 
+                    2}, {1, 3}, {2, 4}, {3, 4}}, Null}, {
+                    GraphLayout -> {"Dimension" -> 2}, ImageSize -> 50, 
+                    VertexLabels -> {None}, VertexSize -> {Large}}]]}, 
+                    TagBox[
+                    GraphicsGroupBox[
+                    
+                    GraphicsComplexBox[{{-1.8369701987210297`*^-16, 1.}, {1., 
+                    1.2246467991473532`*^-16}, {-1., \
+-2.4492935982947064`*^-16}, {6.123233995736766*^-17, -1.}}, {{
+                    Arrowheads[Medium], 
+                    Directive[
+                    Opacity[0.7], 
+                    Hue[0.6, 0.7, 0.7], 
+                    CapForm["Round"]], 
+                    
+                    ArrowBox[{{1, 2}, {1, 3}, {2, 4}, {3, 4}}, 
+                    0.282842712474619]}, {
+                    Directive[
+                    Hue[0.6, 0.5, 1.], 
+                    EdgeForm[
+                    Directive[
+                    GrayLevel[0], 
+                    Opacity[0.7]]]], 
+                    DiskBox[1, 0.282842712474619], 
+                    DiskBox[2, 0.282842712474619], 
+                    DiskBox[3, 0.282842712474619], 
+                    DiskBox[4, 0.282842712474619]}}]], 
+                    MouseAppearanceTag["NetworkGraphics"]], 
+                    AllowKernelInitialization -> False]], {
+                   FormatType -> TraditionalForm, FrameTicks -> None, 
+                    ImageSize -> 50, DefaultBaseStyle -> "NetworkGraphics"}], 
+                  "SummaryItem"]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+            AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}]}, 
+         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+       "SummaryPanel"],
+      DynamicModuleValues:>{}], "]"}],
+    ahafver`BayesianNetwork`BayesianNetworkObject[<|
+     "Variables" -> {<|
+        "Name" -> "Cloudy", "Parents" -> {}, 
+         "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
+         DataDistribution["Empirical", {{0.5, 0.5}, {1, 2}, False}, 1, 2]|>, <|
+        "Name" -> "Rain", "Parents" -> {"Cloudy"}, 
+         "Domain" -> <|"True" -> 1, "False" -> 2|>, "Distribution" -> 
+         DataDistribution[
+          "Empirical", {{(0.8 Boole[# == 1.] + 
+              0.2 Boole[# == 2.]) (1. Boole[# == 1.] + 
+               1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+               0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+              1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
+              1. Boole[# == 1.] + 1. Boole[# == 2.])), (0.2 Boole[# == 1.] + 
+              0.8 Boole[# == 2.]) (1. Boole[# == 1.] + 
+               1. Boole[# == 2.])^(-1)/((0.8 Boole[# == 1.] + 
+               0.2 Boole[# == 2.])/(1. Boole[# == 1.] + 
+              1. Boole[# == 2.]) + (0.2 Boole[# == 1.] + 0.8 Boole[# == 2.])/(
+              1. Boole[# == 1.] + 1. Boole[# == 2.]))}, {1, 2}, False}, 1, 
+           2]|>, <|"Name" -> "Sprinkler", "Parents" -> {"Cloudy"}, 
+         "Domain" -> <|"On" -> 1, "Off" -> 2|>, "Distribution" -> 
+         DataDistribution[
+          "Empirical", {{(0.1 Boole[# == 1.] + 
+              0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
+               1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+               0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+              1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
+              1. Boole[# == 1.] + 1. Boole[# == 2.])), (0.9 Boole[# == 1.] + 
+              0.5 Boole[# == 2.]) (1. Boole[# == 1.] + 
+               1. Boole[# == 2.])^(-1)/((0.1 Boole[# == 1.] + 
+               0.5 Boole[# == 2.])/(1. Boole[# == 1.] + 
+              1. Boole[# == 2.]) + (0.9 Boole[# == 1.] + 0.5 Boole[# == 2.])/(
+              1. Boole[# == 1.] + 1. Boole[# == 2.]))}, {1, 2}, False}, 1, 
+           2]|>, <|"Name" -> "Grass", "Parents" -> {"Rain", "Sprinkler"}, 
+         "Domain" -> <|"Wet" -> 1, "Dry" -> 2|>, "Distribution" -> 
+         DataDistribution["Empirical", {{(0. + 0.99 Boole[
+                 And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                 And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                 And[#2 == 2., #3 == 1.]]) (0. + 1. Boole[
+                  And[#2 == 1., #3 == 1.]] + 1. Boole[
+                  And[#2 == 1., #3 == 2.]] + 1. Boole[
+                  And[#2 == 2., #3 == 1.]] + 1. Boole[
+                  And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                  And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                  And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                  And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
+                 And[#2 == 1., #3 == 1.]] + 1. Boole[
+                 And[#2 == 1., #3 == 2.]] + 1. Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                  And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                  And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                  And[#2 == 2., #3 == 1.]] + 1. Boole[
+                  And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+                 And[#2 == 1., #3 == 1.]] + 1. Boole[
+                 And[#2 == 1., #3 == 2.]] + 1. Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]])), (0.01 Boole[
+                 And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                 And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]]) (0. + 1. Boole[
+                  And[#2 == 1., #3 == 1.]] + 1. Boole[
+                  And[#2 == 1., #3 == 2.]] + 1. Boole[
+                  And[#2 == 2., #3 == 1.]] + 1. Boole[
+                  And[#2 == 2., #3 == 2.]])^(-1)/((0. + 0.99 Boole[
+                  And[#2 == 1., #3 == 1.]] + 0.9 Boole[
+                  And[#2 == 1., #3 == 2.]] + 0.9 Boole[
+                  And[#2 == 2., #3 == 1.]])/(0. + 1. Boole[
+                 And[#2 == 1., #3 == 1.]] + 1. Boole[
+                 And[#2 == 1., #3 == 2.]] + 1. Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]]) + (0.01 Boole[
+                  And[#2 == 1., #3 == 1.]] + 0.1 Boole[
+                  And[#2 == 1., #3 == 2.]] + 0.1 Boole[
+                  And[#2 == 2., #3 == 1.]] + 1. Boole[
+                  And[#2 == 2., #3 == 2.]])/(0. + 1. Boole[
+                 And[#2 == 1., #3 == 1.]] + 1. Boole[
+                 And[#2 == 1., #3 == 2.]] + 1. Boole[
+                 And[#2 == 2., #3 == 1.]] + 1. Boole[
+                 And[#2 == 2., #3 == 2.]]))}, {1, 2}, False}, 1, 2]|>}, 
+      "Distribution" -> 
+      ProbabilityDistribution[(0.5 Boole[1 == $CellContext`\[FormalX]1] + 
+         0.5 Boole[2 == $CellContext`\[FormalX]1]) ((0. + 0.99 Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               1.]] + 0.9 Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               2.]] + 0.9 Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               1.]]) (0. + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                1.]] + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                2.]] + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                1.]] + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                2.]])^(-1) ((0. + 0.99 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  1.]] + 0.9 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  2.]] + 0.9 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  1.]])/(0. + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 2.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 2.]]) + (0.01 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  1.]] + 0.1 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  2.]] + 0.1 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  1.]] + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  2.]])/(0. + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 2.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 2.]]))^(-1) 
+          Boole[1 == $CellContext`\[FormalX]4] + (0.01 Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               1.]] + 0.1 Boole[
+              
+              And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+               2.]] + 0.1 Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               1.]] + 1. Boole[
+              
+              And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+               2.]]) (0. + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                1.]] + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                2.]] + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                1.]] + 1. Boole[
+               
+               And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                2.]])^(-1) ((0. + 0.99 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  1.]] + 0.9 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  2.]] + 0.9 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  1.]])/(0. + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 2.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 2.]]) + (0.01 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  1.]] + 0.1 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                  2.]] + 0.1 Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  1.]] + 1. Boole[
+                 
+                 And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                  2.]])/(0. + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 1., $CellContext`\[FormalX]3 == 
+                 2.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 1.]] + 1. Boole[
+                
+                And[$CellContext`\[FormalX]2 == 2., $CellContext`\[FormalX]3 == 
+                 2.]]))^(-1) Boole[2 == $CellContext`\[FormalX]4]) (
+         Boole[1 == $CellContext`\[FormalX]3] (
+           0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+            1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+            0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+            0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+            0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+            0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+         Boole[2 == $CellContext`\[FormalX]3] (
+           0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.5 Boole[$CellContext`\[FormalX]1 == 2.]) (
+            1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+            0.1 Boole[$CellContext`\[FormalX]1 == 1.] + 
+            0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+            0.9 Boole[$CellContext`\[FormalX]1 == 1.] + 
+            0.5 Boole[$CellContext`\[FormalX]1 == 2.])/(
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.]))) (
+         Boole[1 == $CellContext`\[FormalX]2] (
+           0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.2 Boole[$CellContext`\[FormalX]1 == 2.]) (
+            1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+            0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+            0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+            0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+            0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.])) + 
+         Boole[2 == $CellContext`\[FormalX]2] (
+           0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+           0.8 Boole[$CellContext`\[FormalX]1 == 2.]) (
+            1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+            1. Boole[$CellContext`\[FormalX]1 == 2.])^(-1)/((
+            0.8 Boole[$CellContext`\[FormalX]1 == 1.] + 
+            0.2 Boole[$CellContext`\[FormalX]1 == 2.])/(
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 2.]) + (
+            0.2 Boole[$CellContext`\[FormalX]1 == 1.] + 
+            0.8 Boole[$CellContext`\[FormalX]1 == 2.])/(
+           1. Boole[$CellContext`\[FormalX]1 == 1.] + 
+           1. Boole[$CellContext`\[FormalX]1 == 
+              2.]))), {$CellContext`\[FormalX]1, 1, 2, 
+         1}, {$CellContext`\[FormalX]2, 1, 2, 1}, {$CellContext`\[FormalX]3, 
+         1, 2, 1}, {$CellContext`\[FormalX]4, 1, 2, 1}], "Graph" -> 
+      Graph[{"Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 
+         4}, {3, 4}}, Null}, {VertexLabels -> {Automatic}}]|>],
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False]}], ";"}]], "Input",
+ CellChangeTimes->{{3.963171888496525*^9, 3.963171908910225*^9}},
+ CellLabel->"In[1]:=",
+ CellID->125010132,ExpressionUUID->"1ef4da87-c3c0-fe47-a6e2-e1353b42fea6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", "BN", "]"}]], "Input",
+ CellChangeTimes->{{3.9631719143147545`*^9, 3.963171918184061*^9}},
+ CellLabel->"In[2]:=",
+ CellID->81199063,ExpressionUUID->"e71c9f55-e853-9b44-be23-9b2d532639ae"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{
+      "Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 4}, {3, 
+       4}}, Null}, {
+      GraphLayout -> {"Dimension" -> 2}, 
+       VertexLabels -> {Automatic, "Grass" -> Labeled[
+           Graphics[{{
+              Opacity[0], 
+              
+              Point[{{0., -0.8428550619082302}, {0., 
+               3.8048069919883467`}}]}, {{}, {
+               Directive[
+                EdgeForm[
+                 Directive[
+                  Thickness[Small], 
+                  Opacity[0.6859999999999999]]], 
+                RGBColor[1., 0.78, 0.2]], {{
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 0.5487982520029133}, {0.6471000000000001, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.6471000000000001], 
+                  Style[0.6471000000000001, {}]]}, {
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 1.5487982520029133`}, {0.35290000000000005`,
+                     2.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.35290000000000005`], 
+                  Style[
+                  0.35290000000000005`, {}]]}}}, {}, {}}, {}, {}, {}, {}, \
+{}}, {DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0., -0.8428550619082302}, 
+             CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, Frame -> True, 
+             FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{{{1., 
+                  Spacer[0], {0.004`20., 0}}, {1., "Wet", 0}, {2., 
+                  Spacer[0], {0.004`20., 0}}, {2., "Dry", 0}}, {{1., 
+                  Spacer[0], {0.004`20., 0}}, {2., 
+                  Spacer[0], {0.004`20., 0}}}}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+             PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], "Grass",
+            Top], "Cloudy" -> Labeled[
+           Graphics[{{
+              Opacity[0], 
+              
+              Point[{{0., -0.8428550619082302}, {0., 
+               3.8048069919883467`}}]}, {{}, {
+               Directive[
+                EdgeForm[
+                 Directive[
+                  Thickness[Small], 
+                  Opacity[0.6859999999999999]]], 
+                RGBColor[1., 0.78, 0.2]], {{
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 0.5487982520029133}, {0.5000000000000001, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.5000000000000001], 
+                  Style[0.5000000000000001, {}]]}, {
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 1.5487982520029133`}, {0.5, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 0.5], 
+                  Style[0.5, {}]]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+            DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0., -0.8428550619082302}, 
+             CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, Frame -> True, 
+             FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{{{1., 
+                  Spacer[0], {0.004`20., 0}}, {1., "True", 0}, {2., 
+                  Spacer[0], {0.004`20., 0}}, {2., "False", 0}}, {{1., 
+                  Spacer[0], {0.004`20., 0}}, {2., 
+                  Spacer[0], {0.004`20., 0}}}}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+             PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+           "Cloudy", Top], "Sprinkler" -> Labeled[
+           Graphics[{{
+              Opacity[0], 
+              
+              Point[{{0., -0.8428550619082302}, {0., 
+               3.8048069919883467`}}]}, {{}, {
+               Directive[
+                EdgeForm[
+                 Directive[
+                  Thickness[Small], 
+                  Opacity[0.6859999999999999]]], 
+                RGBColor[1., 0.78, 0.2]], {{
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 0.5487982520029133}, {0.3, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 0.3], 
+                  Style[0.3, {}]]}, {
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 1.5487982520029133`}, {0.7000000000000002, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.7000000000000002], 
+                  Style[
+                  0.7000000000000002, {}]]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+            DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0., -0.8428550619082302}, 
+             CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, Frame -> True, 
+             FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{{{1., 
+                  Spacer[0], {0.004`20., 0}}, {1., "On", 0}, {2., 
+                  Spacer[0], {0.004`20., 0}}, {2., "Off", 0}}, {{1., 
+                  Spacer[0], {0.004`20., 0}}, {2., 
+                  Spacer[0], {0.004`20., 0}}}}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+             PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+           "Sprinkler", Top], "Rain" -> Labeled[
+           Graphics[{{
+              Opacity[0], 
+              
+              Point[{{0., -0.8428550619082302}, {0., 
+               3.8048069919883467`}}]}, {{}, {
+               Directive[
+                EdgeForm[
+                 Directive[
+                  Thickness[Small], 
+                  Opacity[0.6859999999999999]]], 
+                RGBColor[1., 0.78, 0.2]], {{
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 0.5487982520029133}, {0.5000000000000001, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.5000000000000001], 
+                  Style[0.5000000000000001, {}]]}, {
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 1.5487982520029133`}, {0.5, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 0.5], 
+                  Style[0.5, {}]]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+            DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0., -0.8428550619082302}, 
+             CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, Frame -> True, 
+             FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{{{1., 
+                  Spacer[0], {0.004`20., 0}}, {1., "True", 0}, {2., 
+                  Spacer[0], {0.004`20., 0}}, {2., "False", 0}}, {{1., 
+                  Spacer[0], {0.004`20., 0}}, {2., 
+                  Spacer[0], {0.004`20., 0}}}}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+             PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], "Rain", 
+           Top]}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.7], Opacity[0.7], CapForm["Round"], Arrowheads[
+        Medium], 
+        ArrowBox[{{{-1.8369701987210297`*^-16, 1.}, {1., 
+         1.2246467991473532`*^-16}}, {{-1.8369701987210297`*^-16, 
+         1.}, {-1., -2.4492935982947064`*^-16}}, {{1., 
+         1.2246467991473532`*^-16}, {
+         6.123233995736766*^-17, -1.}}, {{-1., -2.4492935982947064`*^-16}, {
+         6.123233995736766*^-17, -1.}}}, 0.02261146496815286]}, 
+       {Hue[0.6, 0.5, 1.], EdgeForm[{GrayLevel[0], Opacity[
+        0.7]}], {
+         DiskBox[{-1.8369701987210297`*^-16, 1.}, 0.02261146496815286], 
+         InsetBox[
+          TemplateBox[{
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{0., -0.8428550619082302}, {0., 
+                3.8048069919883467`}}]}, {{}, {
+                Directive[
+                 EdgeForm[
+                  Directive[
+                   Thickness[Small], 
+                   Opacity[0.6859999999999999]]], 
+                 RGBColor[1., 0.78, 0.2]], {{
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 0.5487982520029133}, {
+                    0.5000000000000001, 1.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.5000000000000001]& , TagBoxNote -> 
+                    "0.5000000000000001"], 
+                    StyleBox[
+                    "0.5000000000000001`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.5000000000000001, {}], "Tooltip"]& ]}, {
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 1.5487982520029133`}, {0.5, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.5]& , TagBoxNote -> "0.5"], 
+                    StyleBox["0.5`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.5, {}], 
+                    "Tooltip"]& ]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+             DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0., -0.8428550619082302}, 
+              CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& )}, Frame -> True, 
+              FrameLabel -> {{None, None}, {None, None}}, 
+              FrameTicks -> {{{{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {1., 
+                   FormBox["\"True\"", TraditionalForm], 0}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox["\"False\"", TraditionalForm], 0}}, {{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}}}, {None, None}}, GridLines -> {None, None}, 
+              GridLinesStyle -> Directive[
+                GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+              PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+            "\"Cloudy\""},
+           "Labeled",
+           DisplayFunction->(FormBox[
+             GridBox[{{
+                ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                TagBox[
+                 ItemBox[
+                  PaneBox[
+                   TagBox[#, "SkipImageSizeLevel"], 
+                   Alignment -> {Center, Baseline}, BaselinePosition -> 
+                   Baseline], DefaultBaseStyle -> "Labeled"], 
+                 "SkipImageSizeLevel"]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {2, 1}], TraditionalForm]& ),
+           InterpretationFunction->(RowBox[{"Labeled", "[", 
+              RowBox[{#, ",", #2, ",", "Top", ",", 
+                RowBox[{"{", "}"}]}], "]"}]& )], 
+          Offset[{2, 2}, {0.022611464968152677, 1.0226114649681528}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1., 1.2246467991473532`*^-16}, 0.02261146496815286], 
+         InsetBox[
+          TemplateBox[{
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{0., -0.8428550619082302}, {0., 
+                3.8048069919883467`}}]}, {{}, {
+                Directive[
+                 EdgeForm[
+                  Directive[
+                   Thickness[Small], 
+                   Opacity[0.6859999999999999]]], 
+                 RGBColor[1., 0.78, 0.2]], {{
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 0.5487982520029133}, {
+                    0.5000000000000001, 1.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.5000000000000001]& , TagBoxNote -> 
+                    "0.5000000000000001"], 
+                    StyleBox[
+                    "0.5000000000000001`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.5000000000000001, {}], "Tooltip"]& ]}, {
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 1.5487982520029133`}, {0.5, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.5]& , TagBoxNote -> "0.5"], 
+                    StyleBox["0.5`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.5, {}], 
+                    "Tooltip"]& ]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+             DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0., -0.8428550619082302}, 
+              CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& )}, Frame -> True, 
+              FrameLabel -> {{None, None}, {None, None}}, 
+              FrameTicks -> {{{{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {1., 
+                   FormBox["\"True\"", TraditionalForm], 0}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox["\"False\"", TraditionalForm], 0}}, {{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}}}, {None, None}}, GridLines -> {None, None}, 
+              GridLinesStyle -> Directive[
+                GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+              PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+            "\"Rain\""},
+           "Labeled",
+           DisplayFunction->(FormBox[
+             GridBox[{{
+                ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                TagBox[
+                 ItemBox[
+                  PaneBox[
+                   TagBox[#, "SkipImageSizeLevel"], 
+                   Alignment -> {Center, Baseline}, BaselinePosition -> 
+                   Baseline], DefaultBaseStyle -> "Labeled"], 
+                 "SkipImageSizeLevel"]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {2, 1}], TraditionalForm]& ),
+           InterpretationFunction->(RowBox[{"Labeled", "[", 
+              RowBox[{#, ",", #2, ",", "Top", ",", 
+                RowBox[{"{", "}"}]}], "]"}]& )], 
+          Offset[{2, 2}, {1.0226114649681528, 0.022611464968152983}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{-1., -2.4492935982947064`*^-16}, 0.02261146496815286], 
+         InsetBox[
+          TemplateBox[{
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{0., -0.8428550619082302}, {0., 
+                3.8048069919883467`}}]}, {{}, {
+                Directive[
+                 EdgeForm[
+                  Directive[
+                   Thickness[Small], 
+                   Opacity[0.6859999999999999]]], 
+                 RGBColor[1., 0.78, 0.2]], {{
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 0.5487982520029133}, {0.3, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.3]& , TagBoxNote -> "0.3"], 
+                    StyleBox["0.3`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.3, {}], "Tooltip"]& ]}, {
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 1.5487982520029133`}, {
+                    0.7000000000000002, 2.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.7000000000000002]& , TagBoxNote -> 
+                    "0.7000000000000002"], 
+                    StyleBox[
+                    "0.7000000000000002`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.7000000000000002, {}], 
+                    "Tooltip"]& ]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+             DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0., -0.8428550619082302}, 
+              CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& )}, Frame -> True, 
+              FrameLabel -> {{None, None}, {None, None}}, 
+              FrameTicks -> {{{{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {1., 
+                   FormBox["\"On\"", TraditionalForm], 0}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox["\"Off\"", TraditionalForm], 0}}, {{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}}}, {None, None}}, GridLines -> {None, None}, 
+              GridLinesStyle -> Directive[
+                GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+              PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+            "\"Sprinkler\""},
+           "Labeled",
+           DisplayFunction->(FormBox[
+             GridBox[{{
+                ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                TagBox[
+                 ItemBox[
+                  PaneBox[
+                   TagBox[#, "SkipImageSizeLevel"], 
+                   Alignment -> {Center, Baseline}, BaselinePosition -> 
+                   Baseline], DefaultBaseStyle -> "Labeled"], 
+                 "SkipImageSizeLevel"]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {2, 1}], TraditionalForm]& ),
+           InterpretationFunction->(RowBox[{"Labeled", "[", 
+              RowBox[{#, ",", #2, ",", "Top", ",", 
+                RowBox[{"{", "}"}]}], "]"}]& )], 
+          Offset[{2, 2}, {-0.9773885350318472, 0.022611464968152615}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{6.123233995736766*^-17, -1.}, 0.02261146496815286], InsetBox[
+          TemplateBox[{
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{0., -0.8428550619082302}, {0., 
+                3.8048069919883467`}}]}, {{}, {
+                Directive[
+                 EdgeForm[
+                  Directive[
+                   Thickness[Small], 
+                   Opacity[0.6859999999999999]]], 
+                 RGBColor[1., 0.78, 0.2]], {{
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 0.5487982520029133}, {
+                    0.6471000000000001, 1.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.6471000000000001]& , TagBoxNote -> 
+                    "0.6471000000000001"], 
+                    StyleBox[
+                    "0.6471000000000001`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.6471000000000001, {}], "Tooltip"]& ]}, {
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 1.5487982520029133`}, {
+                    0.35290000000000005`, 2.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.35290000000000005`]& , TagBoxNote -> 
+                    "0.35290000000000005"], 
+                    StyleBox[
+                    "0.35290000000000005`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.35290000000000005`, {}], 
+                    "Tooltip"]& ]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+             DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0., -0.8428550619082302}, 
+              CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& )}, Frame -> True, 
+              FrameLabel -> {{None, None}, {None, None}}, 
+              FrameTicks -> {{{{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {1., 
+                   FormBox["\"Wet\"", TraditionalForm], 0}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox["\"Dry\"", TraditionalForm], 0}}, {{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}}}, {None, None}}, GridLines -> {None, None}, 
+              GridLinesStyle -> Directive[
+                GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+              PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+            "\"Grass\""},
+           "Labeled",
+           DisplayFunction->(FormBox[
+             GridBox[{{
+                ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                TagBox[
+                 ItemBox[
+                  PaneBox[
+                   TagBox[#, "SkipImageSizeLevel"], 
+                   Alignment -> {Center, Baseline}, BaselinePosition -> 
+                   Baseline], DefaultBaseStyle -> "Labeled"], 
+                 "SkipImageSizeLevel"]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {2, 1}], TraditionalForm]& ),
+           InterpretationFunction->(RowBox[{"Labeled", "[", 
+              RowBox[{#, ",", #2, ",", "Top", ",", 
+                RowBox[{"{", "}"}]}], "]"}]& )], 
+          Offset[{2, 2}, {0.022611464968152924, -0.9773885350318472}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.9631719188341084`*^9, 3.9631730922551174`*^9},
+ CellLabel->"Out[2]=",
+ CellID->562929531,ExpressionUUID->"119f692f-11a4-a24c-ae04-c8f9bf963564"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{"BN", ",", " ", 
+   RowBox[{
+    RowBox[{"#Rain", " ", "==", "\"\<True\>\""}], "&"}]}], "]"}]], "Input",
+ CellLabel->"In[3]:=",
+ CellID->150766506,ExpressionUUID->"b86a301a-1f0e-b54f-b94f-e59cdb16c39a"],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{
+      "Cloudy", "Rain", "Sprinkler", "Grass"}, {{{1, 2}, {1, 3}, {2, 4}, {3, 
+       4}}, Null}, {
+      GraphLayout -> {"Dimension" -> 2}, 
+       VertexLabels -> {Automatic, "Grass" -> Labeled[
+           Graphics[{{
+              Opacity[0], 
+              
+              Point[{{0., -0.8428550619082302}, {0., 
+               3.8048069919883467`}}]}, {{}, {
+               Directive[
+                EdgeForm[
+                 Directive[
+                  Thickness[Small], 
+                  Opacity[0.6859999999999999]]], 
+                RGBColor[1., 0.78, 0.2]], {{
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 0.5487982520029133}, {0.9162000000000001, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.9162000000000001], 
+                  Style[0.9162000000000001, {}]]}, {
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 1.5487982520029133`}, {0.08380000000000001, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.08380000000000001], 
+                  Style[
+                  0.08380000000000001, {}]]}}}, {}, {}}, {}, {}, {}, {}, {}}, \
+{DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0., -0.8428550619082302}, 
+             CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, Frame -> True, 
+             FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{{{1., 
+                  Spacer[0], {0.004`20., 0}}, {1., "Wet", 0}, {2., 
+                  Spacer[0], {0.004`20., 0}}, {2., "Dry", 0}}, {{1., 
+                  Spacer[0], {0.004`20., 0}}, {2., 
+                  Spacer[0], {0.004`20., 0}}}}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+             PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], "Grass",
+            Top], "Cloudy" -> Labeled[
+           Graphics[{{
+              Opacity[0], 
+              
+              Point[{{0., -0.8428550619082302}, {0., 
+               3.8048069919883467`}}]}, {{}, {
+               Directive[
+                EdgeForm[
+                 Directive[
+                  Thickness[Small], 
+                  Opacity[0.6859999999999999]]], 
+                RGBColor[1., 0.78, 0.2]], {{
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 0.5487982520029133}, {0.8000000000000002, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.8000000000000002], 
+                  Style[0.8000000000000002, {}]]}, {
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 1.5487982520029133`}, {0.2, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 0.2], 
+                  Style[0.2, {}]]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+            DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0., -0.8428550619082302}, 
+             CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, Frame -> True, 
+             FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{{{1., 
+                  Spacer[0], {0.004`20., 0}}, {1., "True", 0}, {2., 
+                  Spacer[0], {0.004`20., 0}}, {2., "False", 0}}, {{1., 
+                  Spacer[0], {0.004`20., 0}}, {2., 
+                  Spacer[0], {0.004`20., 0}}}}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+             PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+           "Cloudy", Top], "Sprinkler" -> Labeled[
+           Graphics[{{
+              Opacity[0], 
+              
+              Point[{{0., -0.8428550619082302}, {0., 
+               3.8048069919883467`}}]}, {{}, {
+               Directive[
+                EdgeForm[
+                 Directive[
+                  Thickness[Small], 
+                  Opacity[0.6859999999999999]]], 
+                RGBColor[1., 0.78, 0.2]], {{
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 0.5487982520029133}, {0.18, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 0.18], 
+                  Style[0.18, {}]]}, {
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[1, 0.5, 0]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 1.5487982520029133`}, {0.8200000000000002, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 
+                   0.8200000000000002], 
+                  Style[
+                  0.8200000000000002, {}]]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+            DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0., -0.8428550619082302}, 
+             CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, Frame -> True, 
+             FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{{{1., 
+                  Spacer[0], {0.004`20., 0}}, {1., "On", 0}, {2., 
+                  Spacer[0], {0.004`20., 0}}, {2., "Off", 0}}, {{1., 
+                  Spacer[0], {0.004`20., 0}}, {2., 
+                  Spacer[0], {0.004`20., 0}}}}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+             PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+           "Sprinkler", Top], "Rain" -> Labeled[
+           Graphics[{{
+              Opacity[0], 
+              
+              Point[{{0., -0.8428550619082302}, {0., 
+               3.8048069919883467`}}]}, {{}, {
+               Directive[
+                EdgeForm[
+                 Directive[
+                  Thickness[Small], 
+                  Opacity[0.6859999999999999]]], 
+                RGBColor[1., 0.78, 0.2]], {{
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[0, 0, 1]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 0.5487982520029133}, {1.0000000000000002`, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 
+                   1.0000000000000002`], 
+                  Style[1.0000000000000002`, {}]]}, {
+                 Directive[
+                  EdgeForm[
+                   Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                  RGBColor[0, 0, 1]], 
+                 Tooltip[
+                  StatusArea[
+                   
+                   Rectangle[{0., 1.5487982520029133`}, {0., 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 0], 
+                  Style[0, {}]]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+            DisplayFunction -> Identity, AspectRatio -> GoldenRatio^(-1), 
+             Axes -> {False, False}, AxesLabel -> {None, None}, 
+             AxesOrigin -> {0., -0.8428550619082302}, 
+             CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                 Identity[
+                  Part[#, 1]], 
+                 Identity[
+                  Part[#, 2]]}& )}, Frame -> True, 
+             FrameLabel -> {{None, None}, {None, None}}, FrameTicks -> {{{{1., 
+                  Spacer[0], {0.004`20., 0}}, {1., "True", 0}, {2., 
+                  Spacer[0], {0.004`20., 0}}, {2., "False", 0}}, {{1., 
+                  Spacer[0], {0.004`20., 0}}, {2., 
+                  Spacer[0], {0.004`20., 0}}}}, {None, None}}, 
+             GridLines -> {None, None}, GridLinesStyle -> Directive[
+               GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+             PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                Scaled[0.02], 
+                Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], "Rain", 
+           Top]}}]]}, 
+    TagBox[GraphicsGroupBox[{
+       {Hue[0.6, 0.7, 0.7], Opacity[0.7], CapForm["Round"], Arrowheads[
+        Medium], 
+        ArrowBox[{{{-1.8369701987210297`*^-16, 1.}, {1., 
+         1.2246467991473532`*^-16}}, {{-1.8369701987210297`*^-16, 
+         1.}, {-1., -2.4492935982947064`*^-16}}, {{1., 
+         1.2246467991473532`*^-16}, {
+         6.123233995736766*^-17, -1.}}, {{-1., -2.4492935982947064`*^-16}, {
+         6.123233995736766*^-17, -1.}}}, 0.02261146496815286]}, 
+       {Hue[0.6, 0.5, 1.], EdgeForm[{GrayLevel[0], Opacity[
+        0.7]}], {
+         DiskBox[{-1.8369701987210297`*^-16, 1.}, 0.02261146496815286], 
+         InsetBox[
+          TemplateBox[{
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{0., -0.8428550619082302}, {0., 
+                3.8048069919883467`}}]}, {{}, {
+                Directive[
+                 EdgeForm[
+                  Directive[
+                   Thickness[Small], 
+                   Opacity[0.6859999999999999]]], 
+                 RGBColor[1., 0.78, 0.2]], {{
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 0.5487982520029133}, {
+                    0.8000000000000002, 1.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.8000000000000002]& , TagBoxNote -> 
+                    "0.8000000000000002"], 
+                    StyleBox[
+                    "0.8000000000000002`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.8000000000000002, {}], "Tooltip"]& ]}, {
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 1.5487982520029133`}, {0.2, 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.2]& , TagBoxNote -> "0.2"], 
+                    StyleBox["0.2`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.2, {}], 
+                    "Tooltip"]& ]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+             DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0., -0.8428550619082302}, 
+              CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& )}, Frame -> True, 
+              FrameLabel -> {{None, None}, {None, None}}, 
+              FrameTicks -> {{{{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {1., 
+                   FormBox["\"True\"", TraditionalForm], 0}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox["\"False\"", TraditionalForm], 0}}, {{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}}}, {None, None}}, GridLines -> {None, None}, 
+              GridLinesStyle -> Directive[
+                GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+              PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+            "\"Cloudy\""},
+           "Labeled",
+           DisplayFunction->(FormBox[
+             GridBox[{{
+                ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                TagBox[
+                 ItemBox[
+                  PaneBox[
+                   TagBox[#, "SkipImageSizeLevel"], 
+                   Alignment -> {Center, Baseline}, BaselinePosition -> 
+                   Baseline], DefaultBaseStyle -> "Labeled"], 
+                 "SkipImageSizeLevel"]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {2, 1}], TraditionalForm]& ),
+           InterpretationFunction->(RowBox[{"Labeled", "[", 
+              RowBox[{#, ",", #2, ",", "Top", ",", 
+                RowBox[{"{", "}"}]}], "]"}]& )], 
+          Offset[{2, 2}, {0.022611464968152677, 1.0226114649681528}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{1., 1.2246467991473532`*^-16}, 0.02261146496815286], 
+         InsetBox[
+          TemplateBox[{
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{0., -0.8428550619082302}, {0., 
+                3.8048069919883467`}}]}, {{}, {
+                Directive[
+                 EdgeForm[
+                  Directive[
+                   Thickness[Small], 
+                   Opacity[0.6859999999999999]]], 
+                 RGBColor[1., 0.78, 0.2]], {{
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[0, 0, 1]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 0.5487982520029133}, {
+                    1.0000000000000002`, 1.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 1.0000000000000002`]& , TagBoxNote -> 
+                    "1.0000000000000002"], 
+                    StyleBox[
+                    "1.0000000000000002`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[1.0000000000000002`, {}], "Tooltip"]& ]}, {
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[0, 0, 1]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 1.5487982520029133`}, {0., 
+                    2.4512017479970867`}, "RoundingRadius" -> 0], 
+                    StatusArea[#, 0]& , TagBoxNote -> "0"], 
+                    StyleBox["0", {}, StripOnInput -> False]], Annotation[#, 
+                    Style[0, {}], 
+                    "Tooltip"]& ]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+             DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0., -0.8428550619082302}, 
+              CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& )}, Frame -> True, 
+              FrameLabel -> {{None, None}, {None, None}}, 
+              FrameTicks -> {{{{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {1., 
+                   FormBox["\"True\"", TraditionalForm], 0}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox["\"False\"", TraditionalForm], 0}}, {{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}}}, {None, None}}, GridLines -> {None, None}, 
+              GridLinesStyle -> Directive[
+                GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+              PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+            "\"Rain\""},
+           "Labeled",
+           DisplayFunction->(FormBox[
+             GridBox[{{
+                ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                TagBox[
+                 ItemBox[
+                  PaneBox[
+                   TagBox[#, "SkipImageSizeLevel"], 
+                   Alignment -> {Center, Baseline}, BaselinePosition -> 
+                   Baseline], DefaultBaseStyle -> "Labeled"], 
+                 "SkipImageSizeLevel"]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {2, 1}], TraditionalForm]& ),
+           InterpretationFunction->(RowBox[{"Labeled", "[", 
+              RowBox[{#, ",", #2, ",", "Top", ",", 
+                RowBox[{"{", "}"}]}], "]"}]& )], 
+          Offset[{2, 2}, {1.0226114649681528, 0.022611464968152983}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{-1., -2.4492935982947064`*^-16}, 0.02261146496815286], 
+         InsetBox[
+          TemplateBox[{
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{0., -0.8428550619082302}, {0., 
+                3.8048069919883467`}}]}, {{}, {
+                Directive[
+                 EdgeForm[
+                  Directive[
+                   Thickness[Small], 
+                   Opacity[0.6859999999999999]]], 
+                 RGBColor[1., 0.78, 0.2]], {{
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 0.5487982520029133}, {0.18, 
+                    1.4512017479970867`}, "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.18]& , TagBoxNote -> "0.18"], 
+                    StyleBox["0.18`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.18, {}], "Tooltip"]& ]}, {
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 1.5487982520029133`}, {
+                    0.8200000000000002, 2.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.8200000000000002]& , TagBoxNote -> 
+                    "0.8200000000000002"], 
+                    StyleBox[
+                    "0.8200000000000002`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.8200000000000002, {}], 
+                    "Tooltip"]& ]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+             DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0., -0.8428550619082302}, 
+              CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& )}, Frame -> True, 
+              FrameLabel -> {{None, None}, {None, None}}, 
+              FrameTicks -> {{{{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {1., 
+                   FormBox["\"On\"", TraditionalForm], 0}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox["\"Off\"", TraditionalForm], 0}}, {{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}}}, {None, None}}, GridLines -> {None, None}, 
+              GridLinesStyle -> Directive[
+                GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+              PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+            "\"Sprinkler\""},
+           "Labeled",
+           DisplayFunction->(FormBox[
+             GridBox[{{
+                ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                TagBox[
+                 ItemBox[
+                  PaneBox[
+                   TagBox[#, "SkipImageSizeLevel"], 
+                   Alignment -> {Center, Baseline}, BaselinePosition -> 
+                   Baseline], DefaultBaseStyle -> "Labeled"], 
+                 "SkipImageSizeLevel"]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {2, 1}], TraditionalForm]& ),
+           InterpretationFunction->(RowBox[{"Labeled", "[", 
+              RowBox[{#, ",", #2, ",", "Top", ",", 
+                RowBox[{"{", "}"}]}], "]"}]& )], 
+          Offset[{2, 2}, {-0.9773885350318472, 0.022611464968152615}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}, {
+         DiskBox[{6.123233995736766*^-17, -1.}, 0.02261146496815286], InsetBox[
+          TemplateBox[{
+            GraphicsBox[{{
+               Opacity[0], 
+               
+               PointBox[{{0., -0.8428550619082302}, {0., 
+                3.8048069919883467`}}]}, {{}, {
+                Directive[
+                 EdgeForm[
+                  Directive[
+                   Thickness[Small], 
+                   Opacity[0.6859999999999999]]], 
+                 RGBColor[1., 0.78, 0.2]], {{
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 0.5487982520029133}, {
+                    0.9162000000000001, 1.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.9162000000000001]& , TagBoxNote -> 
+                    "0.9162000000000001"], 
+                    StyleBox[
+                    "0.9162000000000001`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.9162000000000001, {}], "Tooltip"]& ]}, {
+                  Directive[
+                   EdgeForm[
+                    Directive[
+                    Thickness[Small], 
+                    Opacity[0.6859999999999999]]], 
+                   RGBColor[1, 0.5, 0]], 
+                  TagBox[
+                   TooltipBox[
+                    TagBox[
+                    
+                    RectangleBox[{0., 1.5487982520029133`}, {
+                    0.08380000000000001, 2.4512017479970867`}, 
+                    "RoundingRadius" -> 0], 
+                    StatusArea[#, 0.08380000000000001]& , TagBoxNote -> 
+                    "0.08380000000000001"], 
+                    StyleBox[
+                    "0.08380000000000001`", {}, StripOnInput -> False]], 
+                   Annotation[#, 
+                    Style[0.08380000000000001, {}], 
+                    "Tooltip"]& ]}}}, {}, {}}, {}, {}, {}, {}, {}}, {
+             DisplayFunction -> Identity, AspectRatio -> 
+              NCache[GoldenRatio^(-1), 0.6180339887498948], 
+              Axes -> {False, False}, AxesLabel -> {None, None}, 
+              AxesOrigin -> {0., -0.8428550619082302}, 
+              CoordinatesToolOptions -> {"DisplayFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+                  Identity[
+                   Part[#, 1]], 
+                  Identity[
+                   Part[#, 2]]}& )}, Frame -> True, 
+              FrameLabel -> {{None, None}, {None, None}}, 
+              FrameTicks -> {{{{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {1., 
+                   FormBox["\"Wet\"", TraditionalForm], 0}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox["\"Dry\"", TraditionalForm], 0}}, {{1., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}, {2., 
+                   FormBox[
+                    TemplateBox[{0}, "Spacer1"], TraditionalForm], {
+                   0.004, 0}}}}, {None, None}}, GridLines -> {None, None}, 
+              GridLinesStyle -> Directive[
+                GrayLevel[0.5, 0.4]], ImageSize -> Tiny, 
+              PlotRange -> {{0, 1}, {All, All}}, PlotRangePadding -> {{
+                 Scaled[0.02], 
+                 Scaled[0.02]}, {0, 0}}, Ticks -> {Automatic, None}}], 
+            "\"Grass\""},
+           "Labeled",
+           DisplayFunction->(FormBox[
+             GridBox[{{
+                ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
+                TagBox[
+                 ItemBox[
+                  PaneBox[
+                   TagBox[#, "SkipImageSizeLevel"], 
+                   Alignment -> {Center, Baseline}, BaselinePosition -> 
+                   Baseline], DefaultBaseStyle -> "Labeled"], 
+                 "SkipImageSizeLevel"]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Center}}, "Rows" -> {{Center}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              BaselinePosition -> {2, 1}], TraditionalForm]& ),
+           InterpretationFunction->(RowBox[{"Labeled", "[", 
+              RowBox[{#, ",", #2, ",", "Top", ",", 
+                RowBox[{"{", "}"}]}], "]"}]& )], 
+          Offset[{2, 2}, {0.022611464968152924, -0.9773885350318472}], 
+          ImageScaled[{0, 0}],
+          BaseStyle->"Graphics"]}}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False]],
+  DefaultBaseStyle->"NetworkGraphics",
+  FormatType->TraditionalForm,
+  FrameTicks->None]], "Output",
+ CellChangeTimes->{3.963171935912569*^9, 3.963173094039057*^9},
+ CellLabel->"Out[3]=",
+ CellID->241792275,ExpressionUUID->"907a6c00-84e0-164e-b03c-0a1c69a0de68"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Possible Issues", "ExampleSection",ExpressionUUID->
+   "8c201f73-ac0c-a845-9d3e-5289f9a2076f"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->3415318,ExpressionUUID->"ef25a303-b7d9-9140-bc2a-620116455d7a"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Interactive Examples", "ExampleSection",ExpressionUUID->
+   "bb271949-87cb-f349-8da0-51fba95714da"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->215945417,ExpressionUUID->"74d4b510-7aa3-e643-b13e-ddaf45239935"],
+
+Cell[BoxData[
+ InterpretationBox[Cell[
+  "Neat Examples", "ExampleSection",ExpressionUUID->
+   "f758fde5-e55c-3044-893b-a8d4223b45d7"],
+  $Line = 0; Null]], "ExampleSection",
+ CellID->951478747,ExpressionUUID->"044edd88-f823-154d-8b9a-be5e573b6db1"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Metadata", "MetadataSection",
+ CellID->21173782,ExpressionUUID->"186ad16a-0b2f-6749-8dd9-3f8ff1c46fac"],
+
+Cell[TextData[{
+ "New in: ",
+ Cell["XX", "HistoryData",
+  CellTags->"New",ExpressionUUID->"538a8fb9-7de6-ed4a-bf7f-ac98389e8ea0"],
+ " | Modified in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Modified",ExpressionUUID->"d46033a9-2c42-0841-b731-cff31aa9eae9"],
+ " | Obsolete in: ",
+ Cell[" ", "HistoryData",
+  CellTags->"Obsolete",ExpressionUUID->"2f4f1926-b9cb-9140-91b4-785a0bac510f"]
+}], "History",
+ CellID->126328385,ExpressionUUID->"45b4cf4c-f7a0-584c-bcfc-3778c62225c1"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Categorization",
+ Cell[BoxData[
+  TemplateBox[{"Metadata", 
+    Cell[
+     BoxData[
+      FrameBox[
+       Cell[
+       "Metadata such as page URI, context, and type of documentation page.", 
+        "MoreInfoText"], BaseStyle -> "IFrameBox"]], "MoreInfoTextOuter"]},
+   "MoreInfoOpenerButtonTemplate"]],ExpressionUUID->
+  "7ab0d030-b01b-1f49-b8ea-02ecd4abf9a3"]
+}], "CategorizationSection",
+ CellID->449569619,ExpressionUUID->"4b093b11-2027-ee4d-a8e6-b6e45353274c"],
+
+Cell["Symbol", "Categorization",
+ CellLabel->"Entity Type",
+ CellID->554451835,ExpressionUUID->"4f810c1c-4675-eb4f-aeab-f99f15dfc75b"],
+
+Cell["ahafver/BayesianNetwork", "Categorization",
+ CellLabel->"Paclet Name",
+ CellID->661086004,ExpressionUUID->"c7b201fe-7791-7246-a036-638872a7b276"],
+
+Cell["ahafver`BayesianNetwork`", "Categorization",
+ CellLabel->"Context",
+ CellID->625231648,ExpressionUUID->"63bd68dd-1149-0d4d-a304-506a3ed8848a"],
+
+Cell["ahafver/BayesianNetwork/ref/BayesianNetworkObject", "Categorization",
+ CellLabel->"URI",
+ CellID->339386131,ExpressionUUID->"a4d1aa3b-e2c0-5740-ac50-f20b24198330"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Keywords", "KeywordsSection",
+ CellID->112429085,ExpressionUUID->"de92c145-0010-9142-9041-ecdfbcc1c173"],
+
+Cell["XXXX", "Keywords",
+ CellID->207835869,ExpressionUUID->"0edfa247-56b0-434e-8009-50da890ba859"]
+}, Closed]],
+
+Cell[CellGroupData[{
+
+Cell["Syntax Templates", "TemplatesSection",
+ CellID->667781239,ExpressionUUID->"eaafeb78-a819-eb43-82f8-3b3fa8572c1b"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Additional Function Template",
+ CellID->49202832,ExpressionUUID->"5548f0b3-e0a9-614f-960c-8226b46e3d3b"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Arguments Pattern",
+ CellID->115867404,ExpressionUUID->"99d68c9d-5bb9-094e-b6a2-c2e54b52fa37"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Local Variables",
+ CellID->5389133,ExpressionUUID->"860c5fc0-d0ee-be45-aa02-bc1a021f958d"],
+
+Cell[BoxData[""], "Template",
+ CellLabel->"Color Equal Signs",
+ CellID->416163802,ExpressionUUID->"929dce7e-b9ba-6644-9cf9-2916eb040667"]
+}, Closed]]
+}, Open  ]]
+},
+WindowSize->{700.1999999999999, 676.8},
+WindowMargins->{{Automatic, 162}, {Automatic, 40.199999999999996`}},
+TaggingRules-><|"Paclet" -> "ahafver/BayesianNetwork"|>,
+Magnification:>0.8 Inherited,
+FrontEndVersion->"14.2 for Microsoft Windows (64-bit) (March 14, 2025)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "FunctionPageStylesExt.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"4a9c7d7d-dad9-c14b-83bc-e8b584a79b3b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "DefaultContent"->{
+  Cell[6401, 199, 3385, 89, 160, "Input",ExpressionUUID->"fb5684e7-7e19-bc4a-8969-b3643c1c8c76",
+   CellTags->"DefaultContent",
+   CellID->78583892]},
+ "ExtendedExamples"->{
+  Cell[30457, 726, 487, 13, 45, "ExtendedExamplesSection",ExpressionUUID->"e1829e73-2071-f540-a047-0f7eff15a22b",
+   CellTags->"ExtendedExamples",
+   CellID->374925315]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"DefaultContent", 143890, 3233},
+ {"ExtendedExamples", 144064, 3237}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 118, 1, 58, "ObjectName",ExpressionUUID->"6dd96f39-8418-4f49-ad8a-39888ce9ad7e",
+ CellID->378397021],
+Cell[697, 25, 554, 10, 77, "Usage",ExpressionUUID->"30314f13-621c-c647-a503-bd6e38cbd635",
+ CellID->77487121],
+Cell[1254, 37, 96, 1, 21, "Notes",ExpressionUUID->"674bc1e2-8712-c74b-92f1-8b09000d98dd",
+ CellID->576452828]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1387, 43, 458, 13, 31, "SeeAlsoSection",ExpressionUUID->"ec027778-a462-df43-a5f4-379ceec4a9f1",
+ CellID->221198932],
+Cell[1848, 58, 1653, 42, 17, "SeeAlso",ExpressionUUID->"5c265c6f-334a-a04d-a395-05deee049318",
+ CellID->400320720]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3538, 105, 435, 12, 32, "TechNotesSection",ExpressionUUID->"cc3170bb-071e-b949-bb83-3c9be72b2018",
+ CellID->830501767],
+Cell[3976, 119, 99, 1, 15, "Tutorials",ExpressionUUID->"568a5b93-a10d-d44b-9e1e-9e64841e2035",
+ CellID->70587949]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4112, 125, 116, 1, 31, "MoreAboutSection",ExpressionUUID->"23a2a84a-cb01-7747-87c8-d598b0e46862",
+ CellID->98245114],
+Cell[4231, 128, 100, 1, 15, "MoreAbout",ExpressionUUID->"074a5ea0-bffa-0e4f-8cdd-38094b5c47ab",
+ CellID->318535299]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4368, 134, 472, 13, 31, "RelatedLinksSection",ExpressionUUID->"6efb90b4-6ed5-2949-98b5-dee2e32c15ed",
+ CellID->326748677],
+Cell[4843, 149, 103, 1, 15, "RelatedLinks",ExpressionUUID->"cea598f9-0418-e74c-9936-5ab16cdab5ba",
+ CellID->692981031]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4983, 155, 530, 14, 55, "ExamplesInitializationSection",ExpressionUUID->"b54b8102-97e9-0b44-af68-436d4dc4e200",
+ CellID->749404200],
+Cell[5516, 171, 183, 3, 36, "ExampleInitialization",ExpressionUUID->"8a7b13c6-954a-734f-997d-0db0e29b5784",
+ CellID->196164021]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5736, 179, 442, 12, 55, "PrimaryExamplesSection",ExpressionUUID->"ea43f44a-f64b-7742-a602-7ebb3dad89ea",
+ CellID->532038386],
+Cell[6181, 193, 217, 4, 18, "ExampleText",ExpressionUUID->"a49cd021-52e8-ac4b-9dbf-f8d5d0f2bf61",
+ CellID->134743555],
+Cell[6401, 199, 3385, 89, 160, "Input",ExpressionUUID->"fb5684e7-7e19-bc4a-8969-b3643c1c8c76",
+ CellTags->"DefaultContent",
+ CellID->78583892],
+Cell[9789, 290, 194, 2, 18, "ExampleText",ExpressionUUID->"6d61426a-a8c3-f04f-9595-2d01b3b73c6d",
+ CellID->226812332],
+Cell[CellGroupData[{
+Cell[10008, 296, 1050, 26, 90, "Input",ExpressionUUID->"31b4ac0d-beca-6246-9ef1-b27a9956a560",
+ CellID->90717749],
+Cell[11061, 324, 19347, 396, 61, "Output",ExpressionUUID->"6e69edd1-1d37-3b43-a732-a6f384d1a188",
+ CellID->50932647]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30457, 726, 487, 13, 45, "ExtendedExamplesSection",ExpressionUUID->"e1829e73-2071-f540-a047-0f7eff15a22b",
+ CellTags->"ExtendedExamples",
+ CellID->374925315],
+Cell[30947, 741, 241, 5, 25, "ExampleSection",ExpressionUUID->"5133d0b2-5404-c040-ba9c-c3daae0c7815",
+ CellID->817888119],
+Cell[31191, 748, 263, 5, 17, "ExampleSection",ExpressionUUID->"df53a7e0-b243-9748-a3ff-fefaea10660e",
+ CellID->62412223],
+Cell[CellGroupData[{
+Cell[31479, 757, 243, 5, 17, "ExampleSection",ExpressionUUID->"53b289bb-6d14-3640-857e-8a0233efa88e",
+ CellID->608888643],
+Cell[31725, 764, 246, 5, 18, "ExampleSubsection",ExpressionUUID->"cec70f6b-8a47-914d-85a7-ec4fe60a725f",
+ CellID->378459077],
+Cell[31974, 771, 246, 5, 16, "ExampleSubsection",ExpressionUUID->"d4561502-8a3c-4c47-9139-9805a71f333e",
+ CellID->245110941]
+}, Open  ]],
+Cell[32235, 779, 248, 5, 25, "ExampleSection",ExpressionUUID->"7f72de38-bc00-0f43-952d-e46e136ba7c3",
+ CellID->257151314],
+Cell[CellGroupData[{
+Cell[32508, 788, 258, 5, 17, "ExampleSection",ExpressionUUID->"c7815246-219a-bb41-bd89-6b7e9e1bf44d",
+ CellID->182478464],
+Cell[32769, 795, 317, 8, 18, "ExampleText",ExpressionUUID->"8b69a944-6525-fa49-97f7-b4e4f28b00a4",
+ CellID->205933709],
+Cell[CellGroupData[{
+Cell[33111, 807, 21168, 416, 100, "Input",ExpressionUUID->"7840f628-2453-f649-bbe3-606ae0c14d48",
+ CellID->607043780],
+Cell[54282, 1225, 1529, 44, 41, "Output",ExpressionUUID->"1af1573e-014e-8b4e-b5b1-491a7aa19924",
+ CellID->352773363]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55848, 1274, 308, 6, 14, "ExampleDelimiter",ExpressionUUID->"661556b2-546b-6041-ad6b-5e05ca5d3e2d",
+ CellID->532181875],
+Cell[56159, 1282, 339, 8, 18, "ExampleText",ExpressionUUID->"96f50806-6763-404b-b7e3-2378390a087b",
+ CellID->389212076],
+Cell[56501, 1292, 20140, 402, 61, "Input",ExpressionUUID->"1ef4da87-c3c0-fe47-a6e2-e1353b42fea6",
+ CellID->125010132],
+Cell[CellGroupData[{
+Cell[76666, 1698, 224, 4, 20, "Input",ExpressionUUID->"e71c9f55-e853-9b44-be23-9b2d532639ae",
+ CellID->81199063],
+Cell[76893, 1704, 31324, 696, 263, "Output",ExpressionUUID->"119f692f-11a4-a24c-ae04-c8f9bf963564",
+ CellID->562929531]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[108254, 2405, 250, 6, 20, "Input",ExpressionUUID->"b86a301a-1f0e-b54f-b94f-e59cdb16c39a",
+ CellID->150766506],
+Cell[108507, 2413, 31285, 695, 263, "Output",ExpressionUUID->"907a6c00-84e0-164e-b03c-0a1c69a0de68",
+ CellID->241792275]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[139831, 3113, 249, 5, 25, "ExampleSection",ExpressionUUID->"ef25a303-b7d9-9140-bc2a-620116455d7a",
+ CellID->3415318],
+Cell[140083, 3120, 256, 5, 17, "ExampleSection",ExpressionUUID->"74d4b510-7aa3-e643-b13e-ddaf45239935",
+ CellID->215945417],
+Cell[140342, 3127, 249, 5, 17, "ExampleSection",ExpressionUUID->"044edd88-f823-154d-8b9a-be5e573b6db1",
+ CellID->951478747]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[140628, 3137, 109, 1, 56, "MetadataSection",ExpressionUUID->"186ad16a-0b2f-6749-8dd9-3f8ff1c46fac",
+ CellID->21173782],
+Cell[140740, 3140, 473, 11, 20, "History",ExpressionUUID->"45b4cf4c-f7a0-584c-bcfc-3778c62225c1",
+ CellID->126328385],
+Cell[CellGroupData[{
+Cell[141238, 3155, 484, 13, 16, "CategorizationSection",ExpressionUUID->"4b093b11-2027-ee4d-a8e6-b6e45353274c",
+ CellID->449569619],
+Cell[141725, 3170, 134, 2, 56, "Categorization",ExpressionUUID->"4f810c1c-4675-eb4f-aeab-f99f15dfc75b",
+ CellID->554451835],
+Cell[141862, 3174, 151, 2, 56, "Categorization",ExpressionUUID->"c7b201fe-7791-7246-a036-638872a7b276",
+ CellID->661086004],
+Cell[142016, 3178, 148, 2, 56, "Categorization",ExpressionUUID->"63bd68dd-1149-0d4d-a304-506a3ed8848a",
+ CellID->625231648],
+Cell[142167, 3182, 169, 2, 56, "Categorization",ExpressionUUID->"a4d1aa3b-e2c0-5740-ac50-f20b24198330",
+ CellID->339386131]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[142373, 3189, 110, 1, 16, "KeywordsSection",ExpressionUUID->"de92c145-0010-9142-9041-ecdfbcc1c173",
+ CellID->112429085],
+Cell[142486, 3192, 99, 1, 56, "Keywords",ExpressionUUID->"0edfa247-56b0-434e-8009-50da890ba859",
+ CellID->207835869]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[142622, 3198, 119, 1, 16, "TemplatesSection",ExpressionUUID->"eaafeb78-a819-eb43-82f8-3b3fa8572c1b",
+ CellID->667781239],
+Cell[142744, 3201, 147, 2, 56, "Template",ExpressionUUID->"5548f0b3-e0a9-614f-960c-8226b46e3d3b",
+ CellID->49202832],
+Cell[142894, 3205, 137, 2, 56, "Template",ExpressionUUID->"99d68c9d-5bb9-094e-b6a2-c2e54b52fa37",
+ CellID->115867404],
+Cell[143034, 3209, 133, 2, 56, "Template",ExpressionUUID->"860c5fc0-d0ee-be45-aa02-bc1a021f958d",
+ CellID->5389133],
+Cell[143170, 3213, 137, 2, 56, "Template",ExpressionUUID->"929dce7e-b9ba-6644-9cf9-2916eb040667",
+ CellID->416163802]
+}, Closed]]
+}, Open  ]]
+}
+]
+*)
+
