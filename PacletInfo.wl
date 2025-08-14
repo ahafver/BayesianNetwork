@@ -7,7 +7,7 @@ PacletObject[
     "Creator" -> "Andreas Hafver",
     "License" -> "MIT",
     "PublisherID" -> "AndreasHafver",
-    "Version" -> "1.0.0",
+    "Version" -> "1.2.0",
     "WolframVersion" -> "12.1+",
     "PrimaryContext" -> "AndreasHafver`BayesianNetwork`",
     "Extensions" -> {
@@ -21,8 +21,7 @@ PacletObject[
           }
         },
         "Symbols" -> {
-          "AndreasHafver`BayesianNetwork`BayesianNetwork",
-          "AndreasHafver`BayesianNetwork`BayesianNetworkObject"
+          "AndreasHafver`BayesianNetwork`BayesianNetwork"
         }
       },
       {"Documentation", "Language" -> "English"}

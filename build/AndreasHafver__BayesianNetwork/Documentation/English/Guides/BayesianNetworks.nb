@@ -1,0 +1,219 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      8147,        210]
+NotebookOptionsPosition[      5916,        160]
+NotebookOutlinePosition[      7574,        201]
+CellTagsIndexPosition[      7531,        198]
+WindowTitle->Bayesian Networks
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "ANDREAS HAFVER/ BAYESIAN NETWORK GUIDE", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "b3183be5-181c-294c-89e2-3c3734c7286e"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "07d82645-c174-6542-bc1b-c9c4402ff3c5"],
+        Background->LightDarkSwitched[
+          RGBColor[0.85098, 0.396078, 0]],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[{
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "Functions",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "9b6d93bf-720a-4c4d-a6bd-b831cce8b1c8"]
+         }],ExpressionUUID->"a3cbc925-9914-cf43-a69a-2dccccee3730"],
+         StripOnInput->False],{
+        StyleBox[
+          "\"BayesianNetwork\"", "SeeAlsoRelated", StripOnInput -> False] :> 
+         Documentation`HelpLookup[
+          "paclet:AndreasHafver/BayesianNetwork/ref/BayesianNetworkObject"]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"GuideFunction"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "c55139f5-90ff-5444-bcd8-7f1a291884d9"],
+     "\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\[ThickSpace]\
+\[ThickSpace]",
+     Cell[BoxData[
+      TagBox[
+       ActionMenuBox[
+        FrameBox[Cell[TextData[{
+          "URL",
+          " ",
+          Cell[BoxData[
+           GraphicsBox[
+            {GrayLevel[0.66667], Thickness[0.13], 
+             LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+            AspectRatio->1,
+            ImageSize->20,
+            PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+           "4ef4eb05-b329-694a-aa20-a87b01634e9f"]
+         }],ExpressionUUID->"26f42b76-a52a-0c49-a6b0-0f1e964b5718"],
+         StripOnInput->False],{
+        "\"AndreasHafver/BayesianNetwork/guide/BayesianNetworks\"" :> None, 
+         "\"Copy Wolfram Documentation Center URL\"" :> 
+         CopyToClipboard[
+          "AndreasHafver/BayesianNetwork/guide/BayesianNetworks"], Delimiter, 
+         "\"Copy web URL\"" :> 
+         Module[{DocumentationSearch`Private`nb$}, 
+           DocumentationSearch`Private`nb$ = 
+            NotebookPut[
+             Notebook[{
+               Cell[BoxData[
+                 MakeBoxes[
+                  Hyperlink[
+                   "http://reference.wolfram.com/language/AndreasHafver/\
+BayesianNetwork/guide/BayesianNetworks.html"], StandardForm]], "Input", 
+                 TextClipboardType -> "PlainText"]}, Visible -> False]]; 
+           SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+           FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+           NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+         "\"Go to web URL\"" :> 
+         FrontEndExecute[{
+           NotebookLocate[{
+             URL[(If[TrueQ[False], 
+                  "http://reference.wolfram.com/system-modeler/", 
+                  "http://reference.wolfram.com/language/"] <> 
+                "AndreasHafver/BayesianNetwork/guide/BayesianNetworks") <> 
+               ".html"], None}]}]},
+        Appearance->None,
+        MenuAppearance->Automatic,
+        MenuStyle->"URLMenu"],
+       MouseAppearanceTag["LinkHand"]]],
+      LineSpacing->{1.4, 0},ExpressionUUID->
+      "697e0bb7-ba3b-ed41-93bd-5f2a3405c45f"]
+    }], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "f502d5d0-ca74-4648-84bb-32ba55c2e430"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"c258dbba-7d1f-b843-a525-0f48520dfc79"],
+
+Cell[CellGroupData[{
+
+Cell["Bayesian Networks", "GuideTitle",
+ CellID->126717766,ExpressionUUID->"efdab09b-66c3-a748-b092-646039bb4f34"],
+
+Cell["\<\
+Probabilistic analysis with Bayesian networks (belief networks).\
+\>", "GuideAbstract",
+ CellID->87464398,ExpressionUUID->"f2ea4f23-5ed5-fc49-ad0a-5833769a1936"],
+
+Cell["\t", "GuideDelimiterSubsection",ExpressionUUID->"d02ea87c-d3dd-6f4a-90c3-72e72ccfea91"],
+
+Cell[TextData[{
+ Cell[BoxData[
+  TemplateBox[{
+    Cell[
+     TextData["BayesianNetwork"]], 
+    "paclet:AndreasHafver/BayesianNetwork/ref/BayesianNetworkObject", 
+    "AndreasHafver Package Symbol"},
+   "PackageLink",
+   BaseStyle->"InlineFunctionSans"]], "InlineFunctionSans",
+  CellTags->"c40ac8e4-27e1-4161-a8df-4d4f38357a23",ExpressionUUID->
+  "43c81cfc-1eda-9549-8b60-a3f9a39a2e2f"],
+ " ",
+ StyleBox["\[LongDash]", "GuideEmDash"],
+ " create a Bayesian Network"
+}], "GuideText",
+ CellID->61743548,ExpressionUUID->"1406e782-5156-5c49-a9ec-941608a43f08"]
+}, Open  ]],
+
+Cell[" ", "FooterCell",ExpressionUUID->"f88a6c73-f4dc-f148-9299-f0ad7af9de08"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 676.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"Bayesian Networks",
+Visible->True,
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}}, 
+  "NewStyles" -> True, "CitationPopupData" -> {$Failed, ""}, "ShowCitation" -> 
+  False, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2025, 8, 15, 1, 30, 30.8677115}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "AndreasHafver`BayesianNetwork`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "Andreas Hafver/ Bayesian Network Guide", "language" -> "en", 
+    "paclet" -> "AndreasHafver/BayesianNetwork", "status" -> "None", 
+    "summary" -> 
+    "Probabilistic analysis with Bayesian networks (belief networks).", 
+    "synonyms" -> {}, "tabletags" -> {}, "title" -> "Bayesian Networks", 
+    "titlemodifier" -> "", "metadescription" -> "", "windowtitle" -> 
+    "Bayesian Networks", "type" -> "Guide", "uri" -> 
+    "AndreasHafver/BayesianNetwork/guide/BayesianNetworks"}},
+CacheGraphics->False,
+FrontEndVersion->"14.3 for Microsoft Windows (64-bit) (July 8, 2025)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "Reference.nb"],
+ExpressionUUID->"4cd89cd5-e31f-5441-b604-3e0e6dc06f3e"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[585, 21, 4265, 105, 70, "AnchorBarGrid",ExpressionUUID->"c258dbba-7d1f-b843-a525-0f48520dfc79",
+ CellID->1],
+Cell[CellGroupData[{
+Cell[4875, 130, 114, 1, 70, "GuideTitle",ExpressionUUID->"efdab09b-66c3-a748-b092-646039bb4f34",
+ CellID->126717766],
+Cell[4992, 133, 171, 3, 70, "GuideAbstract",ExpressionUUID->"f2ea4f23-5ed5-fc49-ad0a-5833769a1936",
+ CellID->87464398],
+Cell[5166, 138, 93, 0, 70, "GuideDelimiterSubsection",ExpressionUUID->"d02ea87c-d3dd-6f4a-90c3-72e72ccfea91"],
+Cell[5262, 140, 557, 15, 70, "GuideText",ExpressionUUID->"1406e782-5156-5c49-a9ec-941608a43f08",
+ CellID->61743548]
+}, Open  ]],
+Cell[5834, 158, 78, 0, 70, "FooterCell",ExpressionUUID->"f88a6c73-f4dc-f148-9299-f0ad7af9de08"]
+}
+]
+*)
+
+(* End of internal cache information *)
